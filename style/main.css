@@ -17,15 +17,14 @@
 }
 
 .first {
-    display: table-cell;
-    vertical-align: middle;
+    text-align: center;
 }
 
 .container {
     height: 90%;
-    text-align: center;
-    width: 100%;
-    display: table;
+    display:flex;
+    justify-content:center;
+    align-items:center; 
 }
 
 html, body {
@@ -35,4 +34,14 @@ html, body {
 
 body {
     font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.logo2, .deslink{
+    text-decoration: none;
+    color: #92d050;
+}
+
+.logo, .deslink:hover{
+    text-decoration: none;
+    color: #01af50;
 }
