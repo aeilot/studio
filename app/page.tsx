@@ -6,8 +6,8 @@ export default function HomePage() {
   return (
     <PageShell>
       <Hero
-        eyebrow="It has arrived."
-        tagline="where sparkles of innovations are ignited"
+        eyebrow="Creating since 2018"
+        tagline="where we believe innovation changes the world."
         showLinks
       />
       <ProjectList />

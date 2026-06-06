@@ -14,23 +14,6 @@ export function Hero({ eyebrow, tagline, showLinks = false }: HeroProps) {
       <p className="hero-eyebrow">{eyebrow}</p>
       <StudioTitle />
       {tagline && <p className="hero-tagline">{tagline}</p>}
-      {showLinks && (
-        <p className="hero-links">
-          Check{" "}
-          <a
-            href={ABOUT_URL}
-            className="hero-link"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            about us
-          </a>{" "}
-          and{" "}
-          <Link href="/members" className="hero-link">
-            members
-          </Link>
-        </p>
-      )}
     </section>
   );
 }
