@@ -9,5 +9,12 @@ export default function nextConfig(phase: string): NextConfig {
 
   return {
     distDir: useDefaultDistDir ? ".next" : ".next-production",
+    outputFileTracingIncludes: {
+      "/rediscover/opengraph-image": [
+        "./app/rediscover/og/**/*",
+        "./public/rediscover/today.png",
+        "./public/rediscover/icon.png",
+      ],
+    },
   };
 }
