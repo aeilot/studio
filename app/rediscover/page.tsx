@@ -229,5 +229,5 @@ export async function generateMetadata({
   searchParams: PageQuery;
 }) {
   const c = translations[language((await searchParams).lang)];
-  return { title: c.title, description: c.intro };
+  return { description: c.intro };
 }
