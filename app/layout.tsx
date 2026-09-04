@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Lora, Source_Sans_3 } from "next/font/google";
+import { siteUrl } from "@/lib/site";
 import "./globals.css";
 
 const lora = Lora({
@@ -15,6 +16,7 @@ const sourceSans = Source_Sans_3({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl()),
   title: "Evolution Studio",
   description: "Innovations Change The World",
 };

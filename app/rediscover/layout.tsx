@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import "./rediscover.css";
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.SITE_URL || "http://localhost:3000"),
   title: {
     default: "Rediscover — The pages you meant to read",
     template: "%s · Rediscover",
