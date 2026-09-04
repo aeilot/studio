@@ -11,6 +11,16 @@ export type Project = {
 
 const projects: Project[] = [
   {
+    id: "rediscover",
+    title: "Rediscover",
+    subtitle: "iPhone · iPad · Mac",
+    description:
+      "Rediscover the pages you meant to read. Save what interests you and come back to a few pages each day.",
+    href: "/rediscover",
+    year: 2026,
+    featured: true,
+  },
+  {
     id: "frase",
     title: "frase.ai",
     subtitle: "SaaS",
@@ -56,8 +66,7 @@ const projects: Project[] = [
     id: "habits",
     title: "Habits",
     subtitle: "macOS",
-    description:
-      'macOS Habit Tracker in the menu bar',
+    description: "macOS Habit Tracker in the menu bar",
     href: "https://github.com/aeilot/Habits",
     year: 2025,
     featured: true,
@@ -67,7 +76,8 @@ const projects: Project[] = [
     id: "hsefz-digital-life",
     title: "HSEFZ Digital Life",
     subtitle: "Web Service",
-    description: "The digital services system for No.2 High School of East China Normal University.",
+    description:
+      "The digital services system for No.2 High School of East China Normal University.",
     href: "https://github.com/HSEFZ-technician/HSEFZ-digital-life",
     year: 2023,
     featured: true,

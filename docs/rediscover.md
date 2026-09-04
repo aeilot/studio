@@ -1,0 +1,41 @@
+# Rediscover website
+
+Routes: `/rediscover`, `/rediscover/support`, `/rediscover/privacy`.
+The website supports English (`en`), Simplified Chinese (`zh-Hans`), and Traditional Chinese (`zh-Hant`). Use `?lang=zh-Hans` or `?lang=zh-Hant`; legacy `?lang=zh` maps to Simplified Chinese. The custom language menu preserves the current path and hash. Locales live in `lib/rediscover-languages.ts`, with typed page and privacy translations in `lib/rediscover-translations.ts`. The menu supports arrow keys, Home/End, Escape, outside click, and focus restoration.
+
+## Distribution and contact links
+
+Configure verified destinations in `lib/rediscover.ts`:
+
+- `appStore`: the app’s public App Store product page.
+- `testFlight`: the public TestFlight invitation URL.
+- `safari`: a verified Safari extension destination; the extension is bundled with the Mac app.
+- `chrome`: the extension’s public **Chrome Web Store** listing (not a ZIP download).
+- `feedback`: mailto link to `louis.chenluodeng@gmail.com`, with the subject “Rediscover Feedback”. The visible address comes from `feedbackEmail`.
+
+The App Store badge currently uses an explicitly requested local preview anchor (`#download-preview`). Replace it with the real product URL before publishing. TestFlight uses `#testflight` until the public invitation is available. Safari displays “Included with the Mac app” without a pending-link notice. Chrome continues to show an availability notice until its Chrome Web Store listing is configured. Browser extensions and Feedback navigation scroll to landing-page sections; the standalone support page remains available for app support links. Supply the public website origin through `SITE_URL` for absolute Open Graph URLs; local development defaults to localhost.
+
+The privacy policy is presented as the official policy, with a scope notice covering Rediscover and its companion browser extensions. Search indexing is enabled. The notice is based on `RediscoverSchema.swift`, `PersistenceBootstrap.swift`, `AIFallbackProviding.swift`, `DeepSeekClient.swift`, `ProductEventLog.swift`, `AIUsageLog.swift`, and browser-extension manifests/READMEs in the Rediscover repository.
+
+After the site is deployed, point the app’s `AppAbout.feedbackURL` and `privacyPolicyURL` at the deployed support/privacy pages. No app source changes were made in this website task. Open-source acknowledgments remain in the app only.
+
+## Artwork provenance
+
+Product icon and screenshots are copied from Rediscover’s asset catalog and `Resources/GuideImages`: GuideToday-iPhone, GuideOpen-iPhone, GuideRadarDiscover-iPhone. The Open Graph image is composed from the same Today screenshot and website typography.
+
+Official badges are retained unmodified, with proportional display sizing:
+
+- Apple English: https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg
+- Google: https://developer.chrome.com/static/docs/webstore/branding/image/iNEddTyWiMfLSwFD6qGq.png
+- Apple guidelines: https://developer.apple.com/app-store/marketing/guidelines/
+- Google guidelines: https://developer.chrome.com/docs/webstore/branding
+
+Keep store badges linked to the actual available product, not a store home page. Do not recolor, crop, distort, or redraw the artwork.
+
+## Product presentation and motion
+
+All three app screenshots use the shared `Device` component with a CSS device shell. Store badges remain official, unmodified artwork. Scroll reveal uses IntersectionObserver; the hero device has a small requestAnimationFrame-driven scroll offset. Reduced-motion preferences disable reveals, the hero entrance, and smooth scrolling. Content remains visible when JavaScript is unavailable.
+
+The iCloud section uses the actual GuideToday-iPad screenshot alongside GuideToday-iPhone, both framed by Device. Development output is `.next`; production build/start output is `.next-production` so build verification cannot overwrite active development chunks.
+
+Chinese App Store badges use the unmodified Apple Marketing Tools API artwork for `zh-cn` and `zh-tw`. Product screenshots retain their original in-app English content.
