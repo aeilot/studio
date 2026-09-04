@@ -1,3 +1,4 @@
+import { rediscoverMetadata } from "@/lib/rediscover-metadata";
 import { language, type PageQuery } from "@/lib/rediscover-languages";
 import { translations } from "@/lib/rediscover-translations";
 import { Shell } from "@/components/rediscover/Shell";
@@ -42,6 +43,5 @@ export async function generateMetadata({
 }: {
   searchParams: PageQuery;
 }) {
-  const c = translations[language((await searchParams).lang)];
-  return { title: c.feedback, description: c.supportIntro };
+  return rediscoverMetadata(language((await searchParams).lang), "/support");
 }

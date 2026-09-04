@@ -6,5 +6,7 @@ export function siteUrl() {
   if (process.env.SITE_URL) return process.env.SITE_URL;
   if (process.env.VERCEL_ENV === "production") return PRODUCTION_SITE_URL;
   if (process.env.VERCEL_URL) return `https://${process.env.VERCEL_URL}`;
-  return "http://localhost:3000";
+  return process.env.NODE_ENV === "production"
+    ? PRODUCTION_SITE_URL
+    : "http://localhost:3000";
 }

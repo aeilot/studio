@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useId, useRef, useState, useLayoutEffect } from "react";
+import { useEffect, useId, useRef, useState } from "react";
 import { rediscoverLanguages, type Language } from "@/lib/rediscover-languages";
 
 export function LanguageMenu({
@@ -30,6 +30,7 @@ export function LanguageMenu({
       cancelAnimationFrame(innerFrame);
     };
   }, [open]);
+  const count = rediscoverLanguages.length;
   const selected = rediscoverLanguages.findIndex(
     (locale) => locale.code === lang,
   );
@@ -84,7 +85,7 @@ export function LanguageMenu({
         onKeyDown={(event) => {
           if (event.key === "ArrowDown" || event.key === "ArrowUp") {
             event.preventDefault();
-            show(event.key === "ArrowUp" ? 2 : selected);
+            show(event.key === "ArrowUp" ? count - 1 : selected);
           }
         }}
       >
@@ -123,10 +124,10 @@ export function LanguageMenu({
             document.activeElement as HTMLButtonElement,
           );
           let next: number | undefined;
-          if (event.key === "ArrowDown") next = (index + 1) % 3;
-          if (event.key === "ArrowUp") next = (index + 2) % 3;
+          if (event.key === "ArrowDown") next = (index + 1) % count;
+          if (event.key === "ArrowUp") next = (index + count - 1) % count;
           if (event.key === "Home") next = 0;
-          if (event.key === "End") next = 2;
+          if (event.key === "End") next = count - 1;
           if (next !== undefined) {
             event.preventDefault();
             items.current[next]?.focus();
@@ -137,7 +138,25 @@ export function LanguageMenu({
             close(true);
           }
           const letter = event.key.toLowerCase();
-          if (letter === "e") items.current[0]?.focus();
+          if (
+            event.key.length === 1 &&
+            !event.ctrlKey &&
+            !event.metaKey &&
+            !event.altKey
+          ) {
+            const match = Array.from(
+              { length: count },
+              (_, offset) => (index + 1 + offset) % count,
+            ).find((i) =>
+              rediscoverLanguages[i].label
+                .toLocaleLowerCase()
+                .startsWith(letter),
+            );
+            if (match !== undefined) {
+              event.preventDefault();
+              items.current[match]?.focus();
+            }
+          }
         }}
       >
         {rediscoverLanguages.map((locale, index) => (

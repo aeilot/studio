@@ -1,3 +1,4 @@
+import { rediscoverMetadata } from "@/lib/rediscover-metadata";
 import { language, type PageQuery } from "@/lib/rediscover-languages";
 import { translations, translatedPrivacy } from "@/lib/rediscover-translations";
 import { Shell } from "@/components/rediscover/Shell";
@@ -33,10 +34,5 @@ export async function generateMetadata({
 }: {
   searchParams: PageQuery;
 }) {
-  const c = translations[language((await searchParams).lang)];
-  return {
-    title: c.privacy,
-    description: c.privacyIntro,
-    robots: { index: true, follow: true },
-  };
+  return rediscoverMetadata(language((await searchParams).lang), "/privacy");
 }

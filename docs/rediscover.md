@@ -1,7 +1,7 @@
 # Rediscover website
 
 Routes: `/rediscover`, `/rediscover/support`, `/rediscover/privacy`.
-The website supports English (`en`), Simplified Chinese (`zh-Hans`), and Traditional Chinese (`zh-Hant`). Use `?lang=zh-Hans` or `?lang=zh-Hant`; legacy `?lang=zh` maps to Simplified Chinese. The custom language menu preserves the current path and hash. Locales live in `lib/rediscover-languages.ts`, with typed page and privacy translations in `lib/rediscover-translations.ts`. The menu supports arrow keys, Home/End, Escape, outside click, and focus restoration.
+The website supports the app’s eight languages: English (`en`), Simplified Chinese (`zh-Hans`), Traditional Chinese (`zh-Hant`), Japanese (`ja`), Korean (`ko`), French (`fr`), German (`de`), and Spanish (`es`). Use `?lang=zh-Hans` or `?lang=zh-Hant`; legacy `?lang=zh` maps to Simplified Chinese. The custom language menu preserves the current path and hash. Locales live in `lib/rediscover-languages.ts`, with typed page and privacy translations in `lib/rediscover-translations.ts` and `lib/rediscover-international.ts`. The menu supports arrow keys, Home/End, Escape, outside click, and focus restoration.
 
 ## Distribution and contact links
 
@@ -13,7 +13,7 @@ Configure verified destinations in `lib/rediscover.ts`:
 - `chrome`: the extension’s public **Chrome Web Store** listing (not a ZIP download).
 - `feedback`: mailto link to `louis.chenluodeng@gmail.com`, with the subject “Rediscover Feedback”. The visible address comes from `feedbackEmail`.
 
-The App Store badge currently uses an explicitly requested local preview anchor (`#download-preview`). Replace it with the real product URL before publishing. TestFlight uses `#testflight` until the public invitation is available. Safari displays “Included with the Mac app” without a pending-link notice. Chrome continues to show an availability notice until its Chrome Web Store listing is configured. Browser extensions and Feedback navigation scroll to landing-page sections; the standalone support page remains available for app support links. Supply the public website origin through `SITE_URL` for absolute Open Graph URLs; local development defaults to localhost.
+The App Store badge currently uses an explicitly requested local preview anchor (`#download-preview`). Replace it with the real product URL before publishing. TestFlight uses `#testflight` until the public invitation is available. Safari displays “Included with the Mac app” without a pending-link notice. Chrome continues to show an availability notice until its Chrome Web Store listing is configured. Browser extensions and Feedback navigation scroll to landing-page sections; the standalone support page remains available for app support links. Supply the public website origin through `SITE_URL` for absolute Open Graph URLs; local development defaults to localhost; production defaults to `https://studio.aeilot.top`. Each route and locale generates its own Open Graph/Twitter title and description, canonical URL, and language alternates through `lib/rediscover-metadata.ts`. All locales share the English 1200 × 630 product artwork.
 
 The privacy policy is presented as the official policy, with a scope notice covering Rediscover and its companion browser extensions. Search indexing is enabled. The notice is based on `RediscoverSchema.swift`, `PersistenceBootstrap.swift`, `AIFallbackProviding.swift`, `DeepSeekClient.swift`, `ProductEventLog.swift`, `AIUsageLog.swift`, and browser-extension manifests/READMEs in the Rediscover repository.
 
@@ -38,4 +38,4 @@ All three app screenshots use the shared `Device` component with a CSS device sh
 
 The iCloud section uses the actual GuideToday-iPad screenshot alongside GuideToday-iPhone, both framed by Device. Development output is `.next`; production build/start output is `.next-production` so build verification cannot overwrite active development chunks.
 
-Chinese App Store badges use the unmodified Apple Marketing Tools API artwork for `zh-cn` and `zh-tw`. Product screenshots retain their original in-app English content.
+Chinese App Store badges use the unmodified Apple Marketing Tools API artwork for `zh-cn` and `zh-tw`. Japanese, Korean, French, German, and Spanish badges use the same official API with `ja-jp`, `ko-kr`, `fr-fr`, `de-de`, and `es-es`. Product screenshots retain their original in-app English content.

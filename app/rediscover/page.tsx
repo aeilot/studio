@@ -1,3 +1,4 @@
+import { rediscoverMetadata } from "@/lib/rediscover-metadata";
 import { language, type PageQuery } from "@/lib/rediscover-languages";
 import { translations } from "@/lib/rediscover-translations";
 import Image from "next/image";
@@ -52,7 +53,7 @@ export default async function Rediscover({
         <div className="rd-story-intro">
           <span className="rd-number">{c.todayLabel}</span>
           <h2>
-            {lang === "en" ? (
+            {!lang.startsWith("zh") ? (
               c.today
             ) : (
               <>
@@ -228,6 +229,5 @@ export async function generateMetadata({
 }: {
   searchParams: PageQuery;
 }) {
-  const c = translations[language((await searchParams).lang)];
-  return { description: c.intro };
+  return rediscoverMetadata(language((await searchParams).lang), "");
 }

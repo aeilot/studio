@@ -1,3 +1,11 @@
+import {
+  ja,
+  ko,
+  fr,
+  de,
+  es,
+  internationalPrivacy,
+} from "./rediscover-international";
 import { copy, privacySections } from "./rediscover";
 import type { Language } from "./rediscover-languages";
 const en = {
@@ -38,7 +46,7 @@ const en = {
   languageLabel: "Website language",
   madeBy: "Made by",
 };
-type Copy = typeof en;
+export type Copy = typeof en;
 const hans: Copy = {
   back: "Evolution Studio",
   extensions: "浏览器插件",
@@ -200,11 +208,17 @@ const hant: Copy = {
   madeBy: "開發者",
 };
 export const translations: Record<Language, Copy> = {
+  ja,
+  ko,
+  fr,
+  de,
+  es,
   en,
   "zh-Hans": hans,
   "zh-Hant": hant,
 };
 export const translatedPrivacy: Record<Language, string[][]> = {
+  ...internationalPrivacy,
   en: privacySections,
   "zh-Hans": [
     [

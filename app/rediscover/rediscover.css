@@ -1086,3 +1086,46 @@ html:has(.rd) {
   color: #0071e3;
   text-decoration: underline;
 }
+/* Keep the full locale menu usable on small screens and with longer labels. */
+.rd-language-menu {
+  max-height: min(420px, calc(100dvh - 120px));
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+.rd-language-trigger {
+  white-space: nowrap;
+}
+.rd[lang="ja"] h1,
+.rd[lang="ja"] h2,
+.rd[lang="ko"] h1,
+.rd[lang="ko"] h2 {
+  line-height: 1.2;
+  letter-spacing: -0.025em;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+@media (max-width: 700px) {
+  .rd-header {
+    height: auto;
+    min-height: 92px;
+  }
+  .rd-header nav {
+    flex-wrap: wrap;
+    column-gap: 14px;
+    row-gap: 6px;
+  }
+  .rd[lang="ko"] .rd-header nav {
+    column-gap: 10px;
+  }
+  .rd-hero h1 {
+    overflow-wrap: anywhere;
+  }
+  .rd-radar-copy h2,
+  .rd-feedback h2 {
+    overflow-wrap: anywhere;
+  }
+  .rd-hero .rd-actions {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
