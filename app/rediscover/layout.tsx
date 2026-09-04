@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./rediscover.css";
 export const metadata: Metadata = {
   title: {
-    default: "Rediscover | Evolution Studio",
+    default: "Rediscover · Evolution Studio",
     template: "%s · Rediscover",
   },
   description:
