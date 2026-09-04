@@ -7,6 +7,18 @@ export const metadata: Metadata = {
   },
   description:
     "Save what interests you. Come back to a few pages each day. Rediscover for iPhone, iPad and Mac.",
+  icons: {
+    icon: [
+      { url: "/rediscover/icon.png", type: "image/png", sizes: "1024x1024" },
+    ],
+    apple: [
+      {
+        url: "/rediscover/apple-touch-icon.png",
+        type: "image/png",
+        sizes: "180x180",
+      },
+    ],
+  },
   openGraph: {
     title: "Rediscover",
     description: "Rediscover the pages you meant to read.",

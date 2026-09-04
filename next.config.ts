@@ -9,6 +9,9 @@ export default function nextConfig(phase: string): NextConfig {
 
   return {
     distDir: useDefaultDistDir ? ".next" : ".next-production",
+    // Keep Open Graph / Twitter tags in <head> for every UA. Next.js 15 otherwise
+    // streams generateMetadata into <body> except for a short crawler list.
+    htmlLimitedBots: /.*/,
     outputFileTracingIncludes: {
       "/rediscover/opengraph-image": [
         "./app/rediscover/og/**/*",
