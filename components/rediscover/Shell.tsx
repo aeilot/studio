@@ -50,16 +50,18 @@ export function Shell({
           <Image src="/rediscover/icon.png" alt="" width={36} height={36} />
           Rediscover
         </Link>
-        <nav aria-label={copy.mainNav}>
-          <a href={path ? `${route("", lang)}#icloud` : "#icloud"}>iCloud</a>
-          <a href={path ? `${route("", lang)}#extensions` : "#extensions"}>
-            {copy.extensions}
-          </a>
-          <a href={path ? `${route("", lang)}#feedback` : "#feedback"}>
-            {copy.feedback}
-          </a>
+        <div className="rd-header-end">
+          <nav aria-label={copy.mainNav}>
+            <a href={path ? `${route("", lang)}#icloud` : "#icloud"}>iCloud</a>
+            <a href={path ? `${route("", lang)}#extensions` : "#extensions"}>
+              {copy.extensions}
+            </a>
+            <a href={path ? `${route("", lang)}#feedback` : "#feedback"}>
+              {copy.feedback}
+            </a>
+          </nav>
           <LanguageMenu lang={lang} label={copy.languageLabel} />
-        </nav>
+        </div>
       </header>
       <main id="main">{children}</main>
       <footer className="rd-footer rd-wrap">

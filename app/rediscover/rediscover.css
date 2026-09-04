@@ -58,6 +58,11 @@ html:has(.rd) {
 .rd-brand img {
   border-radius: 8px;
 }
+.rd-header-end {
+  display: flex;
+  align-items: center;
+  gap: 27px;
+}
 .rd nav {
   display: flex;
   align-items: center;
@@ -577,17 +582,20 @@ html:has(.rd) {
 }
 @media (max-width: 700px) {
   html:has(.rd) {
-    scroll-padding-top: 100px;
+    scroll-padding-top: 72px;
   }
   .rd-wrap {
     padding-inline: 24px;
   }
   .rd-header {
-    height: 92px;
-    flex-wrap: wrap;
-    padding: 12px 22px;
-    justify-content: center;
-    gap: 8px;
+    height: 56px;
+    flex-wrap: nowrap;
+    padding: 8px 22px;
+    justify-content: space-between;
+    gap: 12px;
+  }
+  .rd-header-end nav {
+    display: none;
   }
   .rd-brand {
     font-size: 19px;
@@ -595,12 +603,6 @@ html:has(.rd) {
   .rd-brand img {
     width: 27px;
     height: 27px;
-  }
-  .rd-header nav {
-    width: 100%;
-    justify-content: center;
-    gap: 25px;
-    font-size: 12px;
   }
   .rd h1 {
     font-size: 48px;
@@ -911,6 +913,10 @@ html:has(.rd) {
     padding-left: 8px;
     max-width: 60%;
   }
+  .rd-cloud-iphone figcaption {
+    text-align: right;
+    padding-right: 8px;
+  }
   .rd-cloud-note {
     margin-top: 34px;
   }
@@ -927,12 +933,6 @@ html:has(.rd) {
   white-space: nowrap;
   border: 0;
 }
-@media (max-width: 700px) {
-  .rd-header nav {
-    gap: 15px;
-    font-size: 11px;
-  }
-}
 
 .rd-language {
   position: relative;
@@ -944,18 +944,18 @@ html:has(.rd) {
   display: flex;
   align-items: center;
   gap: 8px;
-  padding: 9px 11px;
-  border: 1px solid #0000000c;
-  border-radius: 10px;
+  padding: 4px 0;
+  border: 0;
+  border-radius: 4px;
   color: #333336;
-  background: #f1f1f3b3;
+  background: transparent;
   font: inherit;
   cursor: pointer;
-  transition: background 150ms ease;
+  transition: color 150ms ease;
 }
 .rd-language-trigger:hover,
 .rd-language-trigger[aria-expanded="true"] {
-  background: #e9e9ed;
+  color: #0071e3;
 }
 .rd-language svg {
   stroke: currentColor;
@@ -1052,7 +1052,8 @@ html:has(.rd) {
 }
 @media (max-width: 700px) {
   .rd-language-trigger {
-    padding: 7px 8px;
+    min-height: 44px;
+    padding: 8px 0;
     gap: 5px;
   }
   .rd-language-trigger > svg:first-child {
@@ -1060,9 +1061,6 @@ html:has(.rd) {
   }
   .rd-language-menu {
     width: 180px;
-  }
-  .rd[lang="zh-Hant"] .rd-header nav {
-    gap: 11px;
   }
 }
 @media (prefers-reduced-motion: reduce) {
@@ -1105,18 +1103,6 @@ html:has(.rd) {
   overflow-wrap: anywhere;
 }
 @media (max-width: 700px) {
-  .rd-header {
-    height: auto;
-    min-height: 92px;
-  }
-  .rd-header nav {
-    flex-wrap: wrap;
-    column-gap: 14px;
-    row-gap: 6px;
-  }
-  .rd[lang="ko"] .rd-header nav {
-    column-gap: 10px;
-  }
   .rd-hero h1 {
     overflow-wrap: anywhere;
   }

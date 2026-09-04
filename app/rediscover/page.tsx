@@ -118,13 +118,13 @@ export default async function Rediscover({
               alt={c.ipadAlt}
             />
             <figcaption>
-              {c.ipadCaption} <strong>iPad.</strong>
+              {c.ipadCaption} <strong>iPad</strong>
             </figcaption>
           </figure>
           <figure className="rd-cloud-iphone">
             <Device src="/rediscover/today.png" alt={c.iphoneAlt} />
             <figcaption>
-              {c.iphoneCaption} <strong>iPhone.</strong>
+              {c.iphoneCaption} <strong>iPhone</strong>
             </figcaption>
           </figure>
         </div>
