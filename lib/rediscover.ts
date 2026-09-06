@@ -10,7 +10,8 @@ export const rediscoverLinks: {
   appStore: "#download-preview", // Preview destination; replace with the real App Store URL.
   testFlight: "#testflight", // Replace with the public TestFlight invitation.
   safari: null,
-  chrome: null,
+  chrome:
+    "https://chromewebstore.google.com/detail/save-to-rediscover/mfcclligjgceiagjnkahhjhmmgbnnnbh",
   feedback: `mailto:${feedbackEmail}?subject=Rediscover%20Feedback`,
 };
 export const copy = {
