@@ -1,5 +1,5 @@
 import { rediscoverMetadata } from "@/lib/rediscover-metadata";
-import { language, type PageQuery } from "@/lib/rediscover-languages";
+import { language, route, type PageQuery } from "@/lib/rediscover-languages";
 import { translations } from "@/lib/rediscover-translations";
 import Image from "next/image";
 import { Device } from "@/components/rediscover/Device";
@@ -135,37 +135,36 @@ export default async function Rediscover({
         <h2>{c.extensionTitle}</h2>
         <p>{c.extensionBody}</p>
         <div className="rd-extension-grid">
-          {(["safari", "chrome"] as const).map((browser) => (
-            <article key={browser}>
-              <div>
-                <h3>{browser === "safari" ? "Safari" : "Chrome Web Store"}</h3>
+          {(["safari", "chrome"] as const).map((browser) => {
+            const href =
+              rediscoverLinks[browser] ??
+              (browser === "safari" ? rediscoverLinks.appStore : null);
+            return (
+              <article key={browser}>
+                <h3>{browser === "safari" ? "Safari" : "Chrome"}</h3>
                 <p>{c[browser]}</p>
-                {rediscoverLinks[browser] ? (
+                {href ? (
                   <a
-                    className={
-                      browser === "chrome" ? "rd-store-badge" : "rd-text-link"
+                    className="rd-text-link"
+                    href={
+                      href.startsWith("#") ? `${route("", lang)}${href}` : href
                     }
-                    href={rediscoverLinks[browser]!}
                   >
-                    {browser === "chrome" ? (
-                      <Image
-                        src="/rediscover/badges/chrome-web-store.png"
-                        alt={c.chromeBadgeAlt}
-                        width={206}
-                        height={58}
-                      />
-                    ) : (
-                      <>{c.getSafari} ↗</>
-                    )}
+                    {browser === "safari" ? c.getSafari : c.getChrome}{" "}
+                    <span aria-hidden="true">↗</span>
                   </a>
-                ) : browser === "chrome" ? (
-                  <span className="rd-status">{c.soon}</span>
                 ) : (
-                  <span className="rd-included">{c.included}</span>
+                  <span
+                    className={
+                      browser === "chrome" ? "rd-status" : "rd-included"
+                    }
+                  >
+                    {browser === "chrome" ? c.soon : c.included}
+                  </span>
                 )}
-              </div>
-            </article>
-          ))}
+              </article>
+            );
+          })}
         </div>
       </section>
       <section className="rd-feedback rd-wrap" id="feedback">
