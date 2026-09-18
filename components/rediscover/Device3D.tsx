@@ -39,8 +39,8 @@ export function Device3D({
       const id = window.requestIdleCallback(start, { timeout: 1200 });
       return () => window.cancelIdleCallback(id);
     }
-    const id = window.setTimeout(start, 120);
-    return () => window.clearTimeout(id);
+    const id = setTimeout(start, 120);
+    return () => clearTimeout(id);
   }, []);
 
   return (
