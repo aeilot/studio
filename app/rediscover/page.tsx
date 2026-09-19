@@ -3,7 +3,6 @@ import { language, route, type PageQuery } from "@/lib/rediscover-languages";
 import { translations } from "@/lib/rediscover-translations";
 import Image from "next/image";
 import { Device } from "@/components/rediscover/Device";
-import { Device3D } from "@/components/rediscover/Device3D";
 import { Shell, Download } from "@/components/rediscover/Shell";
 import { rediscoverLinks, feedbackEmail } from "@/lib/rediscover";
 export default async function Rediscover({
@@ -40,8 +39,8 @@ export default async function Rediscover({
         <div className="rd-hero-art">
           <span className="rd-orbit" aria-hidden="true" />
 
-          <div className="rd-phone rd-phone-live">
-            <Device3D src="/rediscover/today.png" alt={c.todayAlt} priority />
+          <div className="rd-phone">
+            <Device src="/rediscover/today.png" alt={c.todayAlt} priority />
           </div>
         </div>
       </section>

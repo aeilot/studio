@@ -32,7 +32,7 @@ Keep App Store badges linked to the actual available product, not a store home p
 
 ## Product presentation and motion
 
-The hero iPhone uses Screenframe3D (`apple/iphone-14-pro`) so the Today screenshot sits on a live 3D device with pointer tilt and scroll. Reduced motion, missing WebGL, and no JavaScript keep the CSS device shell. Other screenshots stay on the CSS shell to avoid multiple WebGL contexts. Device GLB is CC-BY from Sketchfab (via Screenframe3D); HDR lighting is Greenwich Park from Poly Haven (CC0).
+All three app screenshots use the shared `Device` component with a CSS device shell. Store badges remain official, unmodified artwork. Scroll reveal uses IntersectionObserver; the hero device has a small requestAnimationFrame-driven scroll offset. Reduced-motion preferences disable reveals, the hero entrance, and smooth scrolling. Content remains visible when JavaScript is unavailable.
 
 The iCloud section uses the actual GuideToday-iPad screenshot alongside GuideToday-iPhone, both framed by Device. Development output is `.next`; production build/start output is `.next-production` so build verification cannot overwrite active development chunks.
 
