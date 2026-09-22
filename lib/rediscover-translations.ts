@@ -91,7 +91,7 @@ const hans: Copy = {
   privacyIntro:
     "了解 Rediscover 如何保存和使用收藏内容、阅读记录，以及哪些功能会连接外部服务。",
   privacyScope: "本政策适用于 Rediscover 及其配套浏览器插件。",
-  updated: "更新日期：2026 年 9 月 4 日",
+  updated: "更新日期：2026 年 9 月 21 日",
   tryBeta: "通过 TestFlight 抢先体验",
   betaTitle: "抢先体验新功能",
   betaBody: "通过 TestFlight 试用 Rediscover 测试版，把你的使用感受告诉我们。",
@@ -171,7 +171,7 @@ const hant: Copy = {
   privacyIntro:
     "了解 Rediscover 如何儲存和使用收藏內容、閱讀紀錄，以及哪些功能會連接外部服務。",
   privacyScope: "本政策適用於 Rediscover 及其配套瀏覽器擴充功能。",
-  updated: "更新日期：2026 年 9 月 4 日",
+  updated: "更新日期：2026 年 9 月 21 日",
   tryBeta: "透過 TestFlight 搶先體驗",
   betaTitle: "搶先體驗新功能",
   betaBody: "透過 TestFlight 試用 Rediscover 測試版，把你的使用感受告訴我們。",
@@ -234,8 +234,8 @@ export const translatedPrivacy: Record<Language, string[][]> = {
       "获取网页、元数据或图片、打开文章，以及发现或刷新 Radar 订阅时，会向相应网站或内容提供方发送请求。这些服务会收到 IP 地址、请求的网址等网络信息。",
     ],
     [
-      "可选的 AI 处理",
-      "Rediscover 支持兼容设备上的 Apple Intelligence 本地处理，以及 DeepSeek 云端分析。当你选择 DeepSeek 并配置 API Key 后，摘要、分类或阅读导读所需的文本与上下文会发送至 DeepSeek API，具体范围取决于功能。本地模型处理不会将其输入发送到 DeepSeek，但 App 的其他功能仍可能联网。",
+      "可选的 AI 与 Jev 处理",
+      "Rediscover 支持兼容设备上的 Apple Intelligence 本地处理，以及通过 OpenRouter 进行的可选云端处理。当你选择 Cloud 或 BYOK 时，Rediscover 可能会将摘要、分类或阅读导读所需的网页链接、标题、提取的正文、摘要、分类、主题和推荐上下文发送给 OpenRouter，并由 OpenRouter 将请求路由至所选模型提供商。BYOK 的 OpenRouter API Key 保存在系统钥匙串中，仅用于请求认证。如果你同时开启 Jev Decisions，Rediscover 会通过 OpenRouter 发送更精简的决策输入，例如条目 ID、标题、截断后的摘要、主题、分类配置和阅读上下文，用于 Radar 时效判断、分类整理等功能。OpenRouter 及其模型提供商会按照各自的数据留存、训练与隐私规则处理数据。本地模型处理不会将输入发送给 OpenRouter，但 App 的其他功能仍可能联网。",
     ],
     [
       "浏览器插件",
@@ -243,7 +243,7 @@ export const translatedPrivacy: Record<Language, string[][]> = {
     ],
     [
       "本地活动记录",
-      "App 在本地记录产品使用事件和 AI 使用情况，例如阅读反馈、任务类型、Token 用量和耗时，用于 App 内统计和诊断。",
+      "App 在本地记录产品使用事件及 AI 或 Jev 使用情况，例如阅读反馈、任务类型、Token 用量、输入大小、决策数量和耗时，用于 App 内统计和诊断；这些记录不包含你的 API Key。",
     ],
     [
       "管理与联系",
@@ -264,8 +264,8 @@ export const translatedPrivacy: Record<Language, string[][]> = {
       "取得網頁、中繼資料或圖片、開啟文章，以及探索或重新整理 Radar 訂閱時，會向相應網站或內容提供者傳送請求。這些服務會收到 IP 位址、請求的網址等網路資訊。",
     ],
     [
-      "可選的 AI 處理",
-      "Rediscover 支援相容裝置上的 Apple Intelligence 本機處理，以及 DeepSeek 雲端分析。當你選擇 DeepSeek 並設定 API Key 後，摘要、分類或閱讀導讀所需的文字與上下文會傳送至 DeepSeek API，具體範圍取決於功能。本機模型處理不會將其輸入傳送到 DeepSeek，但 App 的其他功能仍可能連網。",
+      "可選的 AI 與 Jev 處理",
+      "Rediscover 支援相容裝置上的 Apple Intelligence 本機處理，以及透過 OpenRouter 進行的可選雲端處理。當你選擇 Cloud 或 BYOK 時，Rediscover 可能會將摘要、分類或閱讀導讀所需的網頁連結、標題、擷取的內文、摘要、分類、主題和推薦內容傳送給 OpenRouter，並由 OpenRouter 將請求路由至所選模型提供者。BYOK 的 OpenRouter API Key 會儲存在系統鑰匙圈中，僅用於請求驗證。如果你同時開啟 Jev Decisions，Rediscover 會透過 OpenRouter 傳送更精簡的決策輸入，例如項目 ID、標題、截短後的摘要、主題、分類設定和閱讀內容，用於 Radar 時效判斷、分類整理等功能。OpenRouter 及其模型提供者會依各自的資料保留、訓練與隱私規則處理資料。本機模型處理不會將輸入傳送給 OpenRouter，但 App 的其他功能仍可能連網。",
     ],
     [
       "瀏覽器擴充功能",
@@ -273,7 +273,7 @@ export const translatedPrivacy: Record<Language, string[][]> = {
     ],
     [
       "本機活動紀錄",
-      "App 在本機記錄產品使用事件和 AI 使用情況，例如閱讀回饋、任務類型、Token 用量和耗時，用於 App 內統計和診斷。",
+      "App 在本機記錄產品使用事件及 AI 或 Jev 使用情況，例如閱讀回饋、任務類型、Token 用量、輸入大小、決策數量和耗時，用於 App 內統計和診斷；這些紀錄不包含你的 API Key。",
     ],
     [
       "管理與聯絡",

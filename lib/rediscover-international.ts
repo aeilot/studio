@@ -47,7 +47,7 @@ export const ja: Copy = {
     "保存した内容や読書履歴の扱いと、外部サービスに接続する機能について説明します。",
   privacyScope:
     "本ポリシーはRediscoverと関連するブラウザ拡張機能に適用されます。",
-  updated: "更新日：2026年9月4日",
+  updated: "更新日：2026年9月21日",
   tryBeta: "TestFlightで先行体験",
   betaTitle: "新機能を、ひと足先に。",
   betaBody:
@@ -132,7 +132,7 @@ export const ko: Copy = {
     "저장한 콘텐츠와 읽기 기록을 처리하는 방식, 외부 서비스에 연결하는 기능을 설명합니다.",
   privacyScope:
     "이 방침은 Rediscover와 함께 제공되는 브라우저 확장 프로그램에 적용됩니다.",
-  updated: "최종 수정: 2026년 9월 4일",
+  updated: "최종 수정: 2026년 9월 21일",
   tryBeta: "TestFlight로 미리 사용해 보기",
   betaTitle: "새로운 기능을 먼저 만나 보세요.",
   betaBody: "TestFlight에서 Rediscover 베타 버전을 사용하고 의견을 들려주세요.",
@@ -217,7 +217,7 @@ export const fr: Copy = {
     "Comment Rediscover traite vos contenus enregistrés, votre activité de lecture et les connexions aux services externes.",
   privacyScope:
     "Cette politique s’applique à Rediscover et à ses extensions de navigateur.",
-  updated: "Mise à jour le 4 septembre 2026",
+  updated: "Mise à jour le 21 septembre 2026",
   tryBeta: "Essayer la bêta sur TestFlight",
   betaTitle: "Les nouveautés, en avant-première.",
   betaBody:
@@ -305,7 +305,7 @@ export const de: Copy = {
     "So verarbeitet Rediscover gespeicherte Inhalte, Leseaktivitäten und Verbindungen zu externen Diensten.",
   privacyScope:
     "Diese Datenschutzerklärung gilt für Rediscover und die zugehörigen Browser-Erweiterungen.",
-  updated: "Stand: 4. September 2026",
+  updated: "Stand: 21. September 2026",
   tryBeta: "Beta über TestFlight ausprobieren",
   betaTitle: "Neue Funktionen früher entdecken.",
   betaBody:
@@ -390,7 +390,7 @@ export const es: Copy = {
     "Cómo trata Rediscover el contenido guardado, la actividad de lectura y las conexiones con servicios externos.",
   privacyScope:
     "Esta política se aplica a Rediscover y a sus extensiones de navegador.",
-  updated: "Actualizado el 4 de septiembre de 2026",
+  updated: "Actualizado el 21 de septiembre de 2026",
   tryBeta: "Prueba la beta en TestFlight",
   betaTitle: "Descubre las novedades antes que nadie.",
   betaBody:
@@ -443,8 +443,8 @@ export const internationalPrivacy = {
       "ページ、メタデータ、画像の取得、記事を開く操作、Radarのフィード検出や更新では、該当するサイトやコンテンツ提供元へリクエストを送信します。相手先にはIPアドレスや要求したURLなどの通信情報が伝わります。",
     ],
     [
-      "任意のAI処理",
-      "Rediscoverは対応デバイス上のApple Intelligenceによる処理と、DeepSeekによるクラウド分析に対応しています。DeepSeekを選択してAPIキーを設定すると、要約、分類、読書ガイドに必要な文章や文脈がDeepSeek APIに送信されます。送信内容は機能によって異なります。デバイス上のモデルによる処理は入力をDeepSeekへ送りませんが、他の機能は通信する場合があります。",
+      "任意のAI・Jev処理",
+      "Rediscoverは、対応デバイス上のApple Intelligenceによる処理と、OpenRouterを介した任意のクラウド処理に対応しています。CloudまたはBYOKを選択すると、要約、分類、読書ガイドに必要なページURL、タイトル、抽出本文、要約、カテゴリ、トピック、おすすめの文脈がOpenRouterへ送信され、選択したモデル提供者へルーティングされる場合があります。BYOKのOpenRouter APIキーはシステムのキーチェーンに保存され、リクエストの認証に使用されます。さらにJev Decisionsを有効にすると、項目ID、タイトル、短縮した要約、トピック、カテゴリ設定、読書の文脈など、より限定的な判断用データがOpenRouterを通じて送信され、Radarの時期判定やカテゴリ整理などに利用されます。OpenRouterと各モデル提供者は、それぞれの保持、学習、プライバシー方針に従ってデータを処理します。デバイス上のモデルは入力をOpenRouterへ送信しませんが、他の機能は通信する場合があります。",
     ],
     [
       "ブラウザ拡張機能",
@@ -452,7 +452,7 @@ export const internationalPrivacy = {
     ],
     [
       "ローカルの活動記録",
-      "アプリは、読書のフィードバック、タスクの種類、トークン数、処理時間など、利用状況とAI使用量をローカルに記録します。これらはアプリ内の統計や診断に使用します。",
+      "アプリは、読書のフィードバック、タスクの種類、トークン数、入力サイズ、判断件数、処理時間など、利用状況とAIまたはJevの使用記録をローカルに保存します。これらはアプリ内の統計や診断に使用され、APIキーは含みません。",
     ],
     [
       "設定とお問い合わせ",
@@ -473,8 +473,8 @@ export const internationalPrivacy = {
       "페이지, 메타데이터, 이미지를 가져오거나 글을 열 때, 또는 Radar 피드를 찾거나 새로 고칠 때 해당 웹사이트나 콘텐츠 제공자에게 요청을 보냅니다. 이 서비스들은 IP 주소와 요청한 URL 등의 네트워크 정보를 받습니다.",
     ],
     [
-      "선택 가능한 AI 처리",
-      "Rediscover는 호환 기기의 Apple Intelligence를 이용한 기기 내 처리와 DeepSeek 클라우드 분석을 지원합니다. DeepSeek를 선택하고 API 키를 설정하면 요약, 분류, 읽기 안내에 필요한 텍스트와 맥락이 DeepSeek API로 전송됩니다. 전송 범위는 기능에 따라 다릅니다. 기기 내 모델은 입력을 DeepSeek로 전송하지 않지만, 다른 앱 기능은 네트워크를 사용할 수 있습니다.",
+      "선택 가능한 AI 및 Jev 처리",
+      "Rediscover는 호환 기기의 Apple Intelligence를 이용한 기기 내 처리와 OpenRouter를 통한 선택적 클라우드 처리를 지원합니다. Cloud 또는 BYOK를 선택하면 요약, 분류, 읽기 안내에 필요한 페이지 URL, 제목, 추출한 본문, 요약, 분류, 주제 및 추천 맥락이 OpenRouter로 전송되고 선택한 모델 제공자에게 라우팅될 수 있습니다. BYOK OpenRouter API 키는 시스템 키체인에 저장되며 요청 인증에 사용됩니다. Jev Decisions도 켜면 항목 ID, 제목, 잘린 요약, 주제, 분류 구성 및 읽기 맥락과 같은 더 제한된 판단 입력이 OpenRouter를 통해 전송되어 Radar 시기 판단과 분류 정리 등의 기능에 사용됩니다. OpenRouter와 모델 제공자는 각자의 보관, 학습 및 개인정보 처리 방침에 따라 데이터를 처리합니다. 기기 내 모델은 입력을 OpenRouter로 전송하지 않지만, 다른 앱 기능은 네트워크를 사용할 수 있습니다.",
     ],
     [
       "브라우저 확장 프로그램",
@@ -482,7 +482,7 @@ export const internationalPrivacy = {
     ],
     [
       "로컬 활동 기록",
-      "앱은 읽기 의견, 작업 유형, 토큰 수, 처리 시간 등 제품 활동 및 AI 사용 기록을 로컬에 보관합니다. 이 기록은 앱 내 통계와 진단에 사용됩니다.",
+      "앱은 읽기 의견, 작업 유형, 토큰 수, 입력 크기, 판단 수 및 처리 시간 등 제품 활동과 AI 또는 Jev 사용 기록을 로컬에 보관합니다. 이 기록은 앱 내 통계와 진단에 사용되며 API 키를 포함하지 않습니다.",
     ],
     [
       "관리 및 문의",
@@ -503,8 +503,8 @@ export const internationalPrivacy = {
       "La récupération des pages, métadonnées ou images, l’ouverture d’articles et la recherche ou l’actualisation des flux Radar envoient des requêtes aux sites ou fournisseurs concernés. Ils reçoivent des informations réseau telles que votre adresse IP et l’URL demandée.",
     ],
     [
-      "Traitement IA facultatif",
-      "Rediscover propose un traitement sur l’appareil via Apple Intelligence sur les appareils compatibles, ainsi qu’une analyse cloud via DeepSeek. Si vous choisissez DeepSeek et configurez une clé API, les textes et le contexte nécessaires aux résumés, au classement ou aux guides de lecture sont envoyés à son API. Les données dépendent de la fonction utilisée. Le modèle local n’envoie pas ses entrées à DeepSeek, mais d’autres fonctions de l’app peuvent utiliser le réseau.",
+      "Traitement facultatif par l’IA et Jev",
+      "Rediscover propose un traitement sur l’appareil via Apple Intelligence sur les appareils compatibles et un traitement cloud facultatif via OpenRouter. Si vous choisissez Cloud ou BYOK, Rediscover peut envoyer à OpenRouter l’URL, le titre, le texte extrait, le résumé, les catégories, les thèmes et le contexte de recommandation nécessaires aux résumés, au classement ou aux guides de lecture ; OpenRouter achemine ensuite la requête vers le fournisseur du modèle choisi. La clé API OpenRouter utilisée avec BYOK est conservée dans le trousseau système et sert à authentifier les requêtes. Si vous activez également Jev Decisions, des données de décision plus limitées — identifiants, titres, résumés tronqués, thèmes, profils de catégories et contexte de lecture — sont envoyées via OpenRouter pour aider notamment à évaluer l’actualité dans Radar et à organiser les catégories. OpenRouter et ses fournisseurs de modèles appliquent leurs propres pratiques de conservation, d’entraînement et de confidentialité. Le traitement sur l’appareil n’envoie pas ses entrées à OpenRouter, mais d’autres fonctions peuvent utiliser le réseau.",
     ],
     [
       "Extensions de navigateur",
@@ -512,7 +512,7 @@ export const internationalPrivacy = {
     ],
     [
       "Historique local",
-      "L’app conserve localement des événements d’utilisation et des données d’usage de l’IA, comme les retours de lecture, le type de tâche, le nombre de jetons et la latence. Ils servent aux statistiques et au diagnostic dans l’app.",
+      "L’app conserve localement des événements d’utilisation et des données d’usage de l’IA ou de Jev, comme les retours de lecture, le type de tâche, le nombre de jetons, la taille des entrées, le nombre de décisions et la latence. Ils servent aux statistiques et au diagnostic dans l’app et ne contiennent pas votre clé API.",
     ],
     [
       "Vos réglages et contact",
@@ -533,8 +533,8 @@ export const internationalPrivacy = {
       "Beim Abrufen von Seiten, Metadaten oder Bildern, beim Öffnen von Artikeln sowie beim Entdecken oder Aktualisieren von Radar-Feeds werden Anfragen an die jeweiligen Websites oder Inhaltsanbieter gesendet. Diese erhalten Netzwerkdaten wie deine IP-Adresse und die angeforderte URL.",
     ],
     [
-      "Optionale KI-Verarbeitung",
-      "Rediscover unterstützt die Verarbeitung auf kompatiblen Geräten mit Apple Intelligence sowie die Cloud-Analyse mit DeepSeek. Wenn du DeepSeek auswählst und einen API-Schlüssel hinterlegst, werden die für Zusammenfassungen, Kategorien oder Lesehinweise erforderlichen Texte und Kontextdaten an die DeepSeek-API gesendet. Der Umfang hängt von der Funktion ab. Das lokale Modell sendet seine Eingaben nicht an DeepSeek; andere App-Funktionen können weiterhin das Netzwerk nutzen.",
+      "Optionale KI- und Jev-Verarbeitung",
+      "Rediscover unterstützt die Verarbeitung auf kompatiblen Geräten mit Apple Intelligence sowie eine optionale Cloud-Verarbeitung über OpenRouter. Wenn du Cloud oder BYOK auswählst, kann Rediscover Seiten-URL, Titel, extrahierten Text, Zusammenfassung, Kategorien, Themen und Empfehlungskontext für Zusammenfassungen, Klassifizierung oder Lesehinweise an OpenRouter senden; OpenRouter leitet die Anfrage an den ausgewählten Modellanbieter weiter. Der OpenRouter-API-Schlüssel für BYOK wird im System-Schlüsselbund gespeichert und zur Authentifizierung verwendet. Wenn du zusätzlich Jev Decisions aktivierst, werden begrenztere Entscheidungsdaten wie Element-IDs, Titel, gekürzte Zusammenfassungen, Themen, Kategorieprofile und Lesekontext über OpenRouter gesendet, um unter anderem die Aktualität in Radar zu bewerten und Kategorien zu ordnen. OpenRouter und seine Modellanbieter verarbeiten Daten nach ihren eigenen Aufbewahrungs-, Trainings- und Datenschutzregeln. Die Verarbeitung auf dem Gerät sendet ihre Eingaben nicht an OpenRouter; andere App-Funktionen können weiterhin das Netzwerk nutzen.",
     ],
     [
       "Browser-Erweiterungen",
@@ -542,7 +542,7 @@ export const internationalPrivacy = {
     ],
     [
       "Lokale Aktivitätsdaten",
-      "Die App speichert Nutzungsereignisse und KI-Nutzungsdaten lokal, etwa Lesefeedback, Aufgabentyp, Token-Anzahl und Verarbeitungsdauer. Sie dienen den Statistiken und der Diagnose innerhalb der App.",
+      "Die App speichert Nutzungsereignisse und KI- oder Jev-Nutzungsdaten lokal, etwa Lesefeedback, Aufgabentyp, Token-Anzahl, Eingabegröße, Anzahl der Entscheidungen und Verarbeitungsdauer. Sie dienen den Statistiken und der Diagnose innerhalb der App und enthalten deinen API-Schlüssel nicht.",
     ],
     [
       "Einstellungen und Kontakt",
@@ -563,8 +563,8 @@ export const internationalPrivacy = {
       "Obtener páginas, metadatos o imágenes, abrir artículos y descubrir o actualizar fuentes de Radar envía solicitudes a los sitios o proveedores correspondientes. Estos reciben información de red, como tu dirección IP y la URL solicitada.",
     ],
     [
-      "Procesamiento opcional con IA",
-      "Rediscover admite el procesamiento en dispositivos compatibles mediante Apple Intelligence y el análisis en la nube mediante DeepSeek. Si eliges DeepSeek y configuras una clave API, se envían a su API los textos y el contexto necesarios para resumir, clasificar o generar guías de lectura. Los datos dependen de la función. El modelo local no envía sus entradas a DeepSeek, aunque otras funciones de la app pueden usar la red.",
+      "Procesamiento opcional con IA y Jev",
+      "Rediscover admite el procesamiento en dispositivos compatibles mediante Apple Intelligence y el procesamiento opcional en la nube mediante OpenRouter. Si eliges Cloud o BYOK, Rediscover puede enviar a OpenRouter la URL, el título, el texto extraído, el resumen, las categorías, los temas y el contexto de recomendación necesarios para resumir, clasificar o generar guías de lectura; OpenRouter dirige la solicitud al proveedor del modelo elegido. La clave API de OpenRouter usada con BYOK se guarda en el llavero del sistema y sirve para autenticar las solicitudes. Si también activas Jev Decisions, se envían mediante OpenRouter datos de decisión más limitados —como identificadores, títulos, resúmenes recortados, temas, perfiles de categorías y contexto de lectura— para ayudar, entre otras funciones, a evaluar la vigencia en Radar y organizar las categorías. OpenRouter y sus proveedores de modelos aplican sus propias prácticas de conservación, entrenamiento y privacidad. El procesamiento en el dispositivo no envía sus entradas a OpenRouter, aunque otras funciones de la app pueden usar la red.",
     ],
     [
       "Extensiones de navegador",
@@ -572,7 +572,7 @@ export const internationalPrivacy = {
     ],
     [
       "Registros locales",
-      "La app conserva localmente registros de actividad y uso de IA, como valoraciones de lectura, tipos de tarea, número de tokens y latencia. Sirven para las estadísticas y el diagnóstico dentro de la app.",
+      "La app conserva localmente registros de actividad y uso de IA o Jev, como valoraciones de lectura, tipos de tarea, número de tokens, tamaño de las entradas, cantidad de decisiones y latencia. Sirven para las estadísticas y el diagnóstico dentro de la app y no incluyen tu clave API.",
     ],
     [
       "Ajustes y contacto",

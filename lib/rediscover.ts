@@ -62,7 +62,7 @@ export const copy = {
     "How Rediscover handles your saved content, reading activity, and connected services.",
   privacyScope:
     "This policy applies to Rediscover and its companion browser extensions.",
-  updated: "Last updated September 4, 2026",
+  updated: "Last updated September 21, 2026",
 };
 export const privacySections = [
   [
@@ -78,8 +78,8 @@ export const privacySections = [
     "Fetching a page, its metadata or images, opening an article, and discovering or refreshing Radar feeds makes requests to the relevant websites or content providers. Those services receive network information such as your IP address and the requested URL.",
   ],
   [
-    "Optional AI processing",
-    "Rediscover supports on-device Apple Intelligence on compatible devices and DeepSeek cloud analysis. When you select DeepSeek and configure an API key, text and context needed for summaries, classification, or reading guides are sent to the DeepSeek API. The scope depends on the feature. On-device model processing does not send its input to DeepSeek; other app features may still use the network.",
+    "Optional AI and Jev processing",
+    "Rediscover supports on-device Apple Intelligence on compatible devices and optional cloud processing through OpenRouter. When you select Cloud or BYOK, Rediscover may send the page URL, title, extracted text, summary, categories, topics, and recommendation context needed for summaries, classification, or reading guides to OpenRouter, which routes the request to the selected model provider. A BYOK OpenRouter API key is stored in the system Keychain and used to authenticate requests. If you also turn on Jev Decisions, Rediscover sends shorter decision inputs—such as item IDs, titles, truncated summaries, topics, category profiles, and reading context—through OpenRouter to help with features such as Radar timing and category organization. OpenRouter and its model providers apply their own retention, training, and privacy practices. On-device model processing does not send its input to OpenRouter; other app features may still use the network.",
   ],
   [
     "Browser extensions",
@@ -87,7 +87,7 @@ export const privacySections = [
   ],
   [
     "Local activity records",
-    "The app keeps local product activity records and AI usage records, such as reading feedback, task type, token counts, and latency. These support in-app insights and diagnostics.",
+    "The app keeps local product activity records and AI or Jev usage records, such as reading feedback, task type, token counts, input size, decision counts, and latency. These support in-app insights and diagnostics and do not contain your API key.",
   ],
   [
     "Your controls and contact",
