@@ -24,11 +24,11 @@ export const copy = {
   soon: "Link coming soon",
   eyebrow: "A little less later. A little more today.",
   title: "Rediscover the pages you meant to read.",
-  intro: "Save what interests you. Come back to a few pages each day.",
+  intro: "Save a page today. After at least a day, Rediscover can bring a few back; you can read from your Library right away.",
   platforms: "Made for iPhone, iPad & Mac",
   today: "A few good pages. Just for today.",
   todayBody:
-    "Something recent, something older, something aside. A small selection from your Library, ready when you are.",
+    "Today picks a few pages you saved at least a day ago. New saves stay in your Library until they are ready to return.",
   quote: "Save freely. A few pages return each day.",
   quoteBody:
     "Rediscover is not a list to clear. There is no finish line for your curiosity.",
@@ -40,7 +40,7 @@ export const copy = {
     "Discover new writing, starting with what you have saved. Radar finds new pages from the sites and sources in your Library. Read now, save for later, or skip what doesn’t interest you.",
   extensionTitle: "A good page? Bring it along.",
   extensionBody:
-    "Save from your browser to Rediscover, then come back when the moment is right.",
+    "Save a page from your browser. After a day, Rediscover can bring it back among your Today picks.",
   safari:
     "Included with Rediscover for Mac. Enable it in Safari to save the page you’re reading.",
   chrome:

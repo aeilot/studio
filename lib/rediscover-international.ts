@@ -14,7 +14,7 @@ export const ja: Copy = {
   platforms: "iPhone、iPad、Macに対応",
   today: "今日読みたい、いくつかのページ。",
   todayBody:
-    "保存したページから毎日少しだけ選んでお届け。時間ができたら開いてみましょう。",
+    "今日のおすすめには、保存から少なくとも1日たったページが少しずつ届きます。保存したばかりのページはライブラリからすぐに読めます。",
   quote: "全部読み終えなくても、大丈夫。",
   quoteBody:
     "気になる内容は、まず保存。Rediscoverが毎日いくつか選ぶので、自分のペースで読めます。",
@@ -26,7 +26,7 @@ export const ja: Copy = {
     "Radarは、保存したことのあるサイトから新しい記事を見つけます。今すぐ読むことも、後で読むために保存することも。気にならない記事はスキップできます。",
   extensionTitle: "気になるページを、その場で保存。",
   extensionBody:
-    "ブラウザからワンクリックで保存。時間ができたらRediscoverで読みましょう。",
+    "ブラウザでページを保存。1日たつと、Rediscoverが「今日のおすすめ」に再び届けます。",
   safari:
     "Mac版Rediscoverに付属。Safariで有効にすると、開いているページを保存できます。",
   chrome: "拡張機能を使って、開いているページをMacのRediscoverに保存できます。",
@@ -51,14 +51,14 @@ export const ja: Copy = {
   tryBeta: "TestFlightで先行体験",
   betaTitle: "新機能を、ひと足先に。",
   betaBody:
-    "TestFlightでRediscoverのベータ版を試して、使った感想をお聞かせください。",
+    "TestFlightでページを保存し、翌日「今日のおすすめ」を開いてみてください。読み返す体験について感想をお聞かせください。",
   joinBeta: "ベータテストに参加",
   betaPending: "ベータ版の招待リンクは近日公開",
   downloadPreview: "期間限定オファー",
   cloudTitle: "保存したページを、",
   cloudSubtitle: "どのデバイスでも。",
   cloudBody:
-    "iPhoneで保存して、iPadやMacで読む。iCloudがライブラリ、購読フィード、今日のおすすめを同期します。",
+    "Proの利用権があれば、iCloudでライブラリ、Radarのソース、今日のおすすめをiPhone、iPad、Mac間で同期できます。",
   cloudNote:
     "各デバイスで同じApple Accountにサインインし、Rediscoverの設定でiCloud同期をオンにしてください。",
   ipadCaption: "大きな画面で、ゆったり読む。",
@@ -99,7 +99,7 @@ export const ko: Copy = {
   platforms: "iPhone, iPad, Mac에서 사용하세요",
   today: "오늘 읽을 좋은 글 몇 편.",
   todayBody:
-    "저장한 페이지에서 매일 몇 편을 골라 드려요. 여유가 생기면 열어 보세요.",
+    "오늘의 추천에는 저장한 지 하루 이상 지난 글이 몇 편 돌아옵니다. 방금 저장한 글은 보관함에서 바로 읽을 수 있어요.",
   quote: "모두 읽어야 한다는 부담 없이.",
   quoteBody:
     "관심 가는 글은 먼저 저장하세요. Rediscover가 매일 몇 편씩 추천하니, 내 속도에 맞춰 읽으면 돼요.",
@@ -111,7 +111,7 @@ export const ko: Copy = {
     "Radar는 저장한 적 있는 사이트에서 새로운 글을 찾아요. 바로 읽거나 나중을 위해 저장하고, 관심 없는 글은 건너뛸 수 있어요.",
   extensionTitle: "마음에 드는 페이지를 바로 저장.",
   extensionBody:
-    "브라우저에서 한 번의 클릭으로 저장하고, 여유가 생기면 Rediscover에서 읽으세요.",
+    "브라우저에서 페이지를 저장하세요. 하루가 지나면 Rediscover가 오늘의 추천으로 다시 가져올 수 있어요.",
   safari:
     "Mac용 Rediscover에 포함되어 있어요. Safari에서 활성화하면 현재 페이지를 저장할 수 있어요.",
   chrome: "확장 프로그램으로 현재 페이지를 Mac의 Rediscover에 저장하세요.",
@@ -135,14 +135,14 @@ export const ko: Copy = {
   updated: "최종 수정: 2026년 9월 21일",
   tryBeta: "TestFlight로 미리 사용해 보기",
   betaTitle: "새로운 기능을 먼저 만나 보세요.",
-  betaBody: "TestFlight에서 Rediscover 베타 버전을 사용하고 의견을 들려주세요.",
+  betaBody: "TestFlight에서 글을 저장하고 다음 날 오늘의 추천을 열어 보세요. 다시 만나는 경험이 어땠는지 알려 주세요.",
   joinBeta: "베타 테스트 참여",
   betaPending: "베타 초대 링크 준비 중",
   downloadPreview: "기간 한정 혜택",
   cloudTitle: "저장한 페이지를",
   cloudSubtitle: "어느 기기에서나.",
   cloudBody:
-    "iPhone에서 저장하고 iPad나 Mac에서 읽으세요. iCloud가 보관함, 구독, 오늘의 추천을 기기 간에 동기화해요.",
+    "Pro 이용 권한이 있으면 iCloud로 보관함, Radar 출처, 오늘의 추천을 iPhone, iPad, Mac 간에 동기화할 수 있어요.",
   cloudNote:
     "각 기기에서 같은 Apple 계정으로 로그인하고 Rediscover 설정에서 iCloud 동기화를 켜 주세요.",
   ipadCaption: "넓은 화면으로 여유롭게.",
@@ -182,7 +182,7 @@ export const fr: Copy = {
   platforms: "Pour iPhone, iPad et Mac",
   today: "Quelques belles lectures pour aujourd’hui.",
   todayBody:
-    "Chaque jour, une petite sélection de votre bibliothèque vous attend. Ouvrez-la quand vous avez un moment.",
+    "Today fait revenir quelques pages enregistrées depuis au moins un jour. Vous pouvez lire immédiatement les nouvelles pages dans votre bibliothèque.",
   quote: "Gardez sans vous obliger à tout lire.",
   quoteBody:
     "Enregistrez ce qui vous intéresse. Rediscover vous propose quelques pages chaque jour, à lire à votre rythme.",
@@ -194,7 +194,7 @@ export const fr: Copy = {
     "Radar trouve de nouveaux articles sur les sites que vous avez déjà enregistrés. Lisez-les, gardez-les pour plus tard ou passez ceux qui ne vous intéressent pas.",
   extensionTitle: "Une page vous plaît ? Gardez-la.",
   extensionBody:
-    "Enregistrez une page depuis votre navigateur en un clic, puis retrouvez-la dans Rediscover quand vous avez le temps.",
+    "Enregistrez une page depuis votre navigateur. Après un jour, Rediscover peut la faire revenir dans votre sélection Today.",
   safari:
     "Incluse avec Rediscover pour Mac. Activez-la dans Safari pour enregistrer la page que vous consultez.",
   chrome:
@@ -221,14 +221,14 @@ export const fr: Copy = {
   tryBeta: "Essayer la bêta sur TestFlight",
   betaTitle: "Les nouveautés, en avant-première.",
   betaBody:
-    "Essayez la prochaine version de Rediscover sur TestFlight et partagez vos impressions.",
+    "Sur TestFlight, enregistrez une page puis revenez le lendemain voir ce que Today vous propose. Racontez-nous ce que vous en pensez.",
   joinBeta: "Rejoindre la bêta",
   betaPending: "Invitation à la bêta bientôt disponible",
   downloadPreview: "Offre à durée limitée",
   cloudTitle: "Votre bibliothèque,",
   cloudSubtitle: "sur tous vos écrans.",
   cloudBody:
-    "Enregistrez sur iPhone, puis lisez sur iPad ou Mac. iCloud synchronise votre bibliothèque, vos abonnements et les sélections du jour entre vos appareils.",
+    "Avec accès aux fonctions Pro, iCloud peut synchroniser votre bibliothèque, les sources Radar et les sélections Today entre iPhone, iPad et Mac.",
   cloudNote:
     "Connectez vos appareils au même compte Apple et activez la synchronisation iCloud dans les réglages de Rediscover.",
   ipadCaption: "Plus d’espace pour lire.",
@@ -270,7 +270,7 @@ export const de: Copy = {
   platforms: "Für iPhone, iPad und Mac",
   today: "Ein paar gute Seiten für heute.",
   todayBody:
-    "Jeden Tag wartet eine kleine Auswahl aus deiner Bibliothek auf dich. Lies sie, wenn du Zeit hast.",
+    "Today bringt einige Seiten zurück, die du vor mindestens einem Tag gespeichert hast. Neue Seiten kannst du sofort in deiner Bibliothek lesen.",
   quote: "Speichern ohne Lesedruck.",
   quoteBody:
     "Speichere, was dich neugierig macht. Rediscover schlägt dir täglich ein paar Seiten vor, die du in deinem Tempo lesen kannst.",
@@ -282,7 +282,7 @@ export const de: Copy = {
     "Radar findet neue Artikel auf Websites, von denen du bereits Seiten gespeichert hast. Lies sie gleich, speichere sie für später oder überspringe, was dich nicht interessiert.",
   extensionTitle: "Eine gute Seite? Einfach speichern.",
   extensionBody:
-    "Speichere Seiten mit einem Klick im Browser und lies sie später in Rediscover.",
+    "Speichere eine Seite im Browser. Nach einem Tag kann Rediscover sie in Today wieder hervorholen.",
   safari:
     "In Rediscover für Mac enthalten. Aktiviere die Erweiterung in Safari, um die aktuelle Seite zu speichern.",
   chrome:
@@ -309,14 +309,14 @@ export const de: Copy = {
   tryBeta: "Beta über TestFlight ausprobieren",
   betaTitle: "Neue Funktionen früher entdecken.",
   betaBody:
-    "Teste die nächste Version von Rediscover über TestFlight und teile deine Erfahrungen.",
+    "Speichere mit TestFlight eine Seite und öffne Today am nächsten Tag erneut. Erzähl uns, wie sich dieses Wiedersehen anfühlt.",
   joinBeta: "An der Beta teilnehmen",
   betaPending: "Einladung zur Beta folgt bald",
   downloadPreview: "Angebot für kurze Zeit",
   cloudTitle: "Deine Bibliothek.",
   cloudSubtitle: "Auf all deinen Geräten.",
   cloudBody:
-    "Auf dem iPhone speichern, auf dem iPad oder Mac lesen. iCloud synchronisiert deine Bibliothek, Abonnements und Tagesauswahl zwischen deinen Geräten.",
+    "Mit Zugang zu den Pro-Funktionen kann iCloud deine Bibliothek, Radar-Quellen und Today-Empfehlungen zwischen iPhone, iPad und Mac synchronisieren.",
   cloudNote:
     "Melde dich auf deinen Geräten mit demselben Apple Account an und aktiviere die iCloud-Synchronisierung in den Rediscover-Einstellungen.",
   ipadCaption: "Mehr Platz zum Lesen.",
@@ -356,7 +356,7 @@ export const es: Copy = {
   platforms: "Para iPhone, iPad y Mac",
   today: "Unas buenas lecturas para hoy.",
   todayBody:
-    "Cada día te espera una pequeña selección de tu biblioteca. Ábrela cuando tengas un rato.",
+    "Today recupera unas páginas guardadas hace al menos un día. Las nuevas puedes leerlas enseguida en tu biblioteca.",
   quote: "Guarda sin tener que leerlo todo.",
   quoteBody:
     "Guarda lo que te interese. Rediscover te propone unas páginas cada día para que leas a tu ritmo.",
@@ -368,7 +368,7 @@ export const es: Copy = {
     "Radar encuentra artículos nuevos en los sitios de los que ya has guardado páginas. Léelos ahora, guárdalos para después o salta los que no te interesen.",
   extensionTitle: "¿Una buena página? Guárdala.",
   extensionBody:
-    "Guarda páginas desde el navegador con un clic y vuelve a Rediscover cuando tengas tiempo para leer.",
+    "Guarda una página desde el navegador. Al cabo de un día, Rediscover puede traerla de vuelta en Today.",
   safari:
     "Incluida con Rediscover para Mac. Actívala en Safari para guardar la página que estás leyendo.",
   chrome:
@@ -394,14 +394,14 @@ export const es: Copy = {
   tryBeta: "Prueba la beta en TestFlight",
   betaTitle: "Descubre las novedades antes que nadie.",
   betaBody:
-    "Prueba la próxima versión de Rediscover en TestFlight y comparte tu experiencia.",
+    "En TestFlight, guarda una página y vuelve al día siguiente para ver qué te trae Today. Cuéntanos cómo fue el reencuentro.",
   joinBeta: "Unirme a la beta",
   betaPending: "Invitación a la beta próximamente",
   downloadPreview: "Oferta por tiempo limitado",
   cloudTitle: "Tu biblioteca,",
   cloudSubtitle: "en todas tus pantallas.",
   cloudBody:
-    "Guarda en el iPhone y lee en el iPad o el Mac. iCloud sincroniza tu biblioteca, suscripciones y selección del día entre tus dispositivos.",
+    "Con acceso a las funciones Pro, iCloud puede sincronizar tu biblioteca, las fuentes de Radar y las selecciones de Today entre iPhone, iPad y Mac.",
   cloudNote:
     "Inicia sesión con la misma cuenta de Apple en tus dispositivos y activa la sincronización con iCloud en los ajustes de Rediscover.",
   ipadCaption: "Más espacio para leer.",
