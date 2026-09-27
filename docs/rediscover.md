@@ -37,3 +37,11 @@ All three app screenshots use the shared `Device` component with a CSS device sh
 The iCloud section uses the actual GuideToday-iPad screenshot alongside GuideToday-iPhone, both framed by Device. Development output is `.next`; production build/start output is `.next-production` so build verification cannot overwrite active development chunks.
 
 Chinese App Store badges use the unmodified Apple Marketing Tools API artwork for `zh-cn` and `zh-tw`. Japanese, Korean, French, German, and Spanish badges use the same official API with `ja-jp`, `ko-kr`, `fr-fr`, `de-de`, and `es-es`. Product screenshots retain their original in-app English content.
+
+## Features and plans
+
+The landing page includes OPML import, Shared reading spaces, optional Jev Decisions, and OpenRouter BYOK, followed by Free / Pro lifetime / Pro+ plan cards. All new copy is required for all eight languages through `lib/rediscover-features.ts`. Header, hero, and footer links provide access to these sections, including on mobile.
+
+Entitlements follow the app's `PurchaseProducts.swift` and `PaywallView.swift`: Free allows 15 articles, 3 Radar sources and 1 owned active shared space; Pro removes article/source limits, adds imports, iCloud and BYOK, and permits 3 owned spaces; Pro+ includes Pro features, higher Cloud AI usage and unlimited owned spaces. Joining spaces remains free. Localized production prices must be confirmed before displaying numeric prices: the website directs visitors to the app, rather than using the local StoreKit test configuration as a published price list.
+
+Shared is presented as a full-width feature immediately after Radar, with the iPhone screenshot copied from `app-store-connect/screenshots/ios/en-US/native-source/06-shared.png` to `public/rediscover/shared.png`. The remaining feature grid covers OPML, Jev, and OpenRouter. Hero Features and Plans links align to the right.

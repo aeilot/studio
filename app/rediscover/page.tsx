@@ -2,6 +2,7 @@ import { rediscoverMetadata } from "@/lib/rediscover-metadata";
 import { language, route, type PageQuery } from "@/lib/rediscover-languages";
 import { translations } from "@/lib/rediscover-translations";
 import Image from "next/image";
+import { featureTranslations } from "@/lib/rediscover-features";
 import { Device } from "@/components/rediscover/Device";
 import { Shell, Download } from "@/components/rediscover/Shell";
 import { rediscoverLinks, feedbackEmail } from "@/lib/rediscover";
@@ -12,6 +13,7 @@ export default async function Rediscover({
 }) {
   const lang = language((await searchParams).lang);
   const c = translations[lang];
+  const f = featureTranslations[lang];
   return (
     <Shell lang={lang}>
       <section className="rd-hero rd-wrap">
@@ -35,6 +37,10 @@ export default async function Rediscover({
             {c.tryBeta} <span aria-hidden="true">↗</span>
           </a>
           <p className="rd-platforms">{c.platforms}</p>
+          <div className="rd-discover-links">
+            <a className="rd-text-link" href="#features">{f.featuresNav} ↓</a>
+            <a className="rd-text-link" href="#plans">{f.plansNav} ↓</a>
+          </div>
         </div>
         <div className="rd-hero-art">
           <span className="rd-orbit" aria-hidden="true" />
@@ -97,6 +103,20 @@ export default async function Rediscover({
             <span className="rd-number">03 / RADAR</span>
             <h2>{c.radar}</h2>
             <p>{c.radarBody}</p>
+          </div>
+        </div>
+      </section>
+      <section className="rd-shared" id="shared" aria-labelledby="shared-title">
+        <div className="rd-wrap rd-shared-inner">
+          <div className="rd-shared-copy">
+            <span className="rd-number">04 / SHARED</span>
+            <h2 id="shared-title">{f.sharedTitle}</h2>
+            <p>{f.sharedDetail}</p>
+            <p className="rd-shared-note">{f.sharedBody}</p>
+            <a className="rd-text-link" href="#plans">{f.plansNav} <span aria-hidden="true">↓</span></a>
+          </div>
+          <div className="rd-shared-art">
+            <Device src="/rediscover/shared.png" alt={f.sharedTitle} />
           </div>
         </div>
       </section>
@@ -167,6 +187,44 @@ export default async function Rediscover({
           })}
         </div>
       </section>
+      <section className="rd-new-features rd-wrap" id="features" aria-labelledby="features-title">
+        <p className="rd-eyebrow">{f.featuresNav}</p>
+        <h2 id="features-title">{f.featuresTitle}</h2>
+        <div className="rd-new-feature-grid">
+          {([
+            ["OPML", f.opmlTitle, f.opmlBody, f.opmlDetail],
+            ["Jev", f.jevTitle, f.jevBody, f.jevDetail],
+            ["OpenRouter", f.routerTitle, f.routerBody, f.routerDetail],
+          ]).map(([name, title, body, detail]) => (
+            <article key={name}>
+              <p className="rd-eyebrow">{name}</p>
+              <h3>{title}</h3>
+              <p>{detail}</p>
+              <p className="rd-feature-availability">{body}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+      <section className="rd-plans rd-wrap" id="plans" aria-labelledby="plans-title">
+        <p className="rd-eyebrow">{f.plansNav}</p>
+        <h2 id="plans-title">{f.plansTitle}</h2>
+        <p className="rd-plans-intro">{f.plansIntro}</p>
+        <div className="rd-plan-grid">
+          {[
+            { name: f.freeName, billing: f.freeBilling, items: [f.freeLimits, f.freeShared, f.cloudFree] },
+            { name: f.proName, billing: f.proBilling, items: [f.unlimited, f.imports, f.sync, f.byok, f.proShared, f.cloudFree] },
+            { name: f.plusName, billing: f.plusBilling, items: [f.allPro, f.cloudPlus, f.plusShared] },
+          ].map((plan) => (
+            <article className="rd-plan" key={plan.name}>
+              <h3>{plan.name}</h3>
+              <p className="rd-plan-billing">{plan.billing}</p>
+              <ul>{plan.items.map((item) => <li key={item}>{item}</li>)}</ul>
+            </article>
+          ))}
+        </div>
+        <p className="rd-pricing-note">{f.pricingNote}</p>
+        <a className="rd-text-link" href="#download">{f.cta} <span aria-hidden="true">↓</span></a>
+      </section>
       <section className="rd-feedback rd-wrap" id="feedback">
         <div>
           <p className="rd-eyebrow">{c.together}</p>
@@ -208,7 +266,7 @@ export default async function Rediscover({
           <p className="rd-status">{c.betaPending}</p>
         )}
       </section>
-      <section className="rd-end rd-wrap">
+      <section className="rd-end rd-wrap" id="download">
         <Image src="/rediscover/icon.png" alt="" width={64} height={64} />
         <h2>{c.end}</h2>
         <p>{c.endBody}</p>

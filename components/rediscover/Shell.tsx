@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { featureTranslations } from "@/lib/rediscover-features";
 import Link from "next/link";
 import { LanguageMenu } from "./LanguageMenu";
 import { Motion } from "./Motion";
@@ -52,7 +53,8 @@ export function Shell({
         </Link>
         <div className="rd-header-end">
           <nav aria-label={copy.mainNav}>
-            <a href={path ? `${route("", lang)}#icloud` : "#icloud"}>iCloud</a>
+            <a href={`${route("", lang)}#features`}>{featureTranslations[lang].featuresNav}</a>
+            <a href={`${route("", lang)}#plans`}>{featureTranslations[lang].plansNav}</a>
             <a href={path ? `${route("", lang)}#extensions` : "#extensions"}>
               {copy.extensions}
             </a>
@@ -74,6 +76,7 @@ export function Shell({
           </p>
         </div>
         <nav aria-label={copy.footerNav}>
+          <a href={`${route("", lang)}#plans`}>{featureTranslations[lang].plansNav}</a>
           <a href={path ? `${route("", lang)}#feedback` : "#feedback"}>
             {copy.feedback}
           </a>
