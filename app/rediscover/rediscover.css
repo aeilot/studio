@@ -1274,53 +1274,94 @@ html:has(.rd) {
   margin-top: 36px;
   border-top: 1px solid #d2d2d7;
 }
-.rd-faq details {
+.rd-acc {
+  --acc-expand: 350ms;
+  --acc-collapse: 250ms;
+  --acc-ease: var(--stagger-ease);
   border-bottom: 1px solid #d2d2d7;
 }
-.rd-faq summary {
+.rd .rd-faq h3 {
+  margin: 0;
+}
+.rd-acc-head {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 24px;
+  width: 100%;
   padding: 22px 0;
+  border: 0;
+  background: none;
+  color: var(--ink);
+  font: inherit;
+  font-size: 20px;
+  font-weight: 650;
+  line-height: 1.35;
+  letter-spacing: -0.02em;
+  text-align: left;
   cursor: pointer;
-  list-style: none;
 }
-.rd-faq summary::-webkit-details-marker {
-  display: none;
-}
-.rd-faq summary::after {
+.rd-acc-head::after {
   content: "+";
   flex-shrink: 0;
   font-size: 24px;
   font-weight: 300;
   line-height: 1;
   color: var(--soft);
-  transition: transform 250ms var(--stagger-ease);
+  transition: transform var(--acc-collapse) var(--acc-ease);
 }
-.rd-faq details[open] summary::after {
+.rd-acc[data-open="true"] .rd-acc-head::after {
   transform: rotate(45deg);
+  transition-duration: var(--acc-expand);
 }
-.rd .rd-faq h3 {
-  font-size: 20px;
-  line-height: 1.35;
-  letter-spacing: -0.02em;
-  margin: 0;
-}
-.rd-faq summary:hover h3 {
+.rd-acc-head:hover {
   color: #0071e3;
 }
-.rd-faq details p {
+.rd-acc-head:focus-visible {
+  outline: 3px solid #0071e3;
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+.rd-acc-panel {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows var(--acc-collapse) var(--acc-ease);
+}
+.rd-acc[data-open="true"] .rd-acc-panel {
+  grid-template-rows: 1fr;
+  transition: grid-template-rows var(--acc-expand) var(--acc-ease);
+}
+.rd-acc-panel-inner {
+  overflow: hidden;
+  opacity: 0;
+  filter: blur(2px);
+  transition:
+    opacity var(--acc-collapse) var(--acc-ease),
+    filter var(--acc-collapse) var(--acc-ease);
+}
+.rd-acc[data-open="true"] .rd-acc-panel-inner {
+  opacity: 1;
+  filter: blur(0);
+  transition:
+    opacity var(--acc-expand) var(--acc-ease),
+    filter var(--acc-expand) var(--acc-ease);
+}
+.rd .rd-acc-panel-inner p {
   max-width: 780px;
-  margin: -6px 0 24px;
+  margin: 0;
+  padding: 0 0 24px;
   font-size: 17px;
   line-height: 1.6;
 }
 @media (max-width: 700px) {
-  .rd .rd-faq h3 { font-size: 18px; }
+  .rd-acc-head { font-size: 18px; }
 }
 @media (prefers-reduced-motion: reduce) {
-  .rd-faq summary::after { transition: none; }
+  .rd-acc-panel,
+  .rd-acc-panel-inner,
+  .rd-acc-head::after {
+    transition: none !important;
+  }
 }
 
 .rd-shared {

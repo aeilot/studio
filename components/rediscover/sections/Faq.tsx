@@ -1,4 +1,5 @@
 import { faq } from "@/lib/rediscover-faq";
+import { FaqAccordion } from "../FaqAccordion";
 import type { SectionProps } from "./types";
 
 export function Faq({ lang }: SectionProps) {
@@ -7,16 +8,10 @@ export function Faq({ lang }: SectionProps) {
     <section className="rd-faq rd-wrap" id="faq" aria-labelledby="faq-title">
       <p className="rd-eyebrow">{f.eyebrow}</p>
       <h2 id="faq-title">{f.title}</h2>
-      <div className="rd-faq-list">
-        {f.items.map((item) => (
-          <details key={item.q}>
-            <summary>
-              <h3>{item.q}</h3>
-            </summary>
-            <p>{item.a}</p>
-          </details>
-        ))}
-      </div>
+      <FaqAccordion items={f.items} />
+      <noscript>
+        <style>{`.rd-acc-panel{grid-template-rows:1fr!important}.rd-acc-panel-inner{opacity:1!important;filter:none!important}`}</style>
+      </noscript>
     </section>
   );
 }
