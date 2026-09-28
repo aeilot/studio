@@ -17,15 +17,6 @@ export function Save({ lang, c, l }: SectionProps) {
               <li key={capture}>{capture}</li>
             ))}
           </ul>
-          <div className="rd-platforms-block">
-            <h3>{l.platformsTitle}</h3>
-            <p>{l.platformsBody}</p>
-            <ul className="rd-captures">
-              {l.platforms.map((platform) => (
-                <li key={platform}>{platform}</li>
-              ))}
-            </ul>
-          </div>
           <p className="rd-ai-note">{l.aiNote}</p>
           <p className="rd-credit">{l.jevCredit}</p>
         </div>
