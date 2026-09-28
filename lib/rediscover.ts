@@ -2,13 +2,11 @@ export const feedbackEmail = "louis.chenluodeng@gmail.com";
 // Set verified destinations here when distribution and support URLs are ready.
 export const rediscoverLinks: {
   appStore: string | null;
-  testFlight: string | null;
   safari: string | null;
   chrome: string | null;
   feedback: string | null;
 } = {
-  appStore: "#download-preview", // Preview destination; replace with the real App Store URL.
-  testFlight: "#testflight", // Replace with the public TestFlight invitation.
+  appStore: "#download", // Preview destination; replace with the real App Store URL.
   safari: null,
   chrome:
     "https://chromewebstore.google.com/detail/save-to-rediscover/mfcclligjgceiagjnkahhjhmmgbnnnbh",
@@ -16,31 +14,13 @@ export const rediscoverLinks: {
 };
 export const copy = {
   back: "Evolution Studio",
-  extensions: "Browser extensions",
   feedback: "Feedback",
   privacy: "Privacy",
   download: "Download on the App Store",
   pending: "App Store link coming soon",
   soon: "Link coming soon",
-  eyebrow: "A little less later. A little more today.",
   title: "Rediscover the pages you meant to read.",
-  intro: "Save a page today. After at least a day, Rediscover can bring a few back; you can read from your Library right away.",
   platforms: "Made for iPhone, iPad & Mac",
-  today: "A few good pages. Just for today.",
-  todayBody:
-    "Today picks a few pages you saved at least a day ago. New saves stay in your Library until they are ready to return.",
-  quote: "Save freely. A few pages return each day.",
-  quoteBody:
-    "Rediscover is not a list to clear. There is no finish line for your curiosity.",
-  read: "Make a little room for reading.",
-  readBody:
-    "Open a page, settle into the words, and leave a little feedback. Future picks become more personal, one good read at a time.",
-  radar: "Follow your curiosity a little further.",
-  radarBody:
-    "Discover new writing, starting with what you have saved. Radar finds new pages from the sites and sources in your Library. Read now, save for later, or skip what doesn’t interest you.",
-  extensionTitle: "A good page? Bring it along.",
-  extensionBody:
-    "Save a page from your browser. After a day, Rediscover can bring it back among your Today picks.",
   safari:
     "Included with Rediscover for Mac. Enable it in Safari to save the page you’re reading.",
   chrome:

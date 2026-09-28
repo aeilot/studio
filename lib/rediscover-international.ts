@@ -2,31 +2,13 @@ import type { Copy } from "./rediscover-translations";
 
 export const ja: Copy = {
   back: "Evolution Studio",
-  extensions: "ブラウザ拡張機能",
   feedback: "フィードバック",
   privacy: "プライバシーポリシー",
   download: "App Storeからダウンロード",
   pending: "App Storeのリンクは近日公開",
   soon: "リンクは近日公開",
-  eyebrow: "保存したページを、読むきっかけに。",
   title: "いつか読みたかった内容を、もう一度。",
-  intro: "気になるページを保存。毎日少しずつ読み返しましょう。",
   platforms: "iPhone、iPad、Macに対応",
-  today: "今日読みたい、いくつかのページ。",
-  todayBody:
-    "今日のおすすめには、保存から少なくとも1日たったページが少しずつ届きます。保存したばかりのページはライブラリからすぐに読めます。",
-  quote: "全部読み終えなくても、大丈夫。",
-  quoteBody:
-    "気になる内容は、まず保存。Rediscoverが毎日いくつか選ぶので、自分のペースで読めます。",
-  read: "少し時間をとって、じっくり読む。",
-  readBody:
-    "ページを開いて、読書にひと息。読んだ後の感想が、これからのおすすめに役立ちます。",
-  radar: "好奇心の、その先へ。",
-  radarBody:
-    "Radarは、保存したことのあるサイトから新しい記事を見つけます。今すぐ読むことも、後で読むために保存することも。気にならない記事はスキップできます。",
-  extensionTitle: "気になるページを、その場で保存。",
-  extensionBody:
-    "ブラウザでページを保存。1日たつと、Rediscoverが「今日のおすすめ」に再び届けます。",
   safari:
     "Mac版Rediscoverに付属。Safariで有効にすると、開いているページを保存できます。",
   chrome: "拡張機能を使って、開いているページをMacのRediscoverに保存できます。",
@@ -48,13 +30,6 @@ export const ja: Copy = {
   privacyScope:
     "本ポリシーはRediscoverと関連するブラウザ拡張機能に適用されます。",
   updated: "更新日：2026年9月21日",
-  tryBeta: "TestFlightで先行体験",
-  betaTitle: "新機能を、ひと足先に。",
-  betaBody:
-    "TestFlightでページを保存し、翌日「今日のおすすめ」を開いてみてください。読み返す体験について感想をお聞かせください。",
-  joinBeta: "ベータテストに参加",
-  betaPending: "ベータ版の招待リンクは近日公開",
-  downloadPreview: "期間限定オファー",
   cloudTitle: "保存したページを、",
   cloudSubtitle: "どのデバイスでも。",
   cloudBody:
@@ -65,18 +40,12 @@ export const ja: Copy = {
   iphoneCaption: "空いた時間に、気軽に読む。",
   todayAlt:
     "ライブラリから選ばれた3件のページを表示するRediscoverの今日のおすすめ",
-  readAlt: "Rediscoverで保存したページを開く",
   radarAlt: "保存したサイトから新しい記事を見つけるRadar",
   ipadAlt: "iPhoneと同じ今日のおすすめを表示するiPad",
   iphoneAlt: "iPadと同じ今日のおすすめを表示するiPhone",
   getSafari: "Safari拡張機能を入手",
   getChrome: "Chrome拡張機能を入手",
   included: "Macアプリに付属",
-  way: "REDISCOVERのある読書",
-  todayLabel: "01 / 今日のおすすめ",
-  readLabel: "02 / 読む・読み返す",
-  saveLabel: "REDISCOVERに保存",
-  together: "あなたの声を聞かせてください",
   supportLabel: "フィードバックとサポート",
   privacyLabel: "プライバシーポリシー",
   skip: "本文へスキップ",
@@ -87,31 +56,13 @@ export const ja: Copy = {
 };
 export const ko: Copy = {
   back: "Evolution Studio",
-  extensions: "브라우저 확장 프로그램",
   feedback: "의견 보내기",
   privacy: "개인정보 처리방침",
   download: "App Store에서 다운로드",
   pending: "App Store 링크 준비 중",
   soon: "링크 준비 중",
-  eyebrow: "저장에서 읽기로, 한 걸음 더.",
   title: "언젠가 읽고 싶었던 글을 다시 발견하세요.",
-  intro: "관심 있는 페이지를 저장하고 매일 몇 편씩 다시 읽어 보세요.",
   platforms: "iPhone, iPad, Mac에서 사용하세요",
-  today: "오늘 읽을 좋은 글 몇 편.",
-  todayBody:
-    "오늘의 추천에는 저장한 지 하루 이상 지난 글이 몇 편 돌아옵니다. 방금 저장한 글은 보관함에서 바로 읽을 수 있어요.",
-  quote: "모두 읽어야 한다는 부담 없이.",
-  quoteBody:
-    "관심 가는 글은 먼저 저장하세요. Rediscover가 매일 몇 편씩 추천하니, 내 속도에 맞춰 읽으면 돼요.",
-  read: "잠시 시간을 내어, 글에 집중하세요.",
-  readBody:
-    "글을 열고 편안하게 읽어 보세요. 읽은 뒤 남긴 간단한 의견이 다음 추천에 도움이 돼요.",
-  radar: "호기심을 따라, 새로운 글로.",
-  radarBody:
-    "Radar는 저장한 적 있는 사이트에서 새로운 글을 찾아요. 바로 읽거나 나중을 위해 저장하고, 관심 없는 글은 건너뛸 수 있어요.",
-  extensionTitle: "마음에 드는 페이지를 바로 저장.",
-  extensionBody:
-    "브라우저에서 페이지를 저장하세요. 하루가 지나면 Rediscover가 오늘의 추천으로 다시 가져올 수 있어요.",
   safari:
     "Mac용 Rediscover에 포함되어 있어요. Safari에서 활성화하면 현재 페이지를 저장할 수 있어요.",
   chrome: "확장 프로그램으로 현재 페이지를 Mac의 Rediscover에 저장하세요.",
@@ -133,12 +84,6 @@ export const ko: Copy = {
   privacyScope:
     "이 방침은 Rediscover와 함께 제공되는 브라우저 확장 프로그램에 적용됩니다.",
   updated: "최종 수정: 2026년 9월 21일",
-  tryBeta: "TestFlight로 미리 사용해 보기",
-  betaTitle: "새로운 기능을 먼저 만나 보세요.",
-  betaBody: "TestFlight에서 글을 저장하고 다음 날 오늘의 추천을 열어 보세요. 다시 만나는 경험이 어땠는지 알려 주세요.",
-  joinBeta: "베타 테스트 참여",
-  betaPending: "베타 초대 링크 준비 중",
-  downloadPreview: "기간 한정 혜택",
   cloudTitle: "저장한 페이지를",
   cloudSubtitle: "어느 기기에서나.",
   cloudBody:
@@ -148,18 +93,12 @@ export const ko: Copy = {
   ipadCaption: "넓은 화면으로 여유롭게.",
   iphoneCaption: "틈날 때마다 몇 편씩.",
   todayAlt: "보관함에서 고른 페이지 세 편을 보여 주는 Rediscover 오늘의 추천",
-  readAlt: "Rediscover에서 저장한 페이지 열기",
   radarAlt: "저장한 사이트에서 새로운 글을 찾는 Radar",
   ipadAlt: "iPhone과 같은 오늘의 추천을 보여 주는 iPad",
   iphoneAlt: "iPad와 같은 오늘의 추천을 보여 주는 iPhone",
   getSafari: "Safari 확장 프로그램 받기",
   getChrome: "Chrome 확장 프로그램 받기",
   included: "Mac 앱에 포함",
-  way: "REDISCOVER와 함께 읽기",
-  todayLabel: "01 / 오늘의 추천",
-  readLabel: "02 / 읽고 다시 찾기",
-  saveLabel: "REDISCOVER에 저장",
-  together: "여러분의 의견을 들려주세요",
   supportLabel: "의견 및 지원",
   privacyLabel: "개인정보 처리방침",
   skip: "본문으로 건너뛰기",
@@ -170,31 +109,13 @@ export const ko: Copy = {
 };
 export const fr: Copy = {
   back: "Evolution Studio",
-  extensions: "Extensions",
   feedback: "Commentaires",
   privacy: "Confidentialité",
   download: "Télécharger dans l’App Store",
   pending: "Lien App Store bientôt disponible",
   soon: "Lien bientôt disponible",
-  eyebrow: "Du plaisir de garder à celui de lire.",
   title: "Retrouvez les pages que vous vouliez lire.",
-  intro: "Gardez ce qui vous intéresse. Retrouvez quelques pages chaque jour.",
   platforms: "Pour iPhone, iPad et Mac",
-  today: "Quelques belles lectures pour aujourd’hui.",
-  todayBody:
-    "Today fait revenir quelques pages enregistrées depuis au moins un jour. Vous pouvez lire immédiatement les nouvelles pages dans votre bibliothèque.",
-  quote: "Gardez sans vous obliger à tout lire.",
-  quoteBody:
-    "Enregistrez ce qui vous intéresse. Rediscover vous propose quelques pages chaque jour, à lire à votre rythme.",
-  read: "Prenez un moment pour lire.",
-  readBody:
-    "Ouvrez une page et profitez de votre lecture. Un petit retour ensuite aide Rediscover à affiner ses prochaines suggestions.",
-  radar: "Laissez votre curiosité vous guider.",
-  radarBody:
-    "Radar trouve de nouveaux articles sur les sites que vous avez déjà enregistrés. Lisez-les, gardez-les pour plus tard ou passez ceux qui ne vous intéressent pas.",
-  extensionTitle: "Une page vous plaît ? Gardez-la.",
-  extensionBody:
-    "Enregistrez une page depuis votre navigateur. Après un jour, Rediscover peut la faire revenir dans votre sélection Today.",
   safari:
     "Incluse avec Rediscover pour Mac. Activez-la dans Safari pour enregistrer la page que vous consultez.",
   chrome:
@@ -218,13 +139,6 @@ export const fr: Copy = {
   privacyScope:
     "Cette politique s’applique à Rediscover et à ses extensions de navigateur.",
   updated: "Mise à jour le 21 septembre 2026",
-  tryBeta: "Essayer la bêta sur TestFlight",
-  betaTitle: "Les nouveautés, en avant-première.",
-  betaBody:
-    "Sur TestFlight, enregistrez une page puis revenez le lendemain voir ce que Today vous propose. Racontez-nous ce que vous en pensez.",
-  joinBeta: "Rejoindre la bêta",
-  betaPending: "Invitation à la bêta bientôt disponible",
-  downloadPreview: "Offre à durée limitée",
   cloudTitle: "Votre bibliothèque,",
   cloudSubtitle: "sur tous vos écrans.",
   cloudBody:
@@ -235,18 +149,12 @@ export const fr: Copy = {
   iphoneCaption: "Quelques pages, où que vous soyez.",
   todayAlt:
     "Rediscover présente trois pages sélectionnées dans la bibliothèque",
-  readAlt: "Ouverture d’une page enregistrée dans Rediscover",
   radarAlt: "Radar découvre de nouveaux articles sur les sites enregistrés",
   ipadAlt: "La même sélection du jour sur iPad et iPhone",
   iphoneAlt: "La sélection du jour sur iPhone, synchronisée avec l’iPad",
   getSafari: "Obtenir l’extension Safari",
   getChrome: "Obtenir l’extension Chrome",
   included: "Incluse avec l’app Mac",
-  way: "LIRE AVEC REDISCOVER",
-  todayLabel: "01 / AUJOURD’HUI",
-  readLabel: "02 / LIRE ET RELIRE",
-  saveLabel: "ENREGISTRER DANS REDISCOVER",
-  together: "VOTRE AVIS COMPTE",
   supportLabel: "COMMENTAIRES ET ASSISTANCE",
   privacyLabel: "POLITIQUE DE CONFIDENTIALITÉ",
   skip: "Aller au contenu",
@@ -257,32 +165,13 @@ export const fr: Copy = {
 };
 export const de: Copy = {
   back: "Evolution Studio",
-  extensions: "Erweiterungen",
   feedback: "Feedback",
   privacy: "Datenschutz",
   download: "Im App Store laden",
   pending: "App-Store-Link folgt bald",
   soon: "Link folgt bald",
-  eyebrow: "Vom Speichern zum Lesen.",
   title: "Finde wieder, was du lesen wolltest.",
-  intro:
-    "Speichere, was dich interessiert. Lies jeden Tag ein paar Seiten erneut.",
   platforms: "Für iPhone, iPad und Mac",
-  today: "Ein paar gute Seiten für heute.",
-  todayBody:
-    "Today bringt einige Seiten zurück, die du vor mindestens einem Tag gespeichert hast. Neue Seiten kannst du sofort in deiner Bibliothek lesen.",
-  quote: "Speichern ohne Lesedruck.",
-  quoteBody:
-    "Speichere, was dich neugierig macht. Rediscover schlägt dir täglich ein paar Seiten vor, die du in deinem Tempo lesen kannst.",
-  read: "Nimm dir Zeit zum Lesen.",
-  readBody:
-    "Öffne eine Seite und lies in Ruhe. Eine kurze Rückmeldung danach hilft Rediscover, passendere Vorschläge zu machen.",
-  radar: "Folge deiner Neugier weiter.",
-  radarBody:
-    "Radar findet neue Artikel auf Websites, von denen du bereits Seiten gespeichert hast. Lies sie gleich, speichere sie für später oder überspringe, was dich nicht interessiert.",
-  extensionTitle: "Eine gute Seite? Einfach speichern.",
-  extensionBody:
-    "Speichere eine Seite im Browser. Nach einem Tag kann Rediscover sie in Today wieder hervorholen.",
   safari:
     "In Rediscover für Mac enthalten. Aktiviere die Erweiterung in Safari, um die aktuelle Seite zu speichern.",
   chrome:
@@ -306,13 +195,6 @@ export const de: Copy = {
   privacyScope:
     "Diese Datenschutzerklärung gilt für Rediscover und die zugehörigen Browser-Erweiterungen.",
   updated: "Stand: 21. September 2026",
-  tryBeta: "Beta über TestFlight ausprobieren",
-  betaTitle: "Neue Funktionen früher entdecken.",
-  betaBody:
-    "Speichere mit TestFlight eine Seite und öffne Today am nächsten Tag erneut. Erzähl uns, wie sich dieses Wiedersehen anfühlt.",
-  joinBeta: "An der Beta teilnehmen",
-  betaPending: "Einladung zur Beta folgt bald",
-  downloadPreview: "Angebot für kurze Zeit",
   cloudTitle: "Deine Bibliothek.",
   cloudSubtitle: "Auf all deinen Geräten.",
   cloudBody:
@@ -322,18 +204,12 @@ export const de: Copy = {
   ipadCaption: "Mehr Platz zum Lesen.",
   iphoneCaption: "Ein paar gute Seiten für unterwegs.",
   todayAlt: "Rediscover zeigt drei ausgewählte Seiten aus der Bibliothek",
-  readAlt: "Eine gespeicherte Seite in Rediscover öffnen",
   radarAlt: "Radar entdeckt neue Artikel auf gespeicherten Websites",
   ipadAlt: "Dieselbe Tagesauswahl auf iPad und iPhone",
   iphoneAlt: "Die Tagesauswahl auf dem iPhone, passend zum iPad",
   getSafari: "Safari-Erweiterung laden",
   getChrome: "Chrome-Erweiterung laden",
   included: "In der Mac-App enthalten",
-  way: "LESEN MIT REDISCOVER",
-  todayLabel: "01 / HEUTE",
-  readLabel: "02 / LESEN UND WIEDERENTDECKEN",
-  saveLabel: "IN REDISCOVER SPEICHERN",
-  together: "DEINE MEINUNG ZÄHLT",
   supportLabel: "FEEDBACK UND HILFE",
   privacyLabel: "DATENSCHUTZ",
   skip: "Zum Inhalt springen",
@@ -344,31 +220,13 @@ export const de: Copy = {
 };
 export const es: Copy = {
   back: "Evolution Studio",
-  extensions: "Extensiones",
   feedback: "Comentarios",
   privacy: "Privacidad",
   download: "Descargar en el App Store",
   pending: "Enlace al App Store próximamente",
   soon: "Enlace próximamente",
-  eyebrow: "De guardar páginas a disfrutarlas.",
   title: "Reencuentra lo que querías leer.",
-  intro: "Guarda lo que te interese. Vuelve a leer unas páginas cada día.",
   platforms: "Para iPhone, iPad y Mac",
-  today: "Unas buenas lecturas para hoy.",
-  todayBody:
-    "Today recupera unas páginas guardadas hace al menos un día. Las nuevas puedes leerlas enseguida en tu biblioteca.",
-  quote: "Guarda sin tener que leerlo todo.",
-  quoteBody:
-    "Guarda lo que te interese. Rediscover te propone unas páginas cada día para que leas a tu ritmo.",
-  read: "Haz un hueco para leer.",
-  readBody:
-    "Abre una página y disfruta de la lectura. Una breve valoración después ayuda a mejorar las próximas recomendaciones.",
-  radar: "Deja que tu curiosidad te lleve más lejos.",
-  radarBody:
-    "Radar encuentra artículos nuevos en los sitios de los que ya has guardado páginas. Léelos ahora, guárdalos para después o salta los que no te interesen.",
-  extensionTitle: "¿Una buena página? Guárdala.",
-  extensionBody:
-    "Guarda una página desde el navegador. Al cabo de un día, Rediscover puede traerla de vuelta en Today.",
   safari:
     "Incluida con Rediscover para Mac. Actívala en Safari para guardar la página que estás leyendo.",
   chrome:
@@ -391,13 +249,6 @@ export const es: Copy = {
   privacyScope:
     "Esta política se aplica a Rediscover y a sus extensiones de navegador.",
   updated: "Actualizado el 21 de septiembre de 2026",
-  tryBeta: "Prueba la beta en TestFlight",
-  betaTitle: "Descubre las novedades antes que nadie.",
-  betaBody:
-    "En TestFlight, guarda una página y vuelve al día siguiente para ver qué te trae Today. Cuéntanos cómo fue el reencuentro.",
-  joinBeta: "Unirme a la beta",
-  betaPending: "Invitación a la beta próximamente",
-  downloadPreview: "Oferta por tiempo limitado",
   cloudTitle: "Tu biblioteca,",
   cloudSubtitle: "en todas tus pantallas.",
   cloudBody:
@@ -407,18 +258,12 @@ export const es: Copy = {
   ipadCaption: "Más espacio para leer.",
   iphoneCaption: "Unas buenas páginas para llevar.",
   todayAlt: "Rediscover muestra tres páginas seleccionadas de tu biblioteca",
-  readAlt: "Abrir una página guardada en Rediscover",
   radarAlt: "Radar descubre nuevos artículos de los sitios guardados",
   ipadAlt: "La misma selección del día en iPad y iPhone",
   iphoneAlt: "La selección del día en iPhone, sincronizada con el iPad",
   getSafari: "Obtener la extensión de Safari",
   getChrome: "Obtener la extensión de Chrome",
   included: "Incluida con la app para Mac",
-  way: "LEER CON REDISCOVER",
-  todayLabel: "01 / HOY",
-  readLabel: "02 / LEER Y REDESCUBRIR",
-  saveLabel: "GUARDAR EN REDISCOVER",
-  together: "TU OPINIÓN IMPORTA",
   supportLabel: "COMENTARIOS Y AYUDA",
   privacyLabel: "POLÍTICA DE PRIVACIDAD",
   skip: "Ir al contenido",

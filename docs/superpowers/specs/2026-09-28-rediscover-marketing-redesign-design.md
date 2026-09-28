@@ -73,7 +73,7 @@ Nav: Today · Radar · Shared · Plans · language menu. "Browser extensions" an
   - A 1 · 3 · 5 segmented control labelled Focused / Balanced / Expanded, Balanced selected. Decorative, `aria-hidden`, with the same information in the body text.
   - A notification banner using the app's strings: title "Today", body "A few pages to read, when you're ready."
 - Merged sub-block (replaces "02 / Read & Return"): H3 "Read it. Rate it." Body: "Finish a page and mark it Not really, Worth it or Excellent. Tomorrow's picks get a little more yours."
-- Screenshot: `read.png` (unchanged).
+- Screenshot: `public/rediscover/rate.png`, copied from `GuideWorth-iPhone.png` (the "Was this worth your time?" sheet). It replaces `read.png`, which showed the Library and duplicated the Save section.
 
 ### 4. 02 / Save without sorting (new; replaces `.rd-extensions`, id `save`)
 

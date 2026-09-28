@@ -5,6 +5,7 @@ import {
   type Language,
 } from "./rediscover-languages";
 import { translations } from "./rediscover-translations";
+import { landing } from "./rediscover-landing";
 import { siteUrl } from "./site";
 
 const ogLocales: Record<Language, string> = {
@@ -22,20 +23,21 @@ export function rediscoverMetadata(
   page: "" | "/support" | "/privacy" = "",
 ): Metadata {
   const c = translations[lang];
+  const l = landing[lang];
   const origin = new URL(siteUrl());
   const url = new URL(route(page, lang), origin).href;
   const title =
     page === "/support"
-      ? `${c.feedback} · Rediscover`
+      ? `${l.support} · Rediscover`
       : page === "/privacy"
         ? `${c.privacy} · Rediscover`
-        : `Rediscover — ${c.title.replace(/^Rediscover\s+/i, "")}`;
+        : l.metaTitle;
   const description =
     page === "/support"
       ? c.supportIntro
       : page === "/privacy"
         ? c.privacyIntro
-        : c.intro;
+        : l.metaDescription;
   const images = [
     {
       url: new URL("/rediscover/opengraph-image", origin).href,
@@ -45,7 +47,7 @@ export function rediscoverMetadata(
     },
   ];
   return {
-    title: { absolute: page ? title : "Rediscover · Evolution Studio" },
+    title: { absolute: title },
     description,
     alternates: {
       canonical: url,

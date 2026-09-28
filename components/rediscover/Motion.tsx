@@ -48,7 +48,7 @@ export function Motion() {
       );
       root
         .querySelectorAll<HTMLElement>(
-          ".rd-cloud-copy, .rd-cloud-devices, .rd-manifesto, .rd-story-intro, .rd-feature-shot, .rd-reading, .rd-radar-art, .rd-radar-copy, .rd-extensions, .rd-feedback, .rd-end",
+          ".rd-cloud-copy, .rd-cloud-devices, .rd-manifesto, .rd-story-intro, .rd-feature-shot, .rd-reading, .rd-save-copy, .rd-save-art, .rd-extension-grid, .rd-radar-art, .rd-radar-copy, .rd-shared-copy, .rd-shared-art, .rd-pocket-inner, .rd-plan-grid, .rd-end",
         )
         .forEach((el) => {
           if (el.getBoundingClientRect().top > innerHeight * 0.95) {

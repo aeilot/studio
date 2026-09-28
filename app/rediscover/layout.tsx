@@ -6,7 +6,7 @@ export const metadata: Metadata = {
     template: "%s · Rediscover",
   },
   description:
-    "Save what interests you. Come back to a few pages each day. Rediscover for iPhone, iPad and Mac.",
+    "Read-later apps help you save. Rediscover helps you come back. For iPhone, iPad and Mac.",
   icons: {
     icon: [
       { url: "/rediscover/icon.png", type: "image/png", sizes: "1024x1024" },

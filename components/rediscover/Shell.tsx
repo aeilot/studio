@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { featureTranslations } from "@/lib/rediscover-features";
+import { landing } from "@/lib/rediscover-landing";
 import Link from "next/link";
 import { LanguageMenu } from "./LanguageMenu";
 import { Motion } from "./Motion";
@@ -40,6 +40,8 @@ export function Shell({
   children: React.ReactNode;
 }) {
   const copy = translations[lang];
+  const l = landing[lang];
+  const home = path ? route("", lang) : "";
   return (
     <div className="rd" lang={lang}>
       <Motion />
@@ -53,14 +55,10 @@ export function Shell({
         </Link>
         <div className="rd-header-end">
           <nav aria-label={copy.mainNav}>
-            <a href={`${route("", lang)}#features`}>{featureTranslations[lang].featuresNav}</a>
-            <a href={`${route("", lang)}#plans`}>{featureTranslations[lang].plansNav}</a>
-            <a href={path ? `${route("", lang)}#extensions` : "#extensions"}>
-              {copy.extensions}
-            </a>
-            <a href={path ? `${route("", lang)}#feedback` : "#feedback"}>
-              {copy.feedback}
-            </a>
+            <a href={`${home}#today`}>{l.navToday}</a>
+            <a href={`${home}#radar`}>{l.navRadar}</a>
+            <a href={`${home}#shared`}>{l.navShared}</a>
+            <a href={`${home}#plans`}>{l.navPlans}</a>
           </nav>
           <LanguageMenu lang={lang} label={copy.languageLabel} />
         </div>
@@ -76,10 +74,8 @@ export function Shell({
           </p>
         </div>
         <nav aria-label={copy.footerNav}>
-          <a href={`${route("", lang)}#plans`}>{featureTranslations[lang].plansNav}</a>
-          <a href={path ? `${route("", lang)}#feedback` : "#feedback"}>
-            {copy.feedback}
-          </a>
+          <a href={`${home}#plans`}>{l.navPlans}</a>
+          <Link href={route("/support", lang)}>{l.support}</Link>
           <Link href={route("/privacy", lang)}>{copy.privacy}</Link>
           <Link href="/">Evolution Studio ↗</Link>
         </nav>

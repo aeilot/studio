@@ -8,12 +8,11 @@ The website supports the app’s eight languages: English (`en`), Simplified Chi
 Configure verified destinations in `lib/rediscover.ts`:
 
 - `appStore`: the app’s public App Store product page.
-- `testFlight`: the public TestFlight invitation URL.
 - `safari`: a verified Safari extension destination; the extension is bundled with the Mac app.
 - `chrome`: the extension’s public **Chrome Web Store** listing (not a ZIP download).
 - `feedback`: mailto link to `louis.chenluodeng@gmail.com`, with the subject “Rediscover Feedback”. The visible address comes from `feedbackEmail`.
 
-The App Store badge currently uses an explicitly requested local preview anchor (`#download-preview`). Replace it with the real product URL before publishing. TestFlight uses `#testflight` until the public invitation is available. Safari’s Get link uses the App Store destination while the extension remains bundled with the Mac app. Chrome’s Get link goes to the public Chrome Web Store listing. Both cards use matching text links rather than a store badge. Browser extensions and Feedback navigation scroll to landing-page sections; the standalone support page remains available for app support links. Supply the public website origin through `SITE_URL` for absolute Open Graph URLs; local development defaults to localhost; production defaults to `https://studio.aeilot.top`. Each route and locale generates its own Open Graph/Twitter title and description, canonical URL, and language alternates through `lib/rediscover-metadata.ts`. All locales share the English 1200 × 630 product artwork.
+The App Store badge currently points at the page’s own `#download` section. Replace it with the real product URL before publishing. Safari’s Get link uses the App Store destination while the extension remains bundled with the Mac app. Chrome’s Get link goes to the public Chrome Web Store listing. Both cards use matching text links rather than a store badge. Feedback lives on `/rediscover/support`, linked from the footer. Supply the public website origin through `SITE_URL` for absolute Open Graph URLs; local development defaults to localhost; production defaults to `https://studio.aeilot.top`. Each route and locale generates its own Open Graph/Twitter title and description, canonical URL, and language alternates through `lib/rediscover-metadata.ts`. All locales share the English 1200 × 630 product artwork.
 
 The privacy policy is presented as the official policy, with a scope notice covering Rediscover and its companion browser extensions. Search indexing is enabled. The notice is based on `RediscoverSchema.swift`, `PersistenceBootstrap.swift`, `AIFallbackProviding.swift`, `OpenRouterClient.swift`, `OpenRouterCredentials.swift`, `APIKeyStore.swift`, `JevClient.swift`, `JevDecisionProvider.swift`, `DecisionUsageLog.swift`, `ProductEventLog.swift`, `AIUsageLog.swift`, and browser-extension manifests/READMEs in the Rediscover repository.
 
@@ -21,7 +20,7 @@ After the site is deployed, point the app’s `AppAbout.feedbackURL` and `privac
 
 ## Artwork provenance
 
-Product icon and screenshots are copied from Rediscover’s asset catalog and `Resources/GuideImages`: GuideToday-iPhone, GuideOpen-iPhone, GuideRadarDiscover-iPhone. The Open Graph image is composed from the same Today screenshot and website typography.
+Product icon and screenshots are copied from Rediscover’s asset catalog and `Resources/GuideImages`: GuideToday-iPhone (`today.png`), GuideWorth-iPhone (`rate.png`), GuideDetails-iPhone (`library.png`), GuideRadarDiscover-iPhone (`radar.png`). The Open Graph image is composed from the same Today screenshot and website typography.
 
 Official App Store badges are retained unmodified, with proportional display sizing:
 
@@ -32,16 +31,22 @@ Keep App Store badges linked to the actual available product, not a store home p
 
 ## Product presentation and motion
 
-All three app screenshots use the shared `Device` component with a CSS device shell. Store badges remain official, unmodified artwork. Scroll reveal uses IntersectionObserver; the hero device has a small requestAnimationFrame-driven scroll offset. Reduced-motion preferences disable reveals, the hero entrance, and smooth scrolling. Content remains visible when JavaScript is unavailable.
+All app screenshots use the shared `Device` component with a CSS device shell. Store badges remain official, unmodified artwork. Scroll reveal uses IntersectionObserver; the hero device has a small requestAnimationFrame-driven scroll offset. Reduced-motion preferences disable reveals, the hero entrance, and smooth scrolling. Content remains visible when JavaScript is unavailable.
 
 The iCloud section uses the actual GuideToday-iPad screenshot alongside GuideToday-iPhone, both framed by Device. Development output is `.next`; production build/start output is `.next-production` so build verification cannot overwrite active development chunks.
 
 Chinese App Store badges use the unmodified Apple Marketing Tools API artwork for `zh-cn` and `zh-tw`. Japanese, Korean, French, German, and Spanish badges use the same official API with `ja-jp`, `ko-kr`, `fr-fr`, `de-de`, and `es-es`. Product screenshots retain their original in-app English content.
 
-## Features and plans
+## Landing page
 
-The landing page includes OPML import, Shared reading spaces, optional Jev Decisions, and OpenRouter BYOK, followed by Free / Pro lifetime / Pro+ plan cards. All new copy is required for all eight languages through `lib/rediscover-features.ts`. Header, hero, and footer links provide access to these sections, including on mobile.
+Positioning: “Read-later apps help you save. Rediscover helps you come back.” The design and the claims each section may make are in `docs/superpowers/specs/2026-09-28-rediscover-marketing-redesign-design.md`.
 
-Entitlements follow the app's `PurchaseProducts.swift` and `PaywallView.swift`: Free allows 15 articles, 3 Radar sources and 1 owned active shared space; Pro removes article/source limits, adds imports, iCloud and BYOK, and permits 3 owned spaces; Pro+ includes Pro features, higher Cloud AI usage and unlimited owned spaces. Joining spaces remains free. Localized production prices must be confirmed before displaying numeric prices: the website directs visitors to the app, rather than using the local StoreKit test configuration as a published price list.
+`app/rediscover/page.tsx` composes the sections in `components/rediscover/sections/`: Hero, Problem, Today (`#today`), Save (`#save`, with `#extensions` kept as an alias), Radar (`#radar`), Shared (`#shared`), Pocket (`#pocket`), Cloud (`#icloud`), Plans (`#plans`) and End (`#download`). Header links go to Today, Radar, Shared and Plans.
 
-Shared is presented as a full-width feature immediately after Radar, with the iPhone screenshot copied from `app-store-connect/screenshots/ios/en-US/native-source/06-shared.png` to `public/rediscover/shared.png`. The remaining feature grid covers OPML, Jev, and OpenRouter. Hero Features and Plans links align to the right.
+Section copy for all eight languages lives in `lib/rediscover-landing.ts`, typed with `satisfies Record<Language, LandingCopy>`, so a missing string fails the build. Strings quoted from the app (Today styles, the reminder, the rating prompt, Radar’s daily-limit line) use the app’s own translations from `Rediscover/*.lproj/Localizable.strings`. Shell, support, privacy and the iCloud section keep their copy in `lib/rediscover.ts`, `lib/rediscover-translations.ts` and `lib/rediscover-international.ts`.
+
+Jev is credited once, in the Save section, for smart categories; it is optional in the app and off by default.
+
+Plans show US prices from `Rediscover.storekit` (Pro $29.99 lifetime; Pro+ $5.99 monthly or $49.99 yearly), with a note that local prices appear in the App Store. Entitlements follow `PurchaseProducts.swift`: Free allows 15 articles, 3 Radar sources and 1 owned shared space; Pro removes article and source limits, adds imports, iCloud and BYOK, and permits 3 owned spaces; Pro+ adds managed Cloud AI with higher limits and unlimited owned spaces. Joining spaces is free. Update the prices here if StoreKit changes.
+
+Shared uses the iPhone screenshot from `app-store-connect/screenshots/ios/en-US/native-source/06-shared.png` (`public/rediscover/shared.png`). The Shared feature flag must be on in the release build for this section to stay accurate.
