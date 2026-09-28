@@ -1259,6 +1259,70 @@ html:has(.rd) {
   .rd-plans { padding-top: 64px; padding-bottom: 64px; }
 }
 
+.rd-faq {
+  padding-top: 40px;
+  padding-bottom: 60px;
+  scroll-margin-top: 90px;
+}
+.rd .rd-faq h2 {
+  max-width: 800px;
+  font-size: clamp(32px, 4vw, 52px);
+  line-height: 1.12;
+  letter-spacing: -1.5px;
+}
+.rd-faq-list {
+  margin-top: 36px;
+  border-top: 1px solid #d2d2d7;
+}
+.rd-faq details {
+  border-bottom: 1px solid #d2d2d7;
+}
+.rd-faq summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  padding: 22px 0;
+  cursor: pointer;
+  list-style: none;
+}
+.rd-faq summary::-webkit-details-marker {
+  display: none;
+}
+.rd-faq summary::after {
+  content: "+";
+  flex-shrink: 0;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1;
+  color: var(--soft);
+  transition: transform 250ms var(--stagger-ease);
+}
+.rd-faq details[open] summary::after {
+  transform: rotate(45deg);
+}
+.rd .rd-faq h3 {
+  font-size: 20px;
+  line-height: 1.35;
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+.rd-faq summary:hover h3 {
+  color: #0071e3;
+}
+.rd-faq details p {
+  max-width: 780px;
+  margin: -6px 0 24px;
+  font-size: 17px;
+  line-height: 1.6;
+}
+@media (max-width: 700px) {
+  .rd .rd-faq h3 { font-size: 18px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .rd-faq summary::after { transition: none; }
+}
+
 .rd-shared {
   background: #f3f6fa;
   overflow: hidden;

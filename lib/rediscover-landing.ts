@@ -151,9 +151,9 @@ export const landing = {
     ],
     pricingNote:
       "US prices. Your local price appears in the App Store. Cloud usage limits apply; bring-your-own-key model costs are billed by your provider.",
-    metaTitle: "Rediscover — the other half of read-later",
+    metaTitle: "Rediscover — the read-later app that brings your pages back",
     metaDescription:
-      "Read-later apps help you save. Rediscover helps you come back, with one, three or five of your saved pages each day, and Radar for fresh writing from sites you love. iPhone, iPad and Mac.",
+      "The read-later app built for coming back: one, three or five saved pages each day, plus Radar for fresh writing. A Pocket alternative for iPhone, iPad and Mac.",
   },
   "zh-Hans": {
     navToday: "Today",
@@ -244,9 +244,9 @@ export const landing = {
     ],
     pricingNote:
       "以上为美国区价格，当地价格以 App Store 显示为准。云端服务设有用量限制；自带 API Key 的模型费用由服务商另行计费。",
-    metaTitle: "Rediscover — 稍后读的另一半",
+    metaTitle: "Rediscover — 会把收藏带回来的稍后读 App",
     metaDescription:
-      "稍后读 App 帮你收藏，Rediscover 帮你回来读：每天带回一篇、三篇或五篇收藏，还有 Radar 从你喜欢的网站发现新文章。适用于 iPhone、iPad 和 Mac。",
+      "为「回来读」而设计的稍后读 App：每天带回一篇、三篇或五篇收藏，Radar 还会发现新文章。适用于 iPhone、iPad 和 Mac 的 Pocket 替代品。",
   },
   "zh-Hant": {
     navToday: "Today",
@@ -337,9 +337,9 @@ export const landing = {
     ],
     pricingNote:
       "以上為美國區價格，當地價格以 App Store 顯示為準。雲端服務設有用量限制；自備 API Key 的模型費用由服務商另行計費。",
-    metaTitle: "Rediscover — 稍後讀的另一半",
+    metaTitle: "Rediscover — 會把收藏帶回來的稍後讀 App",
     metaDescription:
-      "稍後讀 App 幫你收藏，Rediscover 幫你回來讀：每天帶回一篇、三篇或五篇收藏，還有 Radar 從你喜歡的網站發現新文章。適用於 iPhone、iPad 和 Mac。",
+      "為「回來讀」而設計的稍後讀 App：每天帶回一篇、三篇或五篇收藏，Radar 還會發現新文章。適用於 iPhone、iPad 和 Mac 的 Pocket 替代方案。",
   },
   ja: {
     navToday: "Today",
@@ -432,9 +432,9 @@ export const landing = {
     ],
     pricingNote:
       "米国での価格です。お住まいの地域の価格は App Store に表示されます。クラウドには利用上限があります。BYOK のモデル利用料はプロバイダーから別途請求されます。",
-    metaTitle: "Rediscover — 「あとで読む」の、もう半分",
+    metaTitle: "Rediscover — 保存したページを届け直す「あとで読む」アプリ",
     metaDescription:
-      "「あとで読む」アプリは保存を助け、Rediscoverは読み返すことを助けます。保存したページから毎日1件、3件、5件を届け、Radarがお気に入りのサイトの新しい記事を見つけます。iPhone、iPad、Mac対応。",
+      "読み返すための「あとで読む」アプリ。保存したページから毎日1件・3件・5件を届け、Radarが新しい記事を見つけます。iPhone、iPad、Mac向けのPocket代替アプリ。",
   },
   ko: {
     navToday: "Today",
@@ -527,9 +527,9 @@ export const landing = {
     ],
     pricingNote:
       "미국 가격입니다. 지역 가격은 App Store에 표시됩니다. 클라우드 사용 한도가 적용되며 BYOK 모델 비용은 제공업체가 별도로 청구합니다.",
-    metaTitle: "Rediscover — 나중에 읽기의 나머지 절반",
+    metaTitle: "Rediscover — 저장한 글을 다시 가져오는 나중에 읽기 앱",
     metaDescription:
-      "나중에 읽기 앱은 저장을 돕고, Rediscover는 다시 읽기를 돕습니다. 매일 저장한 페이지 중 한 편, 세 편 또는 다섯 편을 가져오고, Radar가 좋아하는 사이트의 새 글을 찾아 줍니다. iPhone, iPad, Mac용.",
+      "다시 읽기를 위해 만든 나중에 읽기 앱. 매일 저장한 페이지 중 한 편, 세 편 또는 다섯 편을 가져오고 Radar가 새 글을 찾아 줍니다. iPhone, iPad, Mac용 Pocket 대안.",
   },
   fr: {
     navToday: "Today",
@@ -623,9 +623,9 @@ export const landing = {
     ],
     pricingNote:
       "Prix américains. Le prix local s’affiche dans l’App Store. Des limites d’utilisation cloud s’appliquent ; les frais des modèles BYOK sont facturés par votre fournisseur.",
-    metaTitle: "Rediscover — l’autre moitié de la lecture différée",
+    metaTitle: "Rediscover — l’app de lecture différée qui vous rapporte vos pages",
     metaDescription:
-      "Les apps de lecture différée vous aident à enregistrer. Rediscover vous aide à y revenir : une, trois ou cinq pages enregistrées chaque jour, et Radar pour les nouveautés de vos sites préférés. iPhone, iPad et Mac.",
+      "L’app de lecture différée pensée pour y revenir : une, trois ou cinq pages enregistrées par jour, et Radar pour les nouveautés. Une alternative à Pocket sur iPhone, iPad et Mac.",
   },
   de: {
     navToday: "Today",
@@ -718,9 +718,9 @@ export const landing = {
     ],
     pricingNote:
       "US-Preise. Deinen lokalen Preis siehst du im App Store. Für die Cloud gelten Nutzungslimits; BYOK-Modellkosten rechnet dein Anbieter separat ab.",
-    metaTitle: "Rediscover — die andere Hälfte von Später-lesen",
+    metaTitle: "Rediscover — die Später-lesen-App, die deine Seiten zurückbringt",
     metaDescription:
-      "Später-lesen-Apps helfen beim Speichern. Rediscover hilft beim Zurückkommen: jeden Tag eine, drei oder fünf gespeicherte Seiten, dazu Radar für Neues von deinen Lieblingsseiten. Für iPhone, iPad und Mac.",
+      "Die Später-lesen-App fürs Zurückkommen: jeden Tag eine, drei oder fünf gespeicherte Seiten, dazu Radar für Neues. Eine Pocket-Alternative für iPhone, iPad und Mac.",
   },
   es: {
     navToday: "Today",
@@ -813,8 +813,8 @@ export const landing = {
     ],
     pricingNote:
       "Precios de EE. UU. Tu precio local aparece en el App Store. Se aplican límites de uso en la nube; tu proveedor factura aparte los costes de modelos BYOK.",
-    metaTitle: "Rediscover — la otra mitad de leer más tarde",
+    metaTitle: "Rediscover — la app para leer más tarde que te devuelve tus páginas",
     metaDescription:
-      "Las apps de leer más tarde te ayudan a guardar. Rediscover te ayuda a volver: una, tres o cinco páginas guardadas cada día, y Radar para lo nuevo de tus sitios favoritos. Para iPhone, iPad y Mac.",
+      "La app para leer más tarde pensada para volver: una, tres o cinco páginas guardadas al día, y Radar para lo nuevo. Una alternativa a Pocket para iPhone, iPad y Mac.",
   },
 } satisfies Record<Language, LandingCopy>;

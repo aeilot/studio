@@ -49,6 +49,19 @@ export function rediscoverMetadata(
   return {
     title: { absolute: title },
     description,
+    applicationName: "Rediscover",
+    category: "productivity",
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        "max-snippet": -1,
+        "max-image-preview": "large",
+        "max-video-preview": -1,
+      },
+    },
     alternates: {
       canonical: url,
       languages: Object.fromEntries([

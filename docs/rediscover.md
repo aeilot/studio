@@ -49,4 +49,13 @@ Jev is credited once, in the Save section, for smart categories; it is optional 
 
 Plans show US prices from `Rediscover.storekit` (Pro $29.99 lifetime; Pro+ $5.99 monthly or $49.99 yearly), with a note that local prices appear in the App Store. Entitlements follow `PurchaseProducts.swift`: Free allows 15 articles, 3 Radar sources and 1 owned shared space; Pro removes article and source limits, adds imports, iCloud and BYOK, and permits 3 owned spaces; Pro+ adds managed Cloud AI with higher limits and unlimited owned spaces. Joining spaces is free. Update the prices here if StoreKit changes.
 
+## Search and AI discoverability
+
+- `app/robots.ts` allows all crawlers, lists AI crawlers explicitly (GPTBot, OAI-SearchBot, ClaudeBot, PerplexityBot, Google-Extended, Applebot-Extended and others), and points to the sitemap.
+- `app/sitemap.ts` lists the studio pages and every Rediscover route in all eight languages, each with `hreflang` alternates.
+- `app/llms.txt/route.ts` serves `/llms.txt`, a plain-text fact sheet for AI assistants built from the English landing copy and FAQ, so it stays in sync with the page.
+- The landing page embeds JSON-LD from `lib/rediscover-schema.ts`: Organization, WebSite, SoftwareApplication (platforms, languages, screenshots, offers with US prices), WebPage and FAQPage. `downloadUrl` and the App Store `sameAs` appear automatically once `rediscoverLinks.appStore` is a real URL.
+- The visible FAQ (`#faq`, copy in `lib/rediscover-faq.ts`) mirrors the FAQPage data. Keep answers factual; they are what search engines and assistants quote.
+- Titles and descriptions (`metaTitle`, `metaDescription` in `lib/rediscover-landing.ts`) include “read-later app”, “Pocket alternative” and the platforms. Google is allowed full-length snippets and large image previews.
+
 Shared uses the iPhone screenshot from `app-store-connect/screenshots/ios/en-US/native-source/06-shared.png` (`public/rediscover/shared.png`). The Shared feature flag must be on in the release build for this section to stay accurate.

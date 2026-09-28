@@ -13,6 +13,8 @@ import { Pocket } from "@/components/rediscover/sections/Pocket";
 import { Cloud } from "@/components/rediscover/sections/Cloud";
 import { Plans } from "@/components/rediscover/sections/Plans";
 import { End } from "@/components/rediscover/sections/End";
+import { Faq } from "@/components/rediscover/sections/Faq";
+import { jsonLd, rediscoverSchema } from "@/lib/rediscover-schema";
 
 export default async function Rediscover({
   searchParams,
@@ -23,6 +25,10 @@ export default async function Rediscover({
   const props = { lang, c: translations[lang], l: landing[lang] };
   return (
     <Shell lang={lang}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: jsonLd(rediscoverSchema(lang)) }}
+      />
       <Hero {...props} />
       <Problem {...props} />
       <Today {...props} />
@@ -32,6 +38,7 @@ export default async function Rediscover({
       <Pocket {...props} />
       <Cloud {...props} />
       <Plans {...props} />
+      <Faq {...props} />
       <End {...props} />
     </Shell>
   );

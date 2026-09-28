@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { landing } from "@/lib/rediscover-landing";
+import { faq } from "@/lib/rediscover-faq";
 import Link from "next/link";
 import { LanguageMenu } from "./LanguageMenu";
 import { Motion } from "./Motion";
@@ -75,6 +76,7 @@ export function Shell({
         </div>
         <nav aria-label={copy.footerNav}>
           <a href={`${home}#plans`}>{l.navPlans}</a>
+          <a href={`${home}#faq`}>{faq[lang].eyebrow}</a>
           <Link href={route("/support", lang)}>{l.support}</Link>
           <Link href={route("/privacy", lang)}>{copy.privacy}</Link>
           <Link href="/">Evolution Studio ↗</Link>
