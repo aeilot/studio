@@ -1,6 +1,11 @@
+import { HtmlLang } from "@/components/HtmlLang";
+import { htmlLangHeader } from "@/lib/html-lang";
+import { language } from "@/lib/rediscover-languages";
+import { siteUrl } from "@/lib/site";
 import type { Metadata } from "next";
 import { Lora, Source_Sans_3 } from "next/font/google";
-import { siteUrl } from "@/lib/site";
+import { headers } from "next/headers";
+import { Suspense } from "react";
 import "./globals.css";
 
 const lora = Lora({
@@ -21,14 +26,21 @@ export const metadata: Metadata = {
   description: "Innovations Change The World",
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const lang = language((await headers()).get(htmlLangHeader) ?? undefined);
+
   return (
-    <html lang="en" className={`${lora.variable} ${sourceSans.variable}`}>
-      <body>{children}</body>
+    <html lang={lang} className={`${lora.variable} ${sourceSans.variable}`}>
+      <body>
+        <Suspense fallback={null}>
+          <HtmlLang />
+        </Suspense>
+        {children}
+      </body>
     </html>
   );
 }

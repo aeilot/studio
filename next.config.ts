@@ -19,5 +19,14 @@ export default function nextConfig(phase: string): NextConfig {
         "./public/rediscover/icon.png",
       ],
     },
+    async redirects() {
+      return [
+        {
+          source: "/about/index.html",
+          destination: "/about",
+          statusCode: 301,
+        },
+      ];
+    },
   };
 }
