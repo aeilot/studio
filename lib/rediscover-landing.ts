@@ -36,6 +36,7 @@ export type LandingCopy = {
   saveBody: string;
   captures: readonly string[];
   jevCredit: string;
+  aiNote: string;
   libraryAlt: string;
   radarLabel: string;
   radarTitle: string;
@@ -49,6 +50,7 @@ export type LandingCopy = {
   sharedAlt: string;
   pocketTitle: string;
   pocketBody: string;
+  importSources: readonly string[];
   pocketNote: string;
   plansEyebrow: string;
   plansTitle: string;
@@ -69,7 +71,7 @@ export const landing = {
     heroEyebrow: "The other half of read-later.",
     heroLead:
       "Most apps are great at saving. Rediscover is built for coming back: every day it brings back one, three or five pages you saved, and lets you know when they’re ready.",
-    pocketLink: "Coming from Pocket?",
+    pocketLink: "Switching from another app?",
     problemEyebrow: "THE PROBLEM WITH LATER",
     problemTitle: "Later has a way of becoming never.",
     problemBody:
@@ -92,6 +94,8 @@ export const landing = {
       "Save from the share sheet, Safari, Chrome, Shortcuts or the clipboard. Rediscover reads each page, writes a short summary and files it for you. No tags to invent, no folders to maintain.",
     captures: ["Share sheet", "Safari", "Chrome", "Shortcuts", "Clipboard"],
     jevCredit: "Smart categories, powered by Jev.",
+    aiNote:
+      "On-device AI with Apple Intelligence: summaries and categories are made on your device, on every plan. Requires iOS 26 or macOS 26 on a supported device, in a supported region.",
     libraryAlt:
       "A saved page in the Rediscover Library with its summary, topics and category",
     radarLabel: "03 / RADAR",
@@ -107,14 +111,15 @@ export const landing = {
     sharedNote:
       "Joining a space is always free. Your plan sets how many spaces you can create.",
     sharedAlt: "Shared spaces in Rediscover",
-    pocketTitle: "Coming from Pocket?",
+    pocketTitle: "Coming from Pocket, Instapaper or Raindrop?",
     pocketBody:
-      "Bring your Pocket export, browser bookmarks or a CSV. Rediscover starts bringing them back tomorrow.",
+      "Import from Pocket, Instapaper, Raindrop.io, Readwise Reader, a CSV file or browser bookmarks. On Mac, bring in Safari, Chrome and Edge bookmarks directly. Rediscover starts bringing them back tomorrow.",
+    importSources: ["Pocket", "Instapaper", "Raindrop.io", "Readwise Reader", "CSV", "Bookmarks HTML"],
     pocketNote: "Imports are included with Pro.",
     plansEyebrow: "PLANS",
     plansTitle: "A plan for the way you read.",
     plansIntro:
-      "Start free. Pay once for Pro, or subscribe to Pro+ when you want Cloud AI without your own key.",
+      "Start free. Pay once for Pro, or subscribe to Pro+ when you want Cloud AI without your own key. On-device Apple Intelligence is included on every plan.",
     plans: [
       {
         name: "Free",
@@ -132,7 +137,7 @@ export const landing = {
         billing: "One-time purchase · Lifetime",
         items: [
           "Unlimited saved articles and Radar sources",
-          "Pocket, bookmark and OPML imports",
+          "Imports from Pocket, Instapaper, Raindrop and more, plus OPML",
           "iCloud sync across devices",
           "Bring your own OpenRouter key",
           "Create 3 shared spaces",
@@ -164,7 +169,7 @@ export const landing = {
     heroEyebrow: "稍后读，还有另一半",
     heroLead:
       "大多数 App 擅长收藏。Rediscover 为「回来读」而设计：每天从你的收藏中带回一篇、三篇或五篇，准备好了就告诉你。",
-    pocketLink: "从 Pocket 迁移？",
+    pocketLink: "从其他 App 迁移？",
     problemEyebrow: "「稍后」的问题",
     problemTitle: "稍后读，常常变成不再读",
     problemBody:
@@ -187,6 +192,8 @@ export const landing = {
       "通过分享菜单、Safari、Chrome、快捷指令或剪贴板保存网页。Rediscover 会读取内容、写好简短摘要并自动归类。不用想标签，也不用维护文件夹。",
     captures: ["分享菜单", "Safari", "Chrome", "快捷指令", "剪贴板"],
     jevCredit: "智能分类由 Jev 提供支持。",
+    aiNote:
+      "内置 Apple 智能本地 AI：摘要和分类直接在设备上生成，所有方案均可使用。需要 iOS 26 或 macOS 26，以及支持 Apple 智能的设备和地区。",
     libraryAlt: "Rediscover 资料库中的一篇收藏，带有摘要、主题和分类",
     radarLabel: "03 / RADAR",
     radarTitle: "新文章，也懂得适可而止",
@@ -200,14 +207,15 @@ export const landing = {
       "邀请朋友进入共读空间，分享值得讨论的网页，把最好的存进自己的资料库。",
     sharedNote: "加入空间始终免费；可创建的空间数量取决于你的方案。",
     sharedAlt: "Rediscover 中的共读空间",
-    pocketTitle: "从 Pocket 迁移？",
+    pocketTitle: "从 Pocket、Instapaper 或 Raindrop 迁移？",
     pocketBody:
-      "导入 Pocket 导出文件、浏览器书签或 CSV。明天起，Rediscover 就会开始把它们带回来。",
+      "支持导入 Pocket、Instapaper、Raindrop.io、Readwise Reader、CSV 文件和浏览器书签；在 Mac 上还能直接导入 Safari、Chrome 和 Edge 书签。明天起，Rediscover 就会开始把它们带回来。",
+    importSources: ["Pocket", "Instapaper", "Raindrop.io", "Readwise Reader", "CSV", "书签 HTML"],
     pocketNote: "导入功能包含在 Pro 中。",
     plansEyebrow: "方案",
     plansTitle: "找到适合你的阅读方案",
     plansIntro:
-      "从免费开始。一次买断 Pro；想用无需自备密钥的云端 AI，可订阅 Pro+。",
+      "从免费开始。一次买断 Pro；想用无需自备密钥的云端 AI，可订阅 Pro+。所有方案都包含 Apple 智能本地 AI。",
     plans: [
       {
         name: "免费版",
@@ -225,7 +233,7 @@ export const landing = {
         billing: "一次购买 · 终身使用",
         items: [
           "无限保存文章与 Radar 来源",
-          "导入 Pocket、书签与 OPML",
+          "导入 Pocket、Instapaper、Raindrop 等收藏及 OPML",
           "跨设备 iCloud 同步",
           "自带 OpenRouter API Key",
           "创建 3 个共读空间",
@@ -257,7 +265,7 @@ export const landing = {
     heroEyebrow: "稍後讀，還有另一半",
     heroLead:
       "大多數 App 擅長收藏。Rediscover 為「回來讀」而設計：每天從你的收藏中帶回一篇、三篇或五篇，準備好了就告訴你。",
-    pocketLink: "從 Pocket 轉移？",
+    pocketLink: "從其他 App 轉移？",
     problemEyebrow: "「稍後」的問題",
     problemTitle: "稍後讀，常常變成不再讀",
     problemBody:
@@ -280,6 +288,8 @@ export const landing = {
       "透過分享選單、Safari、Chrome、捷徑或剪貼簿儲存網頁。Rediscover 會讀取內容、寫好簡短摘要並自動歸類。不用想標籤，也不用維護資料夾。",
     captures: ["分享選單", "Safari", "Chrome", "捷徑", "剪貼簿"],
     jevCredit: "智慧分類由 Jev 提供支援。",
+    aiNote:
+      "內建 Apple Intelligence 本機 AI：摘要和分類直接在裝置上產生，所有方案皆可使用。需要 iOS 26 或 macOS 26，以及支援 Apple Intelligence 的裝置和地區。",
     libraryAlt: "Rediscover 資料庫中的一篇收藏，附有摘要、主題和分類",
     radarLabel: "03 / RADAR",
     radarTitle: "新文章，也懂得適可而止",
@@ -293,14 +303,15 @@ export const landing = {
       "邀請朋友進入共讀空間，分享值得討論的網頁，把最好的存進自己的資料庫。",
     sharedNote: "加入空間始終免費；可建立的空間數量取決於你的方案。",
     sharedAlt: "Rediscover 中的共讀空間",
-    pocketTitle: "從 Pocket 轉移？",
+    pocketTitle: "從 Pocket、Instapaper 或 Raindrop 轉移？",
     pocketBody:
-      "匯入 Pocket 匯出檔、瀏覽器書籤或 CSV。明天起，Rediscover 就會開始把它們帶回來。",
+      "支援匯入 Pocket、Instapaper、Raindrop.io、Readwise Reader、CSV 檔案和瀏覽器書籤；在 Mac 上還能直接匯入 Safari、Chrome 和 Edge 書籤。明天起，Rediscover 就會開始把它們帶回來。",
+    importSources: ["Pocket", "Instapaper", "Raindrop.io", "Readwise Reader", "CSV", "書籤 HTML"],
     pocketNote: "匯入功能包含在 Pro 中。",
     plansEyebrow: "方案",
     plansTitle: "找到適合你的閱讀方案",
     plansIntro:
-      "從免費開始。一次買斷 Pro；想用無需自備金鑰的雲端 AI，可訂閱 Pro+。",
+      "從免費開始。一次買斷 Pro；想用無需自備金鑰的雲端 AI，可訂閱 Pro+。所有方案都包含 Apple Intelligence 本機 AI。",
     plans: [
       {
         name: "免費版",
@@ -318,7 +329,7 @@ export const landing = {
         billing: "一次購買 · 終身使用",
         items: [
           "無限儲存文章與 Radar 來源",
-          "匯入 Pocket、書籤與 OPML",
+          "匯入 Pocket、Instapaper、Raindrop 等收藏及 OPML",
           "跨裝置 iCloud 同步",
           "自備 OpenRouter API Key",
           "建立 3 個共讀空間",
@@ -350,7 +361,7 @@ export const landing = {
     heroEyebrow: "「あとで読む」の、もう半分。",
     heroLead:
       "多くのアプリは保存が得意です。Rediscoverは「読み返す」ためのアプリ。保存したページから毎日1件、3件、または5件を選んで届け、準備ができたらお知らせします。",
-    pocketLink: "Pocketから移行しますか？",
+    pocketLink: "ほかのアプリから移行しますか？",
     problemEyebrow: "「あとで」の問題",
     problemTitle: "「あとで」は、いつの間にか「読まない」に。",
     problemBody:
@@ -373,6 +384,8 @@ export const landing = {
       "共有シート、Safari、Chrome、ショートカット、クリップボードから保存できます。Rediscoverがページを読み、短い要約を書き、自動で分類します。タグを考える必要も、フォルダを管理する必要もありません。",
     captures: ["共有シート", "Safari", "Chrome", "ショートカット", "クリップボード"],
     jevCredit: "スマートな分類は Jev が支えています。",
+    aiNote:
+      "Apple Intelligenceによる端末内AI：要約と分類を端末上で生成し、すべてのプランで使えます。iOS 26またはmacOS 26と、対応するデバイス・地域が必要です。",
     libraryAlt:
       "要約、トピック、カテゴリが付いたRediscoverライブラリの保存ページ",
     radarLabel: "03 / RADAR",
@@ -388,14 +401,15 @@ export const landing = {
     sharedNote:
       "スペースへの参加はいつでも無料。作成できるスペースの数はプランによって異なります。",
     sharedAlt: "Rediscoverの共有スペース",
-    pocketTitle: "Pocketから移行しますか？",
+    pocketTitle: "Pocket、Instapaper、Raindropから移行しますか？",
     pocketBody:
-      "Pocketのエクスポート、ブラウザのブックマーク、CSVを読み込めます。明日から、Rediscoverがそれらを届け始めます。",
+      "Pocket、Instapaper、Raindrop.io、Readwise Reader、CSVファイル、ブラウザのブックマークを読み込めます。Macでは、Safari、Chrome、Edgeのブックマークも直接取り込めます。明日から、Rediscoverがそれらを届け始めます。",
+    importSources: ["Pocket", "Instapaper", "Raindrop.io", "Readwise Reader", "CSV", "ブックマークHTML"],
     pocketNote: "読み込みはProに含まれます。",
     plansEyebrow: "プラン",
     plansTitle: "読み方に合ったプランを。",
     plansIntro:
-      "無料で始められます。Proは買い切り。自分のキーなしでCloud AIを使いたいならPro+を。",
+      "無料で始められます。Proは買い切り。自分のキーなしでCloud AIを使いたいならPro+を。端末内のApple Intelligenceはすべてのプランに含まれます。",
     plans: [
       {
         name: "無料",
@@ -413,7 +427,7 @@ export const landing = {
         billing: "買い切り · 永続利用",
         items: [
           "記事の保存・Radar の情報源が無制限",
-          "Pocket、ブックマーク、OPML の読み込み",
+          "Pocket、Instapaper、Raindropなどからの読み込みとOPML",
           "デバイス間の iCloud 同期",
           "OpenRouter API キーの持ち込み",
           "共有スペースを3つ作成",
@@ -445,7 +459,7 @@ export const landing = {
     heroEyebrow: "나중에 읽기의 나머지 절반.",
     heroLead:
       "대부분의 앱은 저장에 능숙합니다. Rediscover는 다시 돌아오기 위해 만들어졌습니다. 매일 저장한 페이지 중 한 편, 세 편 또는 다섯 편을 다시 가져오고, 준비되면 알려 드립니다.",
-    pocketLink: "Pocket에서 오셨나요?",
+    pocketLink: "다른 앱에서 오셨나요?",
     problemEyebrow: "'나중에'의 문제",
     problemTitle: "나중은 어느새 '안 읽음'이 됩니다.",
     problemBody:
@@ -468,6 +482,8 @@ export const landing = {
       "공유 시트, Safari, Chrome, 단축어 또는 클립보드에서 저장하세요. Rediscover가 페이지를 읽고, 짧은 요약을 쓰고, 알아서 분류합니다. 태그를 고민할 필요도, 폴더를 관리할 필요도 없습니다.",
     captures: ["공유 시트", "Safari", "Chrome", "단축어", "클립보드"],
     jevCredit: "스마트 분류는 Jev가 지원합니다.",
+    aiNote:
+      "Apple Intelligence 온디바이스 AI: 요약과 분류를 기기에서 바로 생성하며 모든 요금제에서 사용할 수 있습니다. iOS 26 또는 macOS 26과 지원되는 기기 및 지역이 필요합니다.",
     libraryAlt:
       "요약, 주제, 카테고리가 표시된 Rediscover 라이브러리의 저장 페이지",
     radarLabel: "03 / RADAR",
@@ -483,14 +499,15 @@ export const landing = {
     sharedNote:
       "공간 참여는 언제나 무료입니다. 만들 수 있는 공간 수는 요금제에 따라 달라집니다.",
     sharedAlt: "Rediscover의 공유 공간",
-    pocketTitle: "Pocket에서 오셨나요?",
+    pocketTitle: "Pocket, Instapaper, Raindrop에서 오셨나요?",
     pocketBody:
-      "Pocket 내보내기 파일, 브라우저 북마크 또는 CSV를 가져오세요. 내일부터 Rediscover가 다시 가져오기 시작합니다.",
+      "Pocket, Instapaper, Raindrop.io, Readwise Reader, CSV 파일, 브라우저 북마크를 가져올 수 있습니다. Mac에서는 Safari, Chrome, Edge 북마크도 바로 가져옵니다. 내일부터 Rediscover가 다시 가져오기 시작합니다.",
+    importSources: ["Pocket", "Instapaper", "Raindrop.io", "Readwise Reader", "CSV", "북마크 HTML"],
     pocketNote: "가져오기는 Pro에 포함됩니다.",
     plansEyebrow: "요금제",
     plansTitle: "읽는 방식에 맞는 요금제.",
     plansIntro:
-      "무료로 시작하세요. Pro는 한 번 구매로, 개인 키 없이 Cloud AI를 쓰려면 Pro+를 구독하세요.",
+      "무료로 시작하세요. Pro는 한 번 구매로, 개인 키 없이 Cloud AI를 쓰려면 Pro+를 구독하세요. 온디바이스 Apple Intelligence는 모든 요금제에 포함됩니다.",
     plans: [
       {
         name: "무료",
@@ -508,7 +525,7 @@ export const landing = {
         billing: "한 번 구매 · 평생 이용",
         items: [
           "기사 저장 및 Radar 소스 무제한",
-          "Pocket, 북마크, OPML 가져오기",
+          "Pocket, Instapaper, Raindrop 등에서 가져오기 및 OPML",
           "기기 간 iCloud 동기화",
           "OpenRouter API 키 직접 사용",
           "공유 공간 3개 만들기",
@@ -540,7 +557,7 @@ export const landing = {
     heroEyebrow: "L’autre moitié de la lecture différée.",
     heroLead:
       "La plupart des apps savent enregistrer. Rediscover est conçu pour y revenir : chaque jour, il vous rapporte une, trois ou cinq pages enregistrées, et vous prévient quand elles sont prêtes.",
-    pocketLink: "Vous venez de Pocket ?",
+    pocketLink: "Vous venez d’une autre app ?",
     problemEyebrow: "LE PROBLÈME DU « PLUS TARD »",
     problemTitle: "« Plus tard » finit souvent par devenir « jamais ».",
     problemBody:
@@ -563,6 +580,8 @@ export const landing = {
       "Enregistrez depuis la feuille de partage, Safari, Chrome, Raccourcis ou le presse-papiers. Rediscover lit chaque page, rédige un court résumé et la classe pour vous. Aucune étiquette à inventer, aucun dossier à entretenir.",
     captures: ["Feuille de partage", "Safari", "Chrome", "Raccourcis", "Presse-papiers"],
     jevCredit: "Catégories intelligentes, propulsées par Jev.",
+    aiNote:
+      "IA sur l’appareil avec Apple Intelligence : résumés et catégories sont générés sur votre appareil, avec toutes les formules. Nécessite iOS 26 ou macOS 26, sur un appareil et dans une région compatibles.",
     libraryAlt:
       "Une page enregistrée dans la bibliothèque Rediscover, avec résumé, sujets et catégorie",
     radarLabel: "03 / RADAR",
@@ -579,14 +598,15 @@ export const landing = {
     sharedNote:
       "Rejoindre un espace est toujours gratuit. Votre formule détermine combien d’espaces vous pouvez créer.",
     sharedAlt: "Espaces partagés dans Rediscover",
-    pocketTitle: "Vous venez de Pocket ?",
+    pocketTitle: "Vous venez de Pocket, Instapaper ou Raindrop ?",
     pocketBody:
-      "Importez votre export Pocket, vos favoris de navigateur ou un fichier CSV. Dès demain, Rediscover commence à vous les rapporter.",
+      "Importez depuis Pocket, Instapaper, Raindrop.io, Readwise Reader, un fichier CSV ou les favoris de votre navigateur. Sur Mac, récupérez directement les favoris de Safari, Chrome et Edge. Dès demain, Rediscover commence à vous les rapporter.",
+    importSources: ["Pocket", "Instapaper", "Raindrop.io", "Readwise Reader", "CSV", "Favoris HTML"],
     pocketNote: "Les imports sont inclus avec Pro.",
     plansEyebrow: "FORMULES",
     plansTitle: "Une formule pour votre façon de lire.",
     plansIntro:
-      "Commencez gratuitement. Achetez Pro une fois pour toutes, ou abonnez-vous à Pro+ pour l’IA cloud sans clé personnelle.",
+      "Commencez gratuitement. Achetez Pro une fois pour toutes, ou abonnez-vous à Pro+ pour l’IA cloud sans clé personnelle. L’IA sur l’appareil avec Apple Intelligence est incluse dans toutes les formules.",
     plans: [
       {
         name: "Gratuit",
@@ -604,7 +624,7 @@ export const landing = {
         billing: "Achat unique · À vie",
         items: [
           "Articles enregistrés et sources Radar illimités",
-          "Import Pocket, favoris et OPML",
+          "Import depuis Pocket, Instapaper, Raindrop et plus, ainsi qu’OPML",
           "Synchronisation iCloud entre appareils",
           "Votre propre clé API OpenRouter",
           "Créez 3 espaces partagés",
@@ -636,7 +656,7 @@ export const landing = {
     heroEyebrow: "Die andere Hälfte von Später-lesen.",
     heroLead:
       "Die meisten Apps können gut speichern. Rediscover ist fürs Zurückkommen gemacht: Jeden Tag bringt es eine, drei oder fünf deiner gespeicherten Seiten zurück und sagt dir Bescheid, wenn sie bereit sind.",
-    pocketLink: "Du kommst von Pocket?",
+    pocketLink: "Du kommst von einer anderen App?",
     problemEyebrow: "DAS PROBLEM MIT SPÄTER",
     problemTitle: "Aus später wird oft nie.",
     problemBody:
@@ -659,6 +679,8 @@ export const landing = {
       "Speichere über das Teilen-Menü, Safari, Chrome, Kurzbefehle oder die Zwischenablage. Rediscover liest jede Seite, schreibt eine kurze Zusammenfassung und ordnet sie für dich ein. Keine Tags ausdenken, keine Ordner pflegen.",
     captures: ["Teilen-Menü", "Safari", "Chrome", "Kurzbefehle", "Zwischenablage"],
     jevCredit: "Intelligente Kategorien, unterstützt von Jev.",
+    aiNote:
+      "KI auf dem Gerät mit Apple Intelligence: Zusammenfassungen und Kategorien entstehen direkt auf deinem Gerät, in jedem Tarif. Erfordert iOS 26 oder macOS 26 auf einem unterstützten Gerät in einer unterstützten Region.",
     libraryAlt:
       "Eine gespeicherte Seite in der Rediscover-Bibliothek mit Zusammenfassung, Themen und Kategorie",
     radarLabel: "03 / RADAR",
@@ -674,14 +696,15 @@ export const landing = {
     sharedNote:
       "Der Beitritt zu einem Raum ist immer kostenlos. Dein Tarif bestimmt, wie viele Räume du erstellen kannst.",
     sharedAlt: "Gemeinsame Räume in Rediscover",
-    pocketTitle: "Du kommst von Pocket?",
+    pocketTitle: "Du kommst von Pocket, Instapaper oder Raindrop?",
     pocketBody:
-      "Importiere deinen Pocket-Export, Browser-Lesezeichen oder eine CSV-Datei. Ab morgen bringt Rediscover sie dir zurück.",
+      "Importiere aus Pocket, Instapaper, Raindrop.io, Readwise Reader, einer CSV-Datei oder Browser-Lesezeichen. Auf dem Mac übernimmst du Safari-, Chrome- und Edge-Lesezeichen direkt. Ab morgen bringt Rediscover sie dir zurück.",
+    importSources: ["Pocket", "Instapaper", "Raindrop.io", "Readwise Reader", "CSV", "Lesezeichen-HTML"],
     pocketNote: "Importe sind in Pro enthalten.",
     plansEyebrow: "TARIFE",
     plansTitle: "Ein Tarif für deine Art zu lesen.",
     plansIntro:
-      "Starte kostenlos. Kaufe Pro einmalig oder abonniere Pro+, wenn du Cloud-KI ohne eigenen Schlüssel möchtest.",
+      "Starte kostenlos. Kaufe Pro einmalig oder abonniere Pro+, wenn du Cloud-KI ohne eigenen Schlüssel möchtest. Apple Intelligence auf dem Gerät ist in jedem Tarif enthalten.",
     plans: [
       {
         name: "Kostenlos",
@@ -699,7 +722,7 @@ export const landing = {
         billing: "Einmalkauf · Dauerhafter Zugang",
         items: [
           "Unbegrenzte Artikel und Radar-Quellen",
-          "Pocket-, Lesezeichen- und OPML-Import",
+          "Import aus Pocket, Instapaper, Raindrop und mehr, dazu OPML",
           "iCloud-Synchronisierung zwischen Geräten",
           "Eigener OpenRouter-API-Schlüssel",
           "3 gemeinsame Räume erstellen",
@@ -731,7 +754,7 @@ export const landing = {
     heroEyebrow: "La otra mitad de leer más tarde.",
     heroLead:
       "La mayoría de las apps saben guardar. Rediscover está hecho para volver: cada día te trae una, tres o cinco páginas que guardaste y te avisa cuando están listas.",
-    pocketLink: "¿Vienes de Pocket?",
+    pocketLink: "¿Vienes de otra app?",
     problemEyebrow: "EL PROBLEMA DEL «MÁS TARDE»",
     problemTitle: "«Más tarde» suele acabar en «nunca».",
     problemBody:
@@ -754,6 +777,8 @@ export const landing = {
       "Guarda desde el menú Compartir, Safari, Chrome, Atajos o el portapapeles. Rediscover lee cada página, escribe un breve resumen y la clasifica por ti. Sin etiquetas que inventar ni carpetas que mantener.",
     captures: ["Menú Compartir", "Safari", "Chrome", "Atajos", "Portapapeles"],
     jevCredit: "Categorías inteligentes, con la ayuda de Jev.",
+    aiNote:
+      "IA en el dispositivo con Apple Intelligence: los resúmenes y las categorías se generan en tu dispositivo, en todos los planes. Requiere iOS 26 o macOS 26 en un dispositivo y región compatibles.",
     libraryAlt:
       "Una página guardada en la biblioteca de Rediscover con resumen, temas y categoría",
     radarLabel: "03 / RADAR",
@@ -769,14 +794,15 @@ export const landing = {
     sharedNote:
       "Unirse a un espacio siempre es gratis. Tu plan determina cuántos espacios puedes crear.",
     sharedAlt: "Espacios compartidos en Rediscover",
-    pocketTitle: "¿Vienes de Pocket?",
+    pocketTitle: "¿Vienes de Pocket, Instapaper o Raindrop?",
     pocketBody:
-      "Importa tu exportación de Pocket, los marcadores del navegador o un CSV. A partir de mañana, Rediscover empieza a traértelos de vuelta.",
+      "Importa desde Pocket, Instapaper, Raindrop.io, Readwise Reader, un archivo CSV o los marcadores del navegador. En Mac, trae directamente los marcadores de Safari, Chrome y Edge. A partir de mañana, Rediscover empieza a traértelos de vuelta.",
+    importSources: ["Pocket", "Instapaper", "Raindrop.io", "Readwise Reader", "CSV", "Marcadores HTML"],
     pocketNote: "Las importaciones están incluidas en Pro.",
     plansEyebrow: "PLANES",
     plansTitle: "Un plan para tu forma de leer.",
     plansIntro:
-      "Empieza gratis. Compra Pro una sola vez o suscríbete a Pro+ si quieres IA en la nube sin clave propia.",
+      "Empieza gratis. Compra Pro una sola vez o suscríbete a Pro+ si quieres IA en la nube sin clave propia. La IA en el dispositivo con Apple Intelligence está incluida en todos los planes.",
     plans: [
       {
         name: "Gratis",
@@ -794,7 +820,7 @@ export const landing = {
         billing: "Compra única · De por vida",
         items: [
           "Artículos guardados y fuentes Radar ilimitados",
-          "Importación de Pocket, marcadores y OPML",
+          "Importación desde Pocket, Instapaper, Raindrop y más, además de OPML",
           "Sincronización iCloud entre dispositivos",
           "Tu propia clave API de OpenRouter",
           "Crea 3 espacios compartidos",

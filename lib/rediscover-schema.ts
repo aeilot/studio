@@ -61,7 +61,7 @@ export function rediscoverSchema(lang: Language) {
         screenshot: ["today", "rate", "library", "radar", "shared"].map(
           (name) => `${origin}/rediscover/${name}.png`,
         ),
-        featureList: [l.todayTitle, l.saveTitle, l.radarTitle, l.sharedTitle, l.pocketTitle],
+        featureList: [l.todayTitle, l.saveTitle, l.aiNote, l.radarTitle, l.sharedTitle, l.pocketTitle],
         publisher: { "@id": `${origin}/#studio` },
         author: { "@type": "Person", name: "aeilot", url: ABOUT_URL },
         offers: [

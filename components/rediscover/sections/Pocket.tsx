@@ -6,6 +6,11 @@ export function Pocket({ l }: SectionProps) {
       <div className="rd-pocket-inner">
         <h2 id="pocket-title">{l.pocketTitle}</h2>
         <p>{l.pocketBody}</p>
+        <ul className="rd-captures rd-import-sources">
+          {l.importSources.map((source) => (
+            <li key={source}>{source}</li>
+          ))}
+        </ul>
         <p className="rd-pocket-note">
           {l.pocketNote}{" "}
           <a className="rd-text-link" href="#plans">

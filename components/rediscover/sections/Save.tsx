@@ -17,6 +17,7 @@ export function Save({ lang, c, l }: SectionProps) {
               <li key={capture}>{capture}</li>
             ))}
           </ul>
+          <p className="rd-ai-note">{l.aiNote}</p>
           <p className="rd-credit">{l.jevCredit}</p>
         </div>
         <div className="rd-save-art">

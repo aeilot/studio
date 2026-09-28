@@ -59,13 +59,31 @@ export function Motion() {
       window.addEventListener("scroll", scroll, { passive: true });
       update();
     };
+    const jump = (event: MouseEvent) => {
+      if (event.defaultPrevented || event.button !== 0) return;
+      if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+      const link = (event.target as Element).closest<HTMLAnchorElement>("a[href]");
+      if (!link || !root.contains(link)) return;
+      const url = new URL(link.href);
+      if (!url.hash || url.pathname !== location.pathname || url.search !== location.search) return;
+      const target = document.getElementById(decodeURIComponent(url.hash.slice(1)));
+      if (!target) return;
+      event.preventDefault();
+      target.scrollIntoView({
+        behavior: preference.matches ? "auto" : "smooth",
+        block: "start",
+      });
+      history.pushState(history.state, "", url.hash);
+    };
     configure();
     preference.addEventListener("change", configure);
+    root.addEventListener("click", jump);
     return () => {
       observer?.disconnect();
       cancelAnimationFrame(frame);
       window.removeEventListener("scroll", scroll);
       preference.removeEventListener("change", configure);
+      root.removeEventListener("click", jump);
       root
         .querySelectorAll(".rd-reveal")
         .forEach((el) => el.classList.remove("rd-reveal"));

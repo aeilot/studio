@@ -29,7 +29,7 @@ Every claim below is backed by the Rediscover app code (`../Rediscover`).
 | Radar learns from saves, opens, ratings and mutes. | `RadarHostAffinity.swift`, `RadarSelector.swift` |
 | Radar stops after five saves a day. | `FeedModels.swift` (`dailySaveLimit = 5`), `RadarEmptyState.swift` |
 | Shared spaces: invite people, add links, save to your Library; joining is free. | `SharedReadingSync.swift`, `PurchaseEntitlements` |
-| Import Pocket ZIP, bookmarks HTML and CSV (Pro). | `Features/Import`, `Services/Import` |
+| Import from Pocket (ZIP or CSV), Instapaper, Raindrop.io, Readwise Reader, generic CSV and bookmarks HTML; direct Safari, Chrome and Edge bookmark import on Mac (Pro). Omnivore is not supported. | `Features/Import/BookmarkImportFlow.swift`, `Services/Import` |
 | Plans: Free / Pro $29.99 lifetime / Pro+ $5.99 per month or $49.99 per year. | `PurchaseProducts.swift`, `Rediscover.storekit` |
 
 ### Claims the page must not make

@@ -25,8 +25,8 @@ export function GET() {
 - Saving: share sheet, Safari, Chrome, Shortcuts and the clipboard. Each page is summarized and categorized automatically; no tags or folders to manage. Optional "Smart Discovery and Categories" is powered by Jev.
 - Radar: discovers new pages from RSS/Atom feeds of sites in your Library and shows them as swipeable cards (right to save, left to pass). Learns from saves, opens and ratings. Stops after 5 saves per day. Pro adds OPML import and manual sources.
 - Shared: invite-only reading spaces synced with iCloud. Joining is free.
-- Imports (Pro): Pocket export, browser bookmarks (HTML) and CSV.
-- AI: on-device Apple Intelligence on compatible devices, or optional cloud processing through OpenRouter (bring your own key on Pro, managed Cloud AI on Pro+).
+- Imports (Pro): Pocket (ZIP or CSV), Instapaper, Raindrop.io, Readwise Reader, generic CSV and browser bookmarks HTML. On Mac, Safari, Chrome and Edge bookmarks import directly.
+- AI: on-device Apple Intelligence (iOS 26 or macOS 26 on supported devices and regions) writes summaries and organizes categories without sending page text to a cloud model, on every plan including Free. Optional cloud processing goes through OpenRouter (bring your own key on Pro, managed Cloud AI on Pro+).
 - Languages: ${rediscoverLanguages.map((locale) => locale.label).join(", ")}.
 
 ## Pricing (US dollars)
