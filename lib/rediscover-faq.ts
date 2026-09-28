@@ -32,6 +32,10 @@ export const faq = {
         a: "Yes. On iPhone, iPad and Mac with Apple Intelligence (iOS 26 or macOS 26 or later, in supported regions), Rediscover writes summaries and organizes categories on-device, without sending page text to a cloud model. It works on every plan, including Free. If you prefer, you can use cloud models through OpenRouter instead.",
       },
       {
+        q: "Can I save YouTube videos, posts from X or podcasts?",
+        a: "Yes. Besides articles, Rediscover recognizes links from YouTube, Vimeo, X, Reddit, Apple Podcasts, Spotify and Apple Music, and fills in the title, author, description and cover automatically. Videos and podcast episodes also show their running time. Short links such as t.co and spotify.link are resolved first.",
+      },
+      {
         q: "Is Radar an RSS reader?",
         a: "Not exactly. Radar uses RSS and Atom feeds from the sites in your Library, but instead of an unread inbox it shows new pages as cards: swipe right to save, left to pass. It learns from what you save, open and rate, and after five saves it stops for the day. Pro adds OPML import and manual sources.",
       },
@@ -72,6 +76,10 @@ export const faq = {
       {
         q: "Rediscover 支持 Apple 智能吗？",
         a: "支持。在支持 Apple 智能的 iPhone、iPad 和 Mac 上（iOS 26 或 macOS 26 及以上，且所在地区可用），Rediscover 会直接在设备上生成摘要、整理分类，不会把网页内容发送给云端模型。所有方案均可使用，包括免费版。你也可以改用通过 OpenRouter 连接的云端模型。",
+      },
+      {
+        q: "可以收藏 YouTube 视频、推文或播客吗？",
+        a: "可以。除了文章，Rediscover 还能识别 YouTube、Vimeo、X、Reddit、Apple 播客、Spotify、Apple Music，以及哔哩哔哩、小红书、知乎、微信公众号、小宇宙和网易云音乐的链接，自动补全标题、作者、简介和封面；视频和播客还会显示时长。t.co、b23.tv、xhslink 等短链接也会先自动解析。",
       },
       {
         q: "Radar 是 RSS 阅读器吗？",
@@ -116,6 +124,10 @@ export const faq = {
         a: "支援。在支援 Apple Intelligence 的 iPhone、iPad 和 Mac 上（iOS 26 或 macOS 26 以上，且所在地區可用），Rediscover 會直接在裝置上產生摘要、整理分類，不會把網頁內容傳送給雲端模型。所有方案皆可使用，包括免費版。你也可以改用透過 OpenRouter 連接的雲端模型。",
       },
       {
+        q: "可以收藏 YouTube 影片、推文或 Podcast 嗎？",
+        a: "可以。除了文章，Rediscover 還能辨識 YouTube、Vimeo、X、Reddit、Apple Podcast、Spotify、Apple Music，以及嗶哩嗶哩、小紅書、知乎、微信公眾號、小宇宙和網易雲音樂的連結，自動補齊標題、作者、簡介和封面；影片和 Podcast 還會顯示時長。t.co、b23.tv、xhslink 等短網址也會先自動解析。",
+      },
+      {
         q: "Radar 是 RSS 閱讀器嗎？",
         a: "不完全是。Radar 使用你資料庫中網站的 RSS 和 Atom 訂閱來源，但它不是未讀收件匣，而是把新文章做成卡片：右滑收藏，左滑略過。它會從你的收藏、開啟和評分中學習，收藏滿五篇就當天停止。Pro 還支援匯入 OPML 和手動新增來源。",
       },
@@ -156,6 +168,10 @@ export const faq = {
       {
         q: "RediscoverはApple Intelligenceに対応していますか？",
         a: "はい。Apple Intelligenceに対応したiPhone、iPad、Mac（iOS 26またはmacOS 26以降、対応地域）では、要約の作成とカテゴリの整理を端末上で行い、ページの本文をクラウドのモデルに送信しません。無料を含むすべてのプランで使えます。OpenRouter経由のクラウドモデルを選ぶこともできます。",
+      },
+      {
+        q: "YouTubeの動画、Xのポスト、ポッドキャストも保存できますか？",
+        a: "はい。記事のほかに、YouTube、Vimeo、X、Reddit、Apple Podcasts、Spotify、Apple Musicのリンクを認識し、タイトル、作者、説明、カバー画像を自動で取り込みます。動画とポッドキャストのエピソードは長さも表示されます。t.coやspotify.linkなどの短縮リンクも先に展開されます。",
       },
       {
         q: "RadarはRSSリーダーですか？",
@@ -200,6 +216,10 @@ export const faq = {
         a: "네. Apple Intelligence를 지원하는 iPhone, iPad, Mac(iOS 26 또는 macOS 26 이상, 지원 지역)에서는 요약 작성과 카테고리 정리를 기기에서 처리하며, 페이지 본문을 클라우드 모델로 보내지 않습니다. 무료를 포함한 모든 요금제에서 사용할 수 있습니다. 원하면 OpenRouter를 통한 클라우드 모델을 대신 사용할 수도 있습니다.",
       },
       {
+        q: "YouTube 영상, X 게시물, 팟캐스트도 저장할 수 있나요?",
+        a: "네. 기사 외에도 YouTube, Vimeo, X, Reddit, Apple 팟캐스트, Spotify, Apple Music 링크를 인식해 제목, 작성자, 설명, 커버를 자동으로 채웁니다. 영상과 팟캐스트 에피소드는 재생 시간도 표시됩니다. t.co, spotify.link 같은 단축 링크도 먼저 풀어 줍니다.",
+      },
+      {
         q: "Radar는 RSS 리더인가요?",
         a: "조금 다릅니다. Radar는 라이브러리에 있는 사이트의 RSS와 Atom 피드를 사용하지만, 읽지 않은 글 목록 대신 새 페이지를 카드로 보여 줍니다. 오른쪽으로 밀면 저장, 왼쪽으로 밀면 넘기기. 저장, 열람, 평가에서 배우고, 다섯 편을 저장하면 그날은 멈춥니다. Pro에서는 OPML 가져오기와 소스 직접 추가가 가능합니다.",
       },
@@ -240,6 +260,10 @@ export const faq = {
       {
         q: "Rediscover utilise-t-il Apple Intelligence ?",
         a: "Oui. Sur les iPhone, iPad et Mac compatibles avec Apple Intelligence (iOS 26 ou macOS 26 et versions ultérieures, dans les régions prises en charge), Rediscover rédige les résumés et organise les catégories sur l’appareil, sans envoyer le texte des pages à un modèle cloud. C’est disponible dans toutes les formules, y compris Gratuit. Vous pouvez aussi choisir des modèles cloud via OpenRouter.",
+      },
+      {
+        q: "Puis-je enregistrer des vidéos YouTube, des posts X ou des podcasts ?",
+        a: "Oui. En plus des articles, Rediscover reconnaît les liens YouTube, Vimeo, X, Reddit, Apple Podcasts, Spotify et Apple Music, et remplit automatiquement le titre, l’auteur, la description et la couverture. Les vidéos et les épisodes de podcast affichent aussi leur durée. Les liens courts comme t.co et spotify.link sont d’abord résolus.",
       },
       {
         q: "Radar est-il un lecteur RSS ?",
@@ -284,6 +308,10 @@ export const faq = {
         a: "Ja. Auf iPhone, iPad und Mac mit Apple Intelligence (iOS 26 oder macOS 26 und neuer, in unterstützten Regionen) schreibt Rediscover Zusammenfassungen und ordnet Kategorien direkt auf dem Gerät, ohne Seitentext an ein Cloud-Modell zu senden. Das funktioniert in jedem Tarif, auch in Kostenlos. Wenn du möchtest, kannst du stattdessen Cloud-Modelle über OpenRouter nutzen.",
       },
       {
+        q: "Kann ich YouTube-Videos, X-Posts oder Podcasts speichern?",
+        a: "Ja. Neben Artikeln erkennt Rediscover Links von YouTube, Vimeo, X, Reddit, Apple Podcasts, Spotify und Apple Music und ergänzt Titel, Autor, Beschreibung und Cover automatisch. Videos und Podcast-Folgen zeigen außerdem ihre Laufzeit. Kurzlinks wie t.co und spotify.link werden vorher aufgelöst.",
+      },
+      {
         q: "Ist Radar ein RSS-Reader?",
         a: "Nicht ganz. Radar nutzt RSS- und Atom-Feeds der Websites in deiner Bibliothek, zeigt neue Seiten aber nicht als ungelesenen Posteingang, sondern als Karten: nach rechts wischen zum Speichern, nach links zum Überspringen. Es lernt aus dem, was du speicherst, öffnest und bewertest, und hört nach fünf gespeicherten Seiten für den Tag auf. Pro bietet zusätzlich OPML-Import und manuelle Quellen.",
       },
@@ -324,6 +352,10 @@ export const faq = {
       {
         q: "¿Rediscover usa Apple Intelligence?",
         a: "Sí. En iPhone, iPad y Mac compatibles con Apple Intelligence (iOS 26 o macOS 26 o posterior, en regiones compatibles), Rediscover escribe los resúmenes y organiza las categorías en el dispositivo, sin enviar el texto de las páginas a un modelo en la nube. Funciona en todos los planes, incluido Gratis. Si lo prefieres, puedes usar modelos en la nube a través de OpenRouter.",
+      },
+      {
+        q: "¿Puedo guardar vídeos de YouTube, posts de X o pódcasts?",
+        a: "Sí. Además de artículos, Rediscover reconoce enlaces de YouTube, Vimeo, X, Reddit, Apple Podcasts, Spotify y Apple Music, y completa automáticamente el título, el autor, la descripción y la portada. Los vídeos y los episodios de pódcast también muestran su duración. Los enlaces cortos como t.co y spotify.link se resuelven primero.",
       },
       {
         q: "¿Radar es un lector RSS?",

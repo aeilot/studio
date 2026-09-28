@@ -23,6 +23,7 @@ export function GET() {
 - Platforms: iPhone, iPad and Mac. Safari extension bundled with the Mac app; Chrome extension saves to the Mac app.
 - Today: a daily selection of 1, 3 or 5 saved pages (styles: Focused, Balanced, Expanded; default Balanced), chosen from pages saved at least a day ago. Optional daily reminder.
 - Saving: share sheet, Safari, Chrome, Shortcuts and the clipboard. Each page is summarized and categorized automatically; no tags or folders to manage. Optional "Smart Discovery and Categories" is powered by Jev.
+- Platforms: besides articles, recognizes links from YouTube, Vimeo, X, Reddit, Apple Podcasts, Spotify and Apple Music, plus Bilibili, Xiaohongshu, Zhihu, WeChat Official Accounts, Xiaoyuzhou and NetEase Cloud Music. Fills in title, author, description and cover; videos and podcast episodes also get their running time. Short links (t.co, b23.tv, xhslink, spotify.link) are resolved.
 - Radar: discovers new pages from RSS/Atom feeds of sites in your Library and shows them as swipeable cards (right to save, left to pass). Learns from saves, opens and ratings. Stops after 5 saves per day. Pro adds OPML import and manual sources.
 - Shared: invite-only reading spaces synced with iCloud. Joining is free.
 - Imports (Pro): Pocket (ZIP or CSV), Instapaper, Raindrop.io, Readwise Reader, generic CSV and browser bookmarks HTML. On Mac, Safari, Chrome and Edge bookmarks import directly.

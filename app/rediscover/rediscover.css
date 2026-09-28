@@ -454,6 +454,21 @@ html:has(.rd) {
   background: #f5f5f7;
   font-size: 14px;
 }
+.rd-platforms-block {
+  margin-top: 36px;
+}
+.rd .rd-platforms-block h3 {
+  font-size: 21px;
+  margin: 0 0 8px;
+}
+.rd .rd-platforms-block p {
+  font-size: 17px;
+  line-height: 1.5;
+  margin: 0;
+}
+.rd-platforms-block .rd-captures {
+  margin-top: 16px;
+}
 .rd .rd-ai-note {
   max-width: 470px;
   margin-top: 26px;

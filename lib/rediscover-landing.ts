@@ -35,6 +35,9 @@ export type LandingCopy = {
   saveTitle: string;
   saveBody: string;
   captures: readonly string[];
+  platformsTitle: string;
+  platformsBody: string;
+  platforms: readonly string[];
   jevCredit: string;
   aiNote: string;
   libraryAlt: string;
@@ -93,6 +96,10 @@ export const landing = {
     saveBody:
       "Save from the share sheet, Safari, Chrome, Shortcuts or the clipboard. Rediscover reads each page, writes a short summary and files it for you. No tags to invent, no folders to maintain.",
     captures: ["Share sheet", "Safari", "Chrome", "Shortcuts", "Clipboard"],
+    platformsTitle: "Videos, posts and podcasts, too.",
+    platformsBody:
+      "Save a YouTube video, a Reddit thread or a podcast episode, and Rediscover fills in the title, author, description and cover, plus the running time for videos and episodes.",
+    platforms: ["YouTube", "Vimeo", "X", "Reddit", "Apple Podcasts", "Spotify", "Apple Music"],
     jevCredit: "Smart categories, powered by Jev.",
     aiNote:
       "On-device AI with Apple Intelligence: summaries and categories are made on your device, on every plan. Requires iOS 26 or macOS 26 on a supported device, in a supported region.",
@@ -191,6 +198,10 @@ export const landing = {
     saveBody:
       "通过分享菜单、Safari、Chrome、快捷指令或剪贴板保存网页。Rediscover 会读取内容、写好简短摘要并自动归类。不用想标签，也不用维护文件夹。",
     captures: ["分享菜单", "Safari", "Chrome", "快捷指令", "剪贴板"],
+    platformsTitle: "视频、帖子和播客，也能收",
+    platformsBody:
+      "收藏 YouTube 视频、Reddit 帖子或一期播客，Rediscover 会自动补全标题、作者、简介和封面；视频和播客还会显示时长。",
+    platforms: ["YouTube", "Vimeo", "X", "Reddit", "Apple 播客", "Spotify", "Apple Music", "哔哩哔哩", "小红书", "知乎", "微信公众号", "小宇宙", "网易云音乐"],
     jevCredit: "智能分类由 Jev 提供支持。",
     aiNote:
       "内置 Apple 智能本地 AI：摘要和分类直接在设备上生成，所有方案均可使用。需要 iOS 26 或 macOS 26，以及支持 Apple 智能的设备和地区。",
@@ -287,6 +298,10 @@ export const landing = {
     saveBody:
       "透過分享選單、Safari、Chrome、捷徑或剪貼簿儲存網頁。Rediscover 會讀取內容、寫好簡短摘要並自動歸類。不用想標籤，也不用維護資料夾。",
     captures: ["分享選單", "Safari", "Chrome", "捷徑", "剪貼簿"],
+    platformsTitle: "影片、貼文和 Podcast，也能收",
+    platformsBody:
+      "收藏 YouTube 影片、Reddit 貼文或一集 Podcast，Rediscover 會自動補齊標題、作者、簡介和封面；影片和 Podcast 還會顯示時長。",
+    platforms: ["YouTube", "Vimeo", "X", "Reddit", "Apple Podcast", "Spotify", "Apple Music", "嗶哩嗶哩", "小紅書", "知乎", "微信公眾號", "小宇宙", "網易雲音樂"],
     jevCredit: "智慧分類由 Jev 提供支援。",
     aiNote:
       "內建 Apple Intelligence 本機 AI：摘要和分類直接在裝置上產生，所有方案皆可使用。需要 iOS 26 或 macOS 26，以及支援 Apple Intelligence 的裝置和地區。",
@@ -383,6 +398,10 @@ export const landing = {
     saveBody:
       "共有シート、Safari、Chrome、ショートカット、クリップボードから保存できます。Rediscoverがページを読み、短い要約を書き、自動で分類します。タグを考える必要も、フォルダを管理する必要もありません。",
     captures: ["共有シート", "Safari", "Chrome", "ショートカット", "クリップボード"],
+    platformsTitle: "動画も、投稿も、ポッドキャストも。",
+    platformsBody:
+      "YouTubeの動画、Redditのスレッド、ポッドキャストのエピソードを保存すると、タイトル、作者、説明、カバー画像を自動で取り込み、動画とエピソードは長さも表示します。",
+    platforms: ["YouTube", "Vimeo", "X", "Reddit", "Apple Podcasts", "Spotify", "Apple Music"],
     jevCredit: "スマートな分類は Jev が支えています。",
     aiNote:
       "Apple Intelligenceによる端末内AI：要約と分類を端末上で生成し、すべてのプランで使えます。iOS 26またはmacOS 26と、対応するデバイス・地域が必要です。",
@@ -481,6 +500,10 @@ export const landing = {
     saveBody:
       "공유 시트, Safari, Chrome, 단축어 또는 클립보드에서 저장하세요. Rediscover가 페이지를 읽고, 짧은 요약을 쓰고, 알아서 분류합니다. 태그를 고민할 필요도, 폴더를 관리할 필요도 없습니다.",
     captures: ["공유 시트", "Safari", "Chrome", "단축어", "클립보드"],
+    platformsTitle: "영상, 게시물, 팟캐스트도.",
+    platformsBody:
+      "YouTube 영상, Reddit 스레드, 팟캐스트 에피소드를 저장하면 제목, 작성자, 설명, 커버를 자동으로 채우고 영상과 에피소드는 재생 시간도 보여 줍니다.",
+    platforms: ["YouTube", "Vimeo", "X", "Reddit", "Apple 팟캐스트", "Spotify", "Apple Music"],
     jevCredit: "스마트 분류는 Jev가 지원합니다.",
     aiNote:
       "Apple Intelligence 온디바이스 AI: 요약과 분류를 기기에서 바로 생성하며 모든 요금제에서 사용할 수 있습니다. iOS 26 또는 macOS 26과 지원되는 기기 및 지역이 필요합니다.",
@@ -579,6 +602,10 @@ export const landing = {
     saveBody:
       "Enregistrez depuis la feuille de partage, Safari, Chrome, Raccourcis ou le presse-papiers. Rediscover lit chaque page, rédige un court résumé et la classe pour vous. Aucune étiquette à inventer, aucun dossier à entretenir.",
     captures: ["Feuille de partage", "Safari", "Chrome", "Raccourcis", "Presse-papiers"],
+    platformsTitle: "Vidéos, publications et podcasts aussi.",
+    platformsBody:
+      "Enregistrez une vidéo YouTube, un fil Reddit ou un épisode de podcast : Rediscover récupère le titre, l’auteur, la description et la couverture, ainsi que la durée des vidéos et des épisodes.",
+    platforms: ["YouTube", "Vimeo", "X", "Reddit", "Apple Podcasts", "Spotify", "Apple Music"],
     jevCredit: "Catégories intelligentes, propulsées par Jev.",
     aiNote:
       "IA sur l’appareil avec Apple Intelligence : résumés et catégories sont générés sur votre appareil, avec toutes les formules. Nécessite iOS 26 ou macOS 26, sur un appareil et dans une région compatibles.",
@@ -678,6 +705,10 @@ export const landing = {
     saveBody:
       "Speichere über das Teilen-Menü, Safari, Chrome, Kurzbefehle oder die Zwischenablage. Rediscover liest jede Seite, schreibt eine kurze Zusammenfassung und ordnet sie für dich ein. Keine Tags ausdenken, keine Ordner pflegen.",
     captures: ["Teilen-Menü", "Safari", "Chrome", "Kurzbefehle", "Zwischenablage"],
+    platformsTitle: "Auch Videos, Posts und Podcasts.",
+    platformsBody:
+      "Speichere ein YouTube-Video, einen Reddit-Thread oder eine Podcast-Folge, und Rediscover ergänzt Titel, Autor, Beschreibung und Cover, bei Videos und Folgen auch die Laufzeit.",
+    platforms: ["YouTube", "Vimeo", "X", "Reddit", "Apple Podcasts", "Spotify", "Apple Music"],
     jevCredit: "Intelligente Kategorien, unterstützt von Jev.",
     aiNote:
       "KI auf dem Gerät mit Apple Intelligence: Zusammenfassungen und Kategorien entstehen direkt auf deinem Gerät, in jedem Tarif. Erfordert iOS 26 oder macOS 26 auf einem unterstützten Gerät in einer unterstützten Region.",
@@ -776,6 +807,10 @@ export const landing = {
     saveBody:
       "Guarda desde el menú Compartir, Safari, Chrome, Atajos o el portapapeles. Rediscover lee cada página, escribe un breve resumen y la clasifica por ti. Sin etiquetas que inventar ni carpetas que mantener.",
     captures: ["Menú Compartir", "Safari", "Chrome", "Atajos", "Portapapeles"],
+    platformsTitle: "También vídeos, publicaciones y pódcasts.",
+    platformsBody:
+      "Guarda un vídeo de YouTube, un hilo de Reddit o un episodio de pódcast y Rediscover completa el título, el autor, la descripción y la portada, además de la duración de vídeos y episodios.",
+    platforms: ["YouTube", "Vimeo", "X", "Reddit", "Apple Podcasts", "Spotify", "Apple Music"],
     jevCredit: "Categorías inteligentes, con la ayuda de Jev.",
     aiNote:
       "IA en el dispositivo con Apple Intelligence: los resúmenes y las categorías se generan en tu dispositivo, en todos los planes. Requiere iOS 26 o macOS 26 en un dispositivo y región compatibles.",
