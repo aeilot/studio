@@ -1,0 +1,228 @@
+{
+  "nav": [
+    "Produit",
+    "Assistance",
+    "Confidentialité"
+  ],
+  "skip": "Aller au contenu",
+  "navigation": "Navigation principale",
+  "footerNavigation": "Navigation du pied de page",
+  "homeLabel": "Accueil InspirPlanet",
+  "language": "Langue",
+  "theme": [
+    "Apparence",
+    "Choisir l’apparence",
+    "Système",
+    "Clair · Bonbon",
+    "Sombre · Espace"
+  ],
+  "footer": "Un peu d’espace pour vos idées.",
+  "hero": [
+    "Une planète pour chaque idée.",
+    "Notez-la. Dites-la à voix haute.",
+    "Laissez vos pensées devenir votre univers.",
+    "Explorer InspirPlanet",
+    "Texte et voix · Organisation en planètes · iCloud",
+    "Voyage à Kyoto",
+    "Écriture",
+    "Une nouvelle idée",
+    "Chaque petite pensée a sa propre orbite"
+  ],
+  "explore": [
+    "Commencez par une phrase",
+    "Notez d’abord.",
+    "Laissez grandir.",
+    "Une idée n’a pas besoin d’être complète. Une pensée ou une note vocale peut devenir une découverte sur votre planète."
+  ],
+  "features": [
+    [
+      "Capturer",
+      "Quelques mots. Ou votre voix.",
+      "Écrivez dans le champ de saisie ou maintenez une planète pour enregistrer. Le texte original et l’audio sont d’abord sauvegardés sur votre appareil, même hors ligne."
+    ],
+    [
+      "Organiser",
+      "Les projets sont des planètes, les thèmes des étoiles.",
+      "Une planète pour vos objectifs, une étoile pour vos intérêts durables. Les pensées non classées restent dans la Nébuleuse. L’IA en ligne aide à déterminer leur destination, leurs étiquettes, mots-clés et priorités."
+    ],
+    [
+      "Grandir",
+      "Faites se rencontrer vos idées.",
+      "Trouvez des idées liées depuis une note et extrayez les points clés des textes longs. La Nébuleuse propose des thèmes en grandissant. Vous confirmez toujours la création d’une planète."
+    ]
+  ],
+  "screenshotAlt": "Écran d’accueil d’InspirPlanet : saisissez une idée en bas ou maintenez une planète pour enregistrer",
+  "trust": [
+    "Votre univers vous accompagne",
+    "Sauvegardé localement.",
+    "Synchronisé avec vous.",
+    "Avec le même compte Apple, iCloud synchronise planètes, textes et enregistrements. L’organisation en ligne transmet les textes utiles ; la notice explique leur parcours.",
+    "Comprendre le traitement des données"
+  ],
+  "help": [
+    "Besoin d’aide ?",
+    "Trouvez votre prochaine orbite.",
+    "Consulter l’aide"
+  ],
+  "support": [
+    "ASSISTANCE",
+    "Un peu d’aide",
+    "pour votre univers.",
+    "De votre première note à la synchronisation entre appareils, voici les réponses aux questions fréquentes.",
+    "Encore une question ?",
+    "Contactez-nous.",
+    "Indiquez la version de l’app, le modèle, la version du système et les étapes du problème. Masquez les données privées des captures. Aucun besoin d’envoyer vos idées originales ou vos enregistrements.",
+    "Écrire à l’assistance",
+    "Lire la notice de confidentialité",
+    "Gérer les abonnements Apple"
+  ],
+  "questions": [
+    [
+      "Comment enregistrer une idée ?",
+      "L’app s’ouvre sur la Nébuleuse. Saisissez du texte en bas ou maintenez une planète pour enregistrer. Sur une planète ordinaire, les nouvelles notes y sont enregistrées. Le bouton des notes récentes ouvre une chronologie consultable et recherchable."
+    ],
+    [
+      "Planètes, étoiles et Nébuleuse : quelle différence ?",
+      "Les planètes accueillent les projets avec un objectif, les étoiles les thèmes durables et la Nébuleuse les notes non classées. Les noms et descriptions aident l’organisation en ligne. Vous pouvez aussi déplacer les notes vous-même."
+    ],
+    [
+      "Pourquoi une idée reste-t-elle dans la Nébuleuse ou en attente ?",
+      "Elle y reste si aucune planète ne convient, si le résultat est incertain ou sans connexion. Le texte sauvegardé reste local. Reconnectez-vous et gardez l’app au premier plan pour réessayer les tâches en attente ou échouées. Acceptez ou ignorez chaque suggestion de destination."
+    ],
+    [
+      "Que faire si l’audio n’est pas transcrit ?",
+      "Vérifiez les autorisations du micro et de reconnaissance vocale dans le système, et la langue de transcription dans l’app. La reconnaissance locale est prioritaire, puis celle d’Apple en ligne peut nécessiter une connexion. L’audio est conservé en cas d’échec ; réessayez depuis le menu de la note."
+    ],
+    [
+      "Que faire si iCloud ne synchronise pas ?",
+      "Utilisez le même compte Apple sur les deux appareils, autorisez iCloud pour l’app et vérifiez réseau et espace disponible. Consultez l’état du compte dans l’app, puis rouvrez-la sur les deux appareils. Un compte disponible ne signifie pas que le transfert est terminé. Continuez hors ligne ; ne supprimez pas l’app ou les données pour diagnostiquer."
+    ],
+    [
+      "Où trouver les idées liées, points clés et thèmes ?",
+      "Les détails d’une note proposent les idées liées. Les textes longs et transcriptions proposent les points clés. La Nébuleuse découvre automatiquement des thèmes dès trois notes admissibles ; la création nécessite votre confirmation. Les résultats dépendent du contenu et du réseau et ne remplacent pas l’original."
+    ],
+    [
+      "Comment modifier, déplacer ou supprimer une note ?",
+      "Ouvrez-la pour modifier. Déplacement et nouvelle transcription sont dans le menu. Une courte possibilité d’annulation suit la suppression. iCloud synchronise aussi les modifications et suppressions. Marquez les projets comme réalisés et les thèmes ou notes de la Nébuleuse pour les retrouver."
+    ],
+    [
+      "Comment restaurer un achat ou résilier ?",
+      "Ouvrez l’écran d’adhésion depuis les réglages et restaurez avec le compte Apple de l’achat. Attendez la confirmation d’Apple pour un achat en attente. Les prix et avantages sont ceux affichés dans l’app. Gérez ou résiliez via la page des abonnements Apple."
+    ]
+  ],
+  "privacy": [
+    "CONFIDENTIALITÉ",
+    "Vos idées vous appartiennent.",
+    "Le parcours des données doit être clair.",
+    "Texte original et audio sont d’abord sauvegardés sur votre appareil. Synchronisation, reconnaissance vocale et IA en ligne suivent des parcours distincts.",
+    "Sommaire de confidentialité",
+    "Politique de confidentialité",
+    "Contacter l’assistance confidentialité"
+  ],
+  "sections": [
+    [
+      "scope",
+      "01 / Champ d’application",
+      "Cette notice concerne l’app InspirPlanet d’Evolution Studio et ces pages produit, assistance et confidentialité. Elle décrit l’implémentation actuelle. Mise à jour : 2 octobre 2026."
+    ],
+    [
+      "local",
+      "02 / Stockage local et iCloud",
+      "Planètes, textes originaux, audio, étiquettes, mots-clés, priorités et états sont stockés sur l’appareil. Si iCloud est disponible, la base privée CloudKit les synchronise, suppressions comprises, entre appareils du même compte Apple. Apparence, vibrations et langue de transcription restent locales. Nous n’avons pas de tableau de bord permettant de consulter vos notes privées CloudKit. Apple exploite et traite les données de ses services cloud."
+    ],
+    [
+      "voice",
+      "03 / Microphone et reconnaissance vocale",
+      "Le micro et la transcription nécessitent leurs autorisations respectives. L’audio reste local et peut être synchronisé via iCloud. La transcription tente d’abord la reconnaissance sur appareil, puis peut envoyer l’audio à Apple pour la reconnaissance en ligne. Le texte transcrit peut entrer dans le traitement IA ci-dessous. Gérez les autorisations dans les réglages système."
+    ],
+    [
+      "ai",
+      "04 / IA en ligne et amélioration locale",
+      "Après sauvegarde ou modification, le texte, les mots-clés candidats et les noms, types et descriptions des planètes sont envoyés à notre Worker Cloudflare, puis via OpenRouter aux modèles pour le classement. Jev organise ; DeepSeek traite actuellement idées liées, thèmes et points clés. Les requêtes incluent identifiants, dates et destinations nécessaires. Apple Intelligence peut extraire des mots localement sur les appareils compatibles. Désactiver cette amélioration ne désactive pas l’organisation en ligne, qui n’est pas entièrement locale."
+    ],
+    [
+      "generation",
+      "05 / Idées liées et résultats générés",
+      "La recherche sélectionne les candidats localement puis transmet les textes utiles de la note et des candidats ; les liens automatiques peuvent être désactivés. L’extraction de points clés est déclenchée par vous et transmet le texte concerné. La découverte de thèmes envoie automatiquement jusqu’à 24 notes admissibles et les planètes ; la création demande confirmation. Les récapitulatifs envoient aussi des textes récents et anciens aux services de liens et résumés pendant l’utilisation au premier plan ; couper leurs notifications n’arrête pas leur génération. Seul le dernier récapitulatif reste local. Les autres résultats sont généralement mis en cache local sept jours, invalidés par modification ou suppression, et effaçables dans les réglages."
+    ],
+    [
+      "providers",
+      "06 / Prestataires et journaux",
+      "Cloudflare traite les requêtes ; OpenRouter transmet aux fournisseurs de modèles. Notre Worker ne journalise ni textes originaux, ni audio, ni clés ; seulement le statut d’erreur en cas d’échec. Adresses IP et métadonnées réseau servent au traitement, aux limites de fréquence et au diagnostic. Les prestataires peuvent conserver ou traiter les données selon leurs politiques. Nous ne garantissons ni absence totale de conservation ni absence universelle d’entraînement ; le traitement peut avoir lieu hors de votre région."
+    ],
+    [
+      "purchases",
+      "07 / Achats, site et e-mails",
+      "Apple StoreKit gère les achats. L’app lit les transactions et droits vérifiés ; nous ne recevons pas les données complètes des cartes. Ces pages n’intègrent ni suivi publicitaire, ni scripts d’analyse, ni cookies de suivi. Le stockage local du navigateur mémorise l’apparence sans envoyer d’idées. L’hébergement peut traiter IP, chemins et erreurs. Les rappels d’anciennes idées et de récapitulatifs sont des notifications locales. Exporter ou partager transmet le texte, les images et la signature facultative choisis à la destination sélectionnée. Les prestataires e-mail traitent adresse, message et pièces jointes ; nous les utilisons pour répondre et diagnostiquer."
+    ],
+    [
+      "control",
+      "08 / Vos choix et suppression",
+      "Vous pouvez modifier, déplacer, supprimer et gérer autorisations, iCloud, amélioration locale et liens automatiques. Supprimer efface les caches dérivés associés et se synchronise si activé. Désinstaller ne supprime pas forcément les données iCloud ni l’abonnement Apple ; utilisez leurs contrôles de stockage et d’abonnement. L’organisation en ligne n’a pas d’interrupteur distinct. Hors ligne, les textes ne sont pas envoyés ; une reconnexion avec l’app au premier plan peut transmettre les notes en attente."
+    ],
+    [
+      "contact",
+      "09 / Contact et mises à jour",
+      "Questions de traitement, demandes de confidentialité et problèmes : louis.chenluodeng@gmail.com. Fournissez seulement les informations nécessaires. Nous actualisons cette notice et sa date lorsque fonctions ou prestataires changent."
+    ]
+  ],
+  "meta": [
+    "Notez vite. Gardez les idées en ordre.",
+    "Assistance",
+    "Confidentialité",
+    "Écrivez depuis l’écran verrouillé ou maintenez une planète dans l’app pour parler. Chaque idée reste distincte et trouve sa place dans vos projets et thèmes.",
+    "Aide sur l’enregistrement, l’organisation, iCloud et les abonnements.",
+    "Comprenez le stockage local, iCloud, la reconnaissance vocale et l’IA en ligne d’InspirPlanet."
+  ],
+  "product": {
+    "eyebrow": "Le produit",
+    "title": "Noter, organiser et concrétiser.",
+    "body": "InspirPlanet est un carnet d’idées pour iPhone. Écrivez ou maintenez une planète pour enregistrer votre voix. Les idées sont d’abord sauvegardées localement ; l’IA en ligne organise ensuite étiquettes, mots-clés, priorité et destination. Les planètes accueillent les projets, les étoiles les intérêts durables, et la Nébuleuse les pensées non classées. Retrouvez des idées liées, extrayez les points clés, confirmez les thèmes proposés et marquez les idées réalisées. iCloud peut synchroniser planètes, textes et audio avec le même compte Apple.",
+    "note": "Ces écrans récents en anglais utilisent des notes de démonstration.",
+    "captions": [
+      "Saisie et accueil des planètes",
+      "Enregistrement, lecture et transcription",
+      "Étiquettes, mots-clés et destination",
+      "Vue des projets et des thèmes",
+      "Thème proposé avec ses notes sources",
+      "Idées de projets réalisées"
+    ]
+  },
+  "landing": {
+    "hero": [
+      "Notez vite.",
+      "Gardez les idées en ordre.",
+      "Écrivez depuis l’écran verrouillé ou maintenez une planète dans l’app pour parler. Chaque idée reste distincte et trouve sa place dans vos projets et thèmes.",
+      "Bientôt sur l’App Store",
+      "Voir comment ça marche",
+      "Pour iPhone · Téléchargement gratuit · Notes illimitées",
+      "De la place pour vos idées"
+    ],
+    "steps": [
+      [
+        "Capturer",
+        "Une idée arrive. Notez-la.",
+        "Un widget, le centre de contrôle ou un bouton Action configuré ouvre la saisie. Pour parler, maintenez une planète dans l’app. Texte et audio sont d’abord sauvegardés sur l’appareil."
+      ],
+      [
+        "Garder",
+        "Une pensée. Une note.",
+        "Vos idées ne s’entassent plus dans un document ou un chat. Modifiez, recherchez et déplacez chaque note. Marquez les idées réalisées dans vos projets."
+      ],
+      [
+        "Organiser",
+        "Sauvegardez, puis organisez.",
+        "L’IA en ligne aide avec les étiquettes, mots-clés, priorités et destinations. Les idées incertaines restent dans la Nébuleuse. Vous pouvez ajuster leur place."
+      ]
+    ],
+    "later": [
+      "À votre retour",
+      "Reprenez le fil de votre idée.",
+      "Retrouvez les idées liées, les points clés et les thèmes suggérés. La création d’une nouvelle planète reste votre choix."
+    ],
+    "finish": [
+      "Prêt pour votre prochaine idée.",
+      "Un endroit rapide pour noter, clair pour retrouver."
+    ]
+  }
+}

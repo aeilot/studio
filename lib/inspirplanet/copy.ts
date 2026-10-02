@@ -1,0 +1,10 @@
+import zh from "./locales/zh-Hans.json";
+import hant from "./locales/zh-Hant.json";
+import en from "./locales/en.json";
+import ja from "./locales/ja.json";
+import ko from "./locales/ko.json";
+import fr from "./locales/fr.json";
+import de from "./locales/de.json";
+import es from "./locales/es.json";
+import type { Language } from "../inspirplanet-languages";
+export const copy: Record<Language, typeof zh> = { "zh-Hans": zh, "zh-Hant": hant, en, ja, ko, fr, de, es };

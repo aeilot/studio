@@ -1,0 +1,228 @@
+{
+  "nav": [
+    "Produkt",
+    "Hilfe",
+    "Datenschutz"
+  ],
+  "skip": "Zum Inhalt",
+  "navigation": "Hauptnavigation",
+  "footerNavigation": "Fußnavigation",
+  "homeLabel": "InspirPlanet Startseite",
+  "language": "Sprache",
+  "theme": [
+    "Darstellung",
+    "Darstellung wählen",
+    "System",
+    "Hell · Candy",
+    "Dunkel · Weltraum"
+  ],
+  "footer": "Ein wenig Raum für deine Ideen.",
+  "hero": [
+    "Ein Planet für jede Idee.",
+    "Schreib sie auf. Sprich sie aus.",
+    "Lass verstreute Gedanken zu deinem Universum wachsen.",
+    "InspirPlanet entdecken",
+    "Text und Sprache · Planetenordnung · iCloud",
+    "Kyoto-Reiseplan",
+    "Schreiben",
+    "Eine neue Idee",
+    "Jeder kleine Gedanke hat seine eigene Umlaufbahn"
+  ],
+  "explore": [
+    "Beginne mit einem Satz",
+    "Erst festhalten.",
+    "Dann wachsen lassen.",
+    "Ideen müssen nicht fertig sein. Ein Gedanke oder eine Sprachnotiz kann zur neuen Entdeckung auf deinem Planeten werden."
+  ],
+  "features": [
+    [
+      "Festhalten",
+      "Ein paar Worte. Oder deine Stimme.",
+      "Tippe ins Eingabefeld oder halte einen Planeten zum Aufnehmen gedrückt. Originaltext und Audio werden zuerst auf deinem Gerät gespeichert, auch offline."
+    ],
+    [
+      "Ordnen",
+      "Projekte sind Planeten. Themen sind Sterne.",
+      "Zielgerichtete Projekte bekommen einen Planeten, dauerhafte Interessen einen Stern. Unsortiertes bleibt im Nebel. Online-KI hilft bei Zuordnung, Tags, Stichwörtern und Priorität."
+    ],
+    [
+      "Wachsen",
+      "Lass Ideen aufeinander treffen.",
+      "Finde verwandte Ideen in den Details und Kernaussagen in längeren Texten. Mit mehr Notizen schlägt der Nebel Themen vor. Neue Planeten entstehen erst nach deiner Bestätigung."
+    ]
+  ],
+  "screenshotAlt": "InspirPlanet-Startansicht: Ideen unten eingeben oder einen Planeten zum Aufnehmen gedrückt halten",
+  "trust": [
+    "Dein Universum für unterwegs",
+    "Lokal gespeichert.",
+    "Mit dir synchronisiert.",
+    "iCloud synchronisiert Planeten, Texte und Audio über denselben Apple Account. Online-Ordnung sendet relevante Texte; die Datenschutzhinweise erklären die Wege.",
+    "So werden Daten verarbeitet"
+  ],
+  "help": [
+    "Brauchst du Hilfe?",
+    "Finde deine nächste Umlaufbahn.",
+    "Hilfe lesen"
+  ],
+  "support": [
+    "HILFE",
+    "Etwas Hilfe",
+    "für dein Universum.",
+    "Von der ersten Notiz bis zur Synchronisierung zwischen Geräten: Antworten auf häufige Fragen.",
+    "Noch Fragen?",
+    "Kontaktiere uns direkt.",
+    "Nenne App-Version, Gerät, Betriebssystem und Schritte zum Problem. Verberge private Inhalte in Screenshots. Originalideen oder Aufnahmen musst du nicht senden.",
+    "Support per E-Mail",
+    "Datenschutzhinweise lesen",
+    "Apple-Abonnements verwalten"
+  ],
+  "questions": [
+    [
+      "Wie halte ich eine Idee fest?",
+      "Die App startet im Nebel. Gib unten Text ein oder halte einen Planeten für Audio gedrückt. Auf einem normalen Planeten landen neue Notizen dort. Die Schaltfläche für letzte Notizen öffnet eine durchsuchbare Zeitleiste."
+    ],
+    [
+      "Was unterscheidet Planeten, Sterne und Nebel?",
+      "Planeten sammeln Projekte mit Ziel, Sterne fortlaufende Themen und der Nebel Unsortiertes. Namen und Beschreibungen helfen der Online-Zuordnung. Du kannst Notizen auch selbst verschieben."
+    ],
+    [
+      "Warum bleibt eine Idee im Nebel oder wartet auf Ordnung?",
+      "Wenn kein Planet passt, die Zuordnung unsicher ist oder das Netz fehlt, bleibt sie dort oder wartet. Gespeicherter Originaltext bleibt lokal. Verbinde dich erneut und halte die App im Vordergrund, damit ausstehende oder fehlgeschlagene Aufgaben erneut versucht werden. Vorschläge kannst du einzeln annehmen oder ignorieren."
+    ],
+    [
+      "Was tun, wenn Audio nicht transkribiert wird?",
+      "Prüfe Mikrofon- und Spracherkennungsrechte im System sowie die Transkriptionssprache der App. Zuerst wird lokal erkannt, bei Bedarf online über Apple; dafür kann Internet nötig sein. Bei Fehlern bleibt die Aufnahme erhalten. Im Notizmenü kannst du es erneut versuchen."
+    ],
+    [
+      "Was tun, wenn iCloud nicht synchronisiert?",
+      "Nutze auf beiden Geräten denselben Apple Account, erlaube iCloud für die App und prüfe Netz und Speicher. Kontrolliere den Kontostatus in der App und öffne sie später auf beiden Geräten erneut. Verfügbar bedeutet nicht vollständig übertragen. Erfasse weiter offline; lösche zur Fehlersuche weder App noch Daten."
+    ],
+    [
+      "Wo finde ich verwandte Ideen, Kernaussagen und Themen?",
+      "Verwandte Ideen stehen in den Notizdetails, Kernaussagen bei längeren Texten und Transkripten. Ab mindestens drei geeigneten Notizen entdeckt der Nebel automatisch Themen. Planetenerstellung braucht deine Bestätigung. Ergebnisse hängen von Netz und Inhalt ab und überschreiben das Original nicht."
+    ],
+    [
+      "Wie bearbeite, verschiebe oder lösche ich Notizen?",
+      "Öffne die Notiz zum Bearbeiten. Verschieben und erneutes Transkribieren stehen im Menü. Nach dem Löschen ist kurz Rückgängig möglich. iCloud synchronisiert auch Änderungen und Löschungen. Projekte können als umgesetzt, Themen- und Nebelnotizen als markiert gekennzeichnet werden."
+    ],
+    [
+      "Wie stelle ich Käufe wieder her oder kündige?",
+      "Öffne über Einstellungen die Mitgliedschaftsseite und stelle Käufe mit dem ursprünglichen Apple Account wieder her. Bei ausstehenden Käufen warte auf Apples Bestätigung. Preise und Leistungen stehen in der App. Verwalte oder kündige auf Apples Abonnementseite."
+    ]
+  ],
+  "privacy": [
+    "DATENSCHUTZ",
+    "Deine Ideen gehören dir.",
+    "Ihre Datenwege sollen klar sein.",
+    "Originaltext und Audio werden zuerst auf deinem Gerät gespeichert. Synchronisierung, Spracherkennung und Online-KI haben getrennte Datenwege.",
+    "Datenschutz-Inhaltsverzeichnis",
+    "Datenschutzerklärung",
+    "Datenschutz kontaktieren"
+  ],
+  "sections": [
+    [
+      "scope",
+      "01 / Geltungsbereich",
+      "Diese Hinweise gelten für Evolution Studios InspirPlanet-App und diese Produkt-, Hilfe- und Datenschutzseiten. Sie beschreiben die aktuelle Implementierung. Stand: 2. Oktober 2026."
+    ],
+    [
+      "local",
+      "02 / Lokale Speicherung und iCloud",
+      "Planeten, Originaltext, Audio, Tags, Stichwörter, Prioritäten und Zustände liegen auf deinem Gerät. Bei verfügbarem iCloud synchronisiert die private CloudKit-Datenbank sie einschließlich Löschungen zwischen Geräten desselben Apple Accounts. Darstellung, Haptik und Transkriptionssprache bleiben lokal. Wir haben kein Betreiber-Dashboard zum Lesen privater CloudKit-Notizen. Apple betreibt und verarbeitet Daten seiner Cloud-Dienste."
+    ],
+    [
+      "voice",
+      "03 / Mikrofon und Spracherkennung",
+      "Aufnahme und Transkription benötigen jeweils die entsprechenden Berechtigungen. Audio wird lokal gespeichert und kann mit der Notiz über iCloud synchronisieren. Zuerst wird auf dem Gerät erkannt, danach gegebenenfalls online bei Apple, wohin Audio gesendet wird. Transkribierter Text kann in den folgenden KI-Ablauf eingehen. Berechtigungen verwaltest du im System."
+    ],
+    [
+      "ai",
+      "04 / Online-KI und lokale Verbesserung",
+      "Nach Speichern oder Bearbeiten gehen Originaltext, mögliche Stichwörter sowie Namen, Arten und Beschreibungen bestehender Planeten an unseren Cloudflare Worker und über OpenRouter an Modelldienste zur Einordnung. Jev ordnet; DeepSeek bearbeitet derzeit verwandte Ideen, Themen und Kernaussagen. Nötige Kennungen, Erstellungszeiten und Zuordnungen werden mitgesendet. Auf unterstützten Geräten kann Apple Intelligence lokal Wörter ergänzen. Das Abschalten dieser Verbesserung stoppt die Online-Ordnung nicht. Online-KI arbeitet nicht vollständig lokal."
+    ],
+    [
+      "generation",
+      "05 / Verwandte Ideen und generierte Ergebnisse",
+      "Die Suche wählt Kandidaten lokal und sendet passende Texte der aktuellen und möglichen Notizen zur Prüfung; automatische Verknüpfung ist abschaltbar. Kernaussagen werden auf deine Aktion hin mit dem jeweiligen Text angefragt. Themenfindung sendet automatisch bis zu 24 geeignete Nebelnotizen und Planeteninformationen; Erstellung erfordert Bestätigung. Planetenrückblicke senden im Vordergrund ebenfalls neue und ältere Kandidatentexte an Verknüpfungs- und Zusammenfassungsdienste. Benachrichtigungen abzuschalten stoppt die Erstellung nicht. Nur der neueste Rückblick bleibt lokal. Andere abgeleitete Ergebnisse werden üblicherweise sieben Tage lokal zwischengespeichert, bei Änderungen oder Löschen ungültig und sind in Einstellungen löschbar."
+    ],
+    [
+      "providers",
+      "06 / Dienstleister und Betriebsprotokolle",
+      "Cloudflare verarbeitet Anfragen; OpenRouter leitet Eingaben an Modellanbieter weiter. Unser Worker protokolliert weder Originaltexte noch Audio oder Anbieterschlüssel, bei Fehlern nur den Status. IP-Adressen und Netzwerkmetadaten dienen Verarbeitung, Begrenzung und Diagnose. Infrastruktur- und Modellanbieter können Daten nach eigenen Regeln verarbeiten oder aufbewahren. Wir versprechen weder durchgehend null Aufbewahrung noch universellen Ausschluss von Training; Verarbeitung kann außerhalb deiner Region stattfinden."
+    ],
+    [
+      "purchases",
+      "07 / Käufe, Website und Support-Mail",
+      "Apple StoreKit verarbeitet Käufe. Die App liest geprüfte Transaktionen und Aborechte; vollständige Kartendaten erhalten wir nicht. Diese Seiten enthalten keine Werbeverfolgung, Analyseskripte oder Tracking-Cookies. Die Darstellung wird im lokalen Browserspeicher gemerkt, ohne Ideen zu senden. Hosting kann IP, Pfade und Fehlerprotokolle verarbeiten. Erinnerungen an alte Ideen und Rückblicke sind lokale Mitteilungen. Exportieren und Teilen übergibt gewählte Texte, Planetenbilder und optionale Signaturen an gewählte Apps oder Empfänger. Mailanbieter verarbeiten Adresse, Text und Anhänge für unsere Antworten und Fehlersuche."
+    ],
+    [
+      "control",
+      "08 / Deine Wahlmöglichkeiten und Löschung",
+      "Du kannst Notizen bearbeiten, verschieben, löschen und Berechtigungen, iCloud, lokale Verbesserung und automatische Verknüpfung verwalten. Löschung entfernt zugehörige abgeleitete Caches und synchronisiert bei Aktivierung. Deinstallation löscht nicht zwangsläufig iCloud-Daten und kündigt keine Apple-Abos; nutze Apples Speicher- und Aboverwaltung. Online-Ordnung hat keinen eigenen Ausschalter. Offline werden Texte nicht gesendet; nach Wiederverbindung kann die App im Vordergrund ausstehende Notizen senden."
+    ],
+    [
+      "contact",
+      "09 / Kontakt und Änderungen",
+      "Fragen zur Verarbeitung, Datenschutzanfragen und Probleme: louis.chenluodeng@gmail.com. Übermittle nur nötige Informationen. Bei Änderungen an Funktionen oder Anbietern aktualisieren wir Hinweise und Datum."
+    ]
+  ],
+  "meta": [
+    "Schnell festhalten. Ideen in Ordnung halten.",
+    "Hilfe",
+    "Datenschutz",
+    "Schreibe vom Sperrbildschirm aus oder halte einen Planeten in der App zum Sprechen gedrückt. Jede Idee bleibt einzeln und findet ihr Projekt oder Thema.",
+    "Hilfe zu Aufnahmen, Planetenordnung, iCloud und Abonnements.",
+    "Informationen zu lokaler Speicherung, iCloud, Spracherkennung und Online-KI in InspirPlanet."
+  ],
+  "product": {
+    "eyebrow": "Das Produkt",
+    "title": "Festhalten, ordnen und umsetzen.",
+    "body": "InspirPlanet ist ein Ideenbuch fürs iPhone. Tippe einen Gedanken oder halte einen Planeten für eine Sprachaufnahme gedrückt. Ideen werden zuerst lokal gespeichert; Online-KI ordnet danach Tags, Stichwörter, Priorität und Planetenzuordnung. Planeten sammeln Projekte, Sterne dauerhafte Interessen und der Nebel unsortierte Gedanken. Finde verwandte Ideen, extrahiere Kernaussagen, bestätige vorgeschlagene Themenplaneten und markiere Projektideen als erledigt. iCloud kann Planeten, Texte und Audio über denselben Apple Account synchronisieren.",
+    "note": "Die aktuellen englischen App-Ansichten verwenden Demonstrationsnotizen.",
+    "captions": [
+      "Texteingabe und Planetenstartseite",
+      "Aufnahme, Wiedergabe und Transkription",
+      "Tags, Stichwörter und Zuordnung",
+      "Projekt- und Themenübersicht",
+      "Themenvorschlag mit Originalideen",
+      "Erledigte Projektideen"
+    ]
+  },
+  "landing": {
+    "hero": [
+      "Schnell festhalten.",
+      "Ideen in Ordnung halten.",
+      "Schreibe vom Sperrbildschirm aus oder halte einen Planeten in der App zum Sprechen gedrückt. Jede Idee bleibt einzeln und findet ihr Projekt oder Thema.",
+      "Bald im App Store",
+      "So funktioniert es",
+      "Für iPhone · Kostenlos laden · Unbegrenzte Notizen",
+      "Raum für deine Gedanken"
+    ],
+    "steps": [
+      [
+        "Festhalten",
+        "Eine Idee kommt. Halte sie fest.",
+        "Ein Widget, das Kontrollzentrum oder eine konfigurierte Aktionstaste öffnet die Texteingabe. Für Audio halte einen Planeten in der App. Text und Audio werden zuerst lokal gespeichert."
+      ],
+      [
+        "Behalten",
+        "Ein Gedanke. Eine Notiz.",
+        "Ideen müssen sich nicht in einem langen Dokument oder Chat stapeln. Bearbeite, suche und verschiebe jede einzeln. Erledigte Projektideen kannst du markieren."
+      ],
+      [
+        "Ordnen",
+        "Erst speichern, später sortieren.",
+        "Online-KI hilft bei Tags, Stichwörtern, Priorität und Zuordnung. Unsichere Ideen bleiben im Nebel. Du kannst sie selbst verschieben."
+      ]
+    ],
+    "later": [
+      "Wenn du zurückkommst",
+      "Den Gedanken weiterführen.",
+      "Finde verwandte Ideen, Kernaussagen und Themenvorschläge. Ob daraus ein neuer Planet wird, entscheidest du."
+    ],
+    "finish": [
+      "Bereit für deinen nächsten Gedanken.",
+      "Schnell festhalten und leichter wiederfinden."
+    ]
+  }
+}

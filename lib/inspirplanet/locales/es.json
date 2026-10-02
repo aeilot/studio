@@ -1,0 +1,228 @@
+{
+  "nav": [
+    "Producto",
+    "Ayuda",
+    "Privacidad"
+  ],
+  "skip": "Ir al contenido",
+  "navigation": "Navegación principal",
+  "footerNavigation": "Navegación del pie",
+  "homeLabel": "Inicio de InspirPlanet",
+  "language": "Idioma",
+  "theme": [
+    "Apariencia",
+    "Elegir apariencia",
+    "Sistema",
+    "Claro · Caramelo",
+    "Oscuro · Espacio"
+  ],
+  "footer": "Un pequeño espacio para tus ideas.",
+  "hero": [
+    "Un planeta para cada idea.",
+    "Anótala. Dila en voz alta.",
+    "Deja que tus pensamientos formen tu universo.",
+    "Explorar InspirPlanet",
+    "Texto y voz · Organización por planetas · Sincronización con iCloud",
+    "Viaje a Kioto",
+    "Escritura",
+    "Una nueva idea",
+    "Cada pensamiento tiene su propia órbita"
+  ],
+  "explore": [
+    "Empieza con una frase",
+    "Primero, anótala.",
+    "Después, déjala crecer.",
+    "Una idea no tiene que estar completa desde el principio. Un pensamiento o una nota de voz pueden convertirse en un nuevo descubrimiento."
+  ],
+  "features": [
+    [
+      "Captura",
+      "Escribe unas palabras. O habla.",
+      "Escribe en el campo de entrada o mantén pulsado un planeta para grabar. El texto original y el audio se guardan primero en tu dispositivo, incluso sin conexión."
+    ],
+    [
+      "Organiza",
+      "Proyectos en planetas. Temas en estrellas.",
+      "Los proyectos con un objetivo tienen un planeta; los intereses duraderos, una estrella. Las ideas pendientes quedan en la Nebulosa. La IA en línea ayuda a asignarles un destino, etiquetas, palabras clave y prioridad."
+    ],
+    [
+      "Crece",
+      "Deja que tus ideas se encuentren.",
+      "Busca ideas relacionadas y extrae los puntos clave de textos largos. Al crecer la Nebulosa aparecen sugerencias de temas. Solo se crean nuevos planetas cuando los confirmas."
+    ]
+  ],
+  "screenshotAlt": "Inicio de InspirPlanet: escribe ideas abajo o mantén pulsado un planeta para grabar",
+  "trust": [
+    "Tu universo, contigo",
+    "Guardado en tu dispositivo.",
+    "Sincronizado contigo.",
+    "iCloud sincroniza planetas, textos y grabaciones entre dispositivos con la misma cuenta de Apple. La organización en línea envía los textos pertinentes; el aviso de privacidad explica cada recorrido.",
+    "Conoce cómo se tratan los datos"
+  ],
+  "help": [
+    "¿Necesitas ayuda?",
+    "Encuentra tu próxima órbita.",
+    "Consultar la guía"
+  ],
+  "support": [
+    "AYUDA",
+    "Un poco de ayuda",
+    "para tu universo.",
+    "Desde tu primera nota hasta la sincronización entre dispositivos: aquí encontrarás respuestas a las preguntas habituales.",
+    "¿Todavía necesitas ayuda?",
+    "Escríbenos directamente.",
+    "Incluye la versión de la app, el dispositivo, la versión del sistema y los pasos para reproducir el problema. Oculta información privada en las capturas. No necesitas enviar ideas ni grabaciones originales.",
+    "Enviar un correo",
+    "Consultar el aviso de privacidad",
+    "Gestionar suscripciones de Apple"
+  ],
+  "questions": [
+    [
+      "¿Cómo capturo una idea?",
+      "La app se abre en la Nebulosa. Escribe abajo o mantén pulsado un planeta para grabar. En un planeta normal, las nuevas ideas se guardan allí. El botón de registros recientes abre una cronología con búsqueda."
+    ],
+    [
+      "¿En qué se diferencian los planetas, las estrellas y la Nebulosa?",
+      "Los planetas contienen proyectos con un objetivo; las estrellas, temas continuos. La Nebulosa es tu bandeja de entrada. Los nombres y descripciones ayudan a la organización en línea a encontrar un destino. También puedes mover los registros manualmente."
+    ],
+    [
+      "¿Por qué una idea sigue en la Nebulosa o pendiente de organizar?",
+      "Puede que ningún planeta encaje, que la confianza sea baja o que no haya conexión. El texto guardado permanece en tu dispositivo. Vuelve a conectarte y mantén la app en primer plano para reintentar la organización pendiente o fallida. Puedes aceptar o ignorar cada sugerencia de destino."
+    ],
+    [
+      "¿Qué hago si una grabación no se transcribe?",
+      "Comprueba los permisos de micrófono y reconocimiento de voz en el sistema y el idioma de transcripción en la app. Primero se intenta el reconocimiento en el dispositivo; después puede usarse el reconocimiento en línea de Apple, que necesita conexión. Si falla, se conserva el audio. Reintenta desde el menú del registro."
+    ],
+    [
+      "¿Qué hago si iCloud no sincroniza?",
+      "Usa la misma cuenta de Apple en ambos dispositivos, permite iCloud para la app y comprueba conexión y espacio. Revisa el estado de la cuenta en la app y vuelve a abrir ambos dispositivos más tarde. Una cuenta disponible no significa que las transferencias hayan terminado. Puedes seguir guardando sin conexión; no elimines la app ni borres datos para resolverlo."
+    ],
+    [
+      "¿Dónde están las ideas relacionadas, los puntos clave y los temas sugeridos?",
+      "Busca ideas relacionadas en los detalles de un registro. Los textos largos y las transcripciones permiten extraer puntos clave. La Nebulosa descubre temas a partir de al menos tres registros aptos; crear un planeta requiere confirmación. Los resultados dependen de la conexión y el contenido y no sustituyen el original."
+    ],
+    [
+      "¿Cómo edito, muevo o elimino registros?",
+      "Abre un registro para editarlo. Su menú permite moverlo o volver a transcribirlo. Tras eliminar aparece brevemente la opción de deshacer. iCloud también sincroniza cambios y eliminaciones. Las ideas de proyectos pueden marcarse como completadas; las de temas y la Nebulosa, para más tarde."
+    ],
+    [
+      "¿Cómo restauro compras o cancelo una suscripción?",
+      "Desde los ajustes abre la pantalla de membresía y restaura las compras con la cuenta de Apple utilizada. Las compras pendientes se desbloquean cuando Apple las confirma. Los precios y ventajas aparecen en la app. Gestiona o cancela las suscripciones en la página de suscripciones de Apple."
+    ]
+  ],
+  "privacy": [
+    "PRIVACIDAD",
+    "Tus ideas te pertenecen.",
+    "Su recorrido debe ser claro.",
+    "Los textos originales y el audio se guardan primero en tu dispositivo. La sincronización, el reconocimiento de voz y la IA en línea siguen recorridos separados.",
+    "Contenido de privacidad",
+    "Política de privacidad",
+    "Contactar por privacidad"
+  ],
+  "sections": [
+    [
+      "scope",
+      "01 / Ámbito",
+      "Este aviso se aplica a la app InspirPlanet de Evolution Studio y a estas páginas de producto, ayuda y privacidad. Describe la implementación actual. Última actualización: 2 de octubre de 2026."
+    ],
+    [
+      "local",
+      "02 / Almacenamiento local e iCloud",
+      "Los planetas, textos originales, audios, etiquetas, palabras clave, prioridades y estados se guardan en tu dispositivo. Cuando iCloud está disponible, la base de datos privada de CloudKit los sincroniza, incluidas las eliminaciones, entre dispositivos con la misma cuenta de Apple. Las preferencias de apariencia, respuesta háptica e idioma de transcripción permanecen locales. No tenemos un panel para consultar tus registros privados de CloudKit. Apple opera sus servicios en la nube y procesa sus datos."
+    ],
+    [
+      "voice",
+      "03 / Micrófono y reconocimiento de voz",
+      "Grabar requiere permiso de micrófono; transcribir requiere permiso de reconocimiento de voz. El audio se guarda localmente y puede sincronizarse con el registro mediante iCloud. Primero se intenta el reconocimiento en el dispositivo; si falla, puede usarse el reconocimiento en línea de Apple, enviándole el audio. El texto transcrito puede entrar en el proceso de IA en línea descrito abajo. Gestiona estos permisos en los ajustes del sistema."
+    ],
+    [
+      "ai",
+      "04 / IA en línea y mejora en el dispositivo",
+      "Tras guardar o editar un registro, el texto original, las palabras clave candidatas y la información de planetas existentes, incluidos nombres, tipos y descripciones, se envían a nuestro Cloudflare Worker y, a través de OpenRouter, a servicios de modelos para organizarlo. Jev realiza la organización; DeepSeek se usa actualmente para ideas relacionadas, temas y puntos clave. Las solicitudes incluyen identificadores de registros, fechas de creación y datos de destino pertinentes. En dispositivos compatibles, Apple Intelligence puede extraer palabras adicionales localmente. Desactivar esta mejora no detiene la organización en línea. La IA en línea no funciona completamente en el dispositivo."
+    ],
+    [
+      "generation",
+      "05 / Ideas relacionadas y resultados generados",
+      "La búsqueda de ideas relacionadas selecciona candidatos localmente y luego envía el texto actual y los candidatos pertinentes para revisarlos; la asociación automática puede desactivarse. La extracción de puntos clave se inicia manualmente y envía el texto del registro. Al cumplirse las condiciones, el descubrimiento de temas envía automáticamente hasta 24 registros seleccionados de la Nebulosa e información de planetas existentes; la creación requiere confirmación. Los repasos de planetas también llaman a servicios de ideas relacionadas y resumen en primer plano, enviando textos recientes y candidatos antiguos; desactivar sus notificaciones no detiene la generación. Solo se guarda localmente el último repaso. Los demás resultados derivados se almacenan normalmente durante siete días, se invalidan al editar o eliminar y pueden borrarse en ajustes."
+    ],
+    [
+      "providers",
+      "06 / Proveedores y registros operativos",
+      "Cloudflare procesa solicitudes y OpenRouter dirige las entradas a proveedores de modelos. Nuestro Worker no registra textos originales, audios ni claves de proveedores; los fallos solo registran el estado de error. El procesamiento, los límites de solicitudes y el diagnóstico implican direcciones IP y metadatos de red. Los proveedores de infraestructura y modelos pueden procesar o conservar datos según sus políticas. No prometemos retención cero ni ausencia de uso para entrenamiento para todos ellos. El procesamiento puede ocurrir fuera de tu región."
+    ],
+    [
+      "purchases",
+      "07 / Compras, sitio web y correo de ayuda",
+      "Apple StoreKit gestiona las compras. La app lee transacciones verificadas y derechos de suscripción; no recibimos los datos completos de tarjetas. Estas páginas no incluyen seguimiento publicitario, scripts de análisis ni cookies de seguimiento. La apariencia se guarda en el almacenamiento local del navegador y no envía ideas. El alojamiento puede procesar IP, rutas de solicitudes y registros de errores. Los recordatorios de ideas antiguas y repasos son notificaciones locales del sistema. Al exportar o compartir, los textos seleccionados, imágenes de planetas y firmas opcionales se entregan a la app o destinatario elegido. Los proveedores de correo procesan tu dirección, mensaje y adjuntos enviados a ayuda; los usamos para responder y diagnosticar problemas."
+    ],
+    [
+      "control",
+      "08 / Tus opciones y eliminación",
+      "Puedes editar, mover o eliminar registros y gestionar permisos, iCloud, mejora local y asociación automática. La eliminación borra las cachés derivadas pertinentes y se sincroniza si está habilitada. Desinstalar no elimina necesariamente los datos de iCloud ni cancela las suscripciones de Apple; gestiona ambos mediante los controles de Apple. La organización en línea no tiene un interruptor independiente. Guardar sin conexión evita enviar textos mientras no haya conexión; al reconectar con la app en primer plano pueden enviarse registros pendientes."
+    ],
+    [
+      "contact",
+      "09 / Contacto y actualizaciones",
+      "Para consultas, solicitudes de privacidad o problemas, escribe a louis.chenluodeng@gmail.com. Proporciona solo la información necesaria. Actualizaremos este aviso y su fecha cuando cambien las funciones o los proveedores."
+    ]
+  ],
+  "meta": [
+    "Captura rápido. Mantén tus ideas en orden.",
+    "Ayuda",
+    "Privacidad",
+    "Escribe desde la pantalla de bloqueo o mantén pulsado un planeta en la app para hablar. Cada idea se guarda por separado y encuentra su proyecto o tema.",
+    "Ayuda con grabaciones, organización de planetas, iCloud y suscripciones.",
+    "Conoce el almacenamiento local, iCloud, el reconocimiento de voz y la IA en línea de InspirPlanet."
+  ],
+  "product": {
+    "eyebrow": "El producto",
+    "title": "Captura, organiza y lleva tus ideas a la práctica.",
+    "body": "InspirPlanet es un cuaderno de ideas para iPhone. Escribe o mantén pulsado un planeta para grabar tu voz. Las ideas se guardan primero localmente; después, la IA en línea organiza etiquetas, palabras clave, prioridad y destino. Los planetas reúnen proyectos, las estrellas intereses duraderos y la Nebulosa pensamientos sin clasificar. Encuentra ideas relacionadas, extrae puntos clave, confirma temas sugeridos y marca ideas de proyectos como completadas. iCloud puede sincronizar planetas, textos y audio con la misma cuenta de Apple.",
+    "note": "Estas pantallas recientes en inglés usan registros de demostración.",
+    "captions": [
+      "Texto y pantalla de planetas",
+      "Grabación, reproducción y transcripción",
+      "Etiquetas, palabras clave y destino",
+      "Vista de proyectos y temas",
+      "Tema sugerido con ideas originales",
+      "Ideas de proyectos completadas"
+    ]
+  },
+  "landing": {
+    "hero": [
+      "Captura rápido.",
+      "Mantén tus ideas en orden.",
+      "Escribe desde la pantalla de bloqueo o mantén pulsado un planeta en la app para hablar. Cada idea se guarda por separado y encuentra su proyecto o tema.",
+      "Próximamente en el App Store",
+      "Ver cómo funciona",
+      "Para iPhone · Descarga gratuita · Notas ilimitadas",
+      "Espacio para tus ideas"
+    ],
+    "steps": [
+      [
+        "Captura",
+        "Llega una idea. Anótala.",
+        "Un widget, el centro de control o un botón de Acción configurado abre el texto. Para hablar, mantén pulsado un planeta en la app. Texto y audio se guardan primero en el dispositivo."
+      ],
+      [
+        "Guarda",
+        "Un pensamiento. Una nota.",
+        "No acumules ideas en un documento largo o un chat contigo. Edita, busca y mueve cada nota por separado. Marca las ideas realizadas de tus proyectos."
+      ],
+      [
+        "Organiza",
+        "Primero guarda. Después organiza.",
+        "La IA en línea ayuda con etiquetas, palabras clave, prioridad y destino. Las ideas inciertas quedan en la Nebulosa. Siempre puedes moverlas."
+      ]
+    ],
+    "later": [
+      "Cuando vuelvas",
+      "Retoma el hilo de tu idea.",
+      "Encuentra ideas relacionadas, puntos clave y temas sugeridos. Tú decides si crear un nuevo planeta."
+    ],
+    "finish": [
+      "Listo para tu próxima idea.",
+      "Un lugar rápido para capturar y claro para encontrar."
+    ]
+  }
+}

@@ -11,6 +11,15 @@ export type Project = {
 
 const projects: Project[] = [
   {
+    id: "inspirplanet",
+    title: "InspirPlanet",
+    subtitle: "iPhone",
+    description: "Give every idea a planet. Capture thoughts with text and voice, and grow your own universe.",
+    href: "/inspirplanet",
+    year: 2026,
+    featured: true,
+  },
+  {
     id: "rediscover",
     title: "Rediscover",
     subtitle: "iPhone · iPad · Mac",

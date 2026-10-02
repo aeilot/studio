@@ -34,7 +34,10 @@ export default async function RootLayout({
   const lang = language((await headers()).get(htmlLangHeader) ?? undefined);
 
   return (
-    <html lang={lang} className={`${lora.variable} ${sourceSans.variable}`}>
+    <html lang={lang} data-scroll-behavior="smooth" suppressHydrationWarning className={`${lora.variable} ${sourceSans.variable}`}>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: `(function(){try{var t=localStorage.getItem("inspirplanet-theme");document.documentElement.dataset.ipTheme=t==="light"||t==="dark"?t:"system"}catch(e){}})()` }} />
+      </head>
       <body>
         <Suspense fallback={null}>
           <HtmlLang />

@@ -1,0 +1,18 @@
+@font-face { font-family: "IP Rounded SC"; src: url("/inspirplanet/fonts/rounded-zh-Hans-400.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "IP Rounded SC"; src: url("/inspirplanet/fonts/rounded-zh-Hans-700.woff2") format("woff2"); font-weight: 700; font-style: normal; font-display: swap; }
+@font-face { font-family: "IP Rounded TC"; src: url("/inspirplanet/fonts/rounded-zh-Hant-400.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "IP Rounded TC"; src: url("/inspirplanet/fonts/rounded-zh-Hant-700.woff2") format("woff2"); font-weight: 700; font-style: normal; font-display: swap; }
+@font-face { font-family: "IP Rounded J"; src: url("/inspirplanet/fonts/rounded-ja-400.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "IP Rounded J"; src: url("/inspirplanet/fonts/rounded-ja-700.woff2") format("woff2"); font-weight: 700; font-style: normal; font-display: swap; }
+@font-face { font-family: "IP Rounded K"; src: url("/inspirplanet/fonts/rounded-ko-400.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "IP Rounded K"; src: url("/inspirplanet/fonts/rounded-ko-700.woff2") format("woff2"); font-weight: 700; font-style: normal; font-display: swap; }
+
+.ip { font-family:var(--font-ip-rounded), "IP Rounded SC", "Yuanti SC", "Hiragino Maru Gothic ProN", ui-rounded, sans-serif; }
+html[lang="zh-Hant"] .ip { font-family:var(--font-ip-rounded), "IP Rounded TC", "Yuanti TC", ui-rounded, sans-serif; }
+html[lang="ja"] .ip { font-family:var(--font-ip-rounded), "IP Rounded J", "Hiragino Maru Gothic ProN", ui-rounded, sans-serif; }
+html[lang="ko"] .ip { font-family:var(--font-ip-rounded), "IP Rounded K", ui-rounded, sans-serif; }
+.ip button, .ip select, .ip input, .ip textarea { font-family:inherit; }
+.ip-language-menu button { font-family:inherit; }
+.ip-brand { letter-spacing:-.035em; font-weight:800; }
+.ip-hero h1, .ip-prose h1 { letter-spacing:-.025em; font-weight:800; }
+.ip h2 { letter-spacing:-.02em; font-weight:700; }

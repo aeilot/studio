@@ -1,0 +1,228 @@
+{
+  "nav": [
+    "Product",
+    "Support",
+    "Privacy"
+  ],
+  "skip": "Skip to content",
+  "navigation": "Main navigation",
+  "footerNavigation": "Footer navigation",
+  "homeLabel": "InspirPlanet home",
+  "language": "Language",
+  "theme": [
+    "Appearance",
+    "Choose appearance",
+    "System",
+    "Light · Candy",
+    "Dark · Space"
+  ],
+  "footer": "A little space for your ideas.",
+  "hero": [
+    "A planet for every idea.",
+    "Jot it down. Say it out loud.",
+    "Let scattered thoughts grow into your universe.",
+    "Explore InspirPlanet",
+    "Text & voice capture · Planet organization · iCloud sync",
+    "Kyoto travel plans",
+    "Writing",
+    "A new idea",
+    "Every little thought has its own orbit"
+  ],
+  "explore": [
+    "Start with a sentence",
+    "Capture it first.",
+    "Let it grow.",
+    "Ideas don't have to arrive fully formed. A thought or a voice note can become a new discovery on your planet."
+  ],
+  "features": [
+    [
+      "Capture",
+      "Type a few words. Or just speak.",
+      "Write in the input field or hold a planet to record your voice. Original text and recordings are saved on your device first, so you can keep capturing offline."
+    ],
+    [
+      "Organize",
+      "Projects are planets. Themes are stars.",
+      "Give goal-driven projects a planet and lasting interests a star. Unsorted thoughts stay in the Nebula. Online AI helps identify their home, tags, keywords and priority."
+    ],
+    [
+      "Grow",
+      "Let your ideas meet.",
+      "Find related ideas from a record and extract key points from longer text. As your Nebula grows, theme suggestions appear. New planets are created only after you confirm."
+    ]
+  ],
+  "screenshotAlt": "InspirPlanet's planet home screen: enter ideas at the bottom or hold a planet to record your voice",
+  "trust": [
+    "Your universe, wherever you go",
+    "Saved locally.",
+    "Synced with you.",
+    "Use iCloud with the same Apple Account to sync planets, text and recordings. Online organization sends relevant text; the privacy notice explains each data path.",
+    "Learn how data is handled"
+  ],
+  "help": [
+    "Need a little help?",
+    "Find your next orbit.",
+    "Read the support guide"
+  ],
+  "support": [
+    "SUPPORT",
+    "A little help",
+    "for your universe.",
+    "From your first note to syncing across devices, find answers to common questions here.",
+    "Still need help?",
+    "Contact us directly.",
+    "Include your app version, device model, OS version and steps to reproduce the issue. Hide private content in screenshots. You don't need to send original ideas or recordings.",
+    "Email support",
+    "Read the privacy notice",
+    "Manage Apple subscriptions"
+  ],
+  "questions": [
+    [
+      "How do I capture an idea?",
+      "The app opens in the Nebula. Enter text at the bottom or hold a planet to record audio. On a regular planet, new ideas are saved there. The recent-records button opens a searchable timeline."
+    ],
+    [
+      "What's the difference between planets, stars and the Nebula?",
+      "Planets hold projects with a goal; stars hold ongoing themes. The Nebula is your inbox. Planet names and descriptions help online organization identify a suitable home. You can also move records yourself."
+    ],
+    [
+      "Why is an idea still in the Nebula or waiting to be organized?",
+      "Ideas stay there when no planet fits, confidence is low or the network is unavailable. Successfully saved text remains local. Reconnect and keep the app in the foreground to retry pending or failed organization. You can accept or ignore destination suggestions individually."
+    ],
+    [
+      "What if a recording isn't transcribed?",
+      "Check microphone and speech-recognition permissions in system settings and the app's transcription language. The app tries on-device recognition first and may fall back to Apple's online recognition, which needs a connection. Failed transcription keeps the recording; retry from the record menu."
+    ],
+    [
+      "What if iCloud isn't syncing?",
+      "Use the same Apple Account on both devices, allow iCloud for the app, and check connectivity and storage. Check iCloud account status in the app and reopen both devices later. An available account doesn't mean transfers are complete. Keep capturing locally while offline; don't delete the app or clear data to troubleshoot."
+    ],
+    [
+      "Where are related ideas, key points and theme suggestions?",
+      "Find related ideas in record details. Longer text and transcripts offer an extract-key-points action. The Nebula starts discovering themes after at least three eligible records, and creating a planet requires confirmation. Results depend on connectivity and content and don't overwrite the original."
+    ],
+    [
+      "How do I edit, move or delete records?",
+      "Open a record to edit it. Move and retranscribe actions are in its menu. A brief undo prompt follows deletion. iCloud also syncs edits and deletions. Project ideas can be marked completed; theme and Nebula ideas can be marked as favorites."
+    ],
+    [
+      "How do I restore purchases or cancel a subscription?",
+      "Open the membership screen from app settings and restore purchases with the Apple Account used to buy. Pending purchases unlock after Apple confirms them. Prices and benefits are shown in the app. Manage or cancel subscriptions through Apple's subscription management page."
+    ]
+  ],
+  "privacy": [
+    "PRIVACY",
+    "Your ideas are yours.",
+    "Their data paths should be clear.",
+    "Original text and audio are saved on your device first. Sync, speech recognition and online AI have separate data paths.",
+    "Privacy contents",
+    "Privacy policy",
+    "Contact privacy support"
+  ],
+  "sections": [
+    [
+      "scope",
+      "01 / Scope",
+      "This notice covers Evolution Studio's InspirPlanet app and these product, support and privacy pages. It describes the current implementation. Last updated: October 2, 2026."
+    ],
+    [
+      "local",
+      "02 / Local storage and iCloud",
+      "Planets, original text, audio, tags, keywords, priorities and record states are stored on your device. When iCloud is available, CloudKit's private database syncs them, including deletions, between devices on the same Apple Account. Appearance, haptic and transcription-language preferences stay local. We have no operator dashboard for browsing your private CloudKit records. Apple operates and processes data for its cloud services."
+    ],
+    [
+      "voice",
+      "03 / Microphone and speech recognition",
+      "Recording requires microphone permission; transcription requires speech-recognition permission. Audio is saved locally and can sync with its record through iCloud. Transcription tries on-device recognition first, then may fall back to Apple's online recognition, sending audio to Apple. Transcribed text may enter the online AI workflow below. Manage these permissions in system settings."
+    ],
+    [
+      "ai",
+      "04 / Online AI and on-device enhancement",
+      "After a record is saved or edited, original text, candidate keywords and existing planet information, including names, types and descriptions, go to our Cloudflare Worker and through OpenRouter to model services for organization. Jev handles organization; DeepSeek currently handles related ideas, themes and key points. Requests include relevant record identifiers, creation times and destination information. Supported Apple Intelligence devices can extract additional words on device. Disabling this enhancement does not stop online organization. Online AI is not entirely local."
+    ],
+    [
+      "generation",
+      "05 / Related ideas and generated results",
+      "Related-idea lookup first selects candidates locally, then sends the current and relevant candidate text for review; automatic linking can be disabled. Key-point extraction is user-triggered and sends that record's text. Theme discovery automatically sends up to 24 selected Nebula records and existing planet information when eligible; creation requires your confirmation. Planet recaps also call related-idea and summary services in the foreground with recent and older candidate text; disabling recap notifications does not stop generation. Only the latest recap is kept locally. Other derived results are cached locally for usually seven days, invalidated by edits or deletion, and can be cleared in settings."
+    ],
+    [
+      "providers",
+      "06 / Service providers and operational logs",
+      "Cloudflare processes requests and OpenRouter routes input to model providers. Our Worker does not log original idea text, audio or provider keys; failures log only error status. IP addresses and network metadata are involved in request processing, rate limiting and troubleshooting. Infrastructure and model providers may process or retain data under their policies. We do not promise universal zero retention or no training use, and processing may occur outside your region."
+    ],
+    [
+      "purchases",
+      "07 / Purchases, website and support email",
+      "Apple StoreKit handles purchases. The app reads verified transactions and subscription entitlements; we do not receive full payment-card details. These pages include no advertising tracking, analytics scripts or tracking cookies. Appearance preferences use browser local storage; this does not send idea content. Hosting may process IP addresses, request paths and error logs. Old-idea and recap reminders are local system notifications. Exporting or sharing sends selected text, planet images and optional signatures to your chosen app or recipient. Email providers process the address, message and attachments you send to support; we use them to respond and troubleshoot."
+    ],
+    [
+      "control",
+      "08 / Your choices and deletion",
+      "You can edit, move or delete records and manage permissions, iCloud, on-device enhancement and automatic linking. Deletion clears related derived caches and syncs when enabled. Uninstalling does not necessarily delete iCloud data or cancel Apple subscriptions; manage those through Apple's storage and subscription controls. Online organization has no separate off switch. Offline capture avoids sending text while offline; reconnecting with the app in the foreground may send pending records."
+    ],
+    [
+      "contact",
+      "09 / Contact and updates",
+      "Ask about processing, make privacy requests or report issues at louis.chenluodeng@gmail.com. Provide only the information needed. We update this notice and its date when features or providers change."
+    ]
+  ],
+  "meta": [
+    "Capture fast. Keep ideas in order.",
+    "Support",
+    "Privacy",
+    "Type a thought from your lock screen, or hold a planet in the app to speak. Each idea stays separate, with a little help finding its project or theme.",
+    "Help with recording, planet organization, iCloud sync and subscriptions.",
+    "Understand local storage, iCloud, speech recognition and online AI in InspirPlanet."
+  ],
+  "product": {
+    "eyebrow": "The product",
+    "title": "Capture, organize, and follow through.",
+    "body": "InspirPlanet is an idea notebook for iPhone. Type a thought or hold a planet to record your voice. Ideas are saved locally first; online AI then organizes tags, keywords, priority and planet placement. Planets hold goal-driven projects, stars hold ongoing interests, and the Nebula holds unsorted thoughts. Find related ideas, extract key points from long text, confirm suggested theme planets, and mark project ideas as done. iCloud can sync planets, text and audio across devices using the same Apple Account.",
+    "note": "These latest English app screens use demonstration records.",
+    "captions": [
+      "Text capture and the planet home",
+      "Voice recording, playback and transcription",
+      "Tags, keywords and planet placement",
+      "Project and theme overview",
+      "Theme suggestion with source ideas",
+      "Completed project ideas"
+    ]
+  },
+  "landing": {
+    "hero": [
+      "Capture fast.",
+      "Keep ideas in order.",
+      "Type a thought from your lock screen, or hold a planet in the app to speak. Each idea stays separate, with a little help finding its project or theme.",
+      "Coming soon to the App Store",
+      "See how it works",
+      "For iPhone · Free to download · Unlimited notes",
+      "Your ideas, with room to grow"
+    ],
+    "steps": [
+      [
+        "Capture",
+        "An idea arrives. Start there.",
+        "Use a lock-screen widget, Control Center or a configured Action Button to open text capture. Prefer speaking? Open the app and hold a planet. Text and audio save on your device first."
+      ],
+      [
+        "Keep",
+        "One thought. One note.",
+        "Ideas don’t need to pile up in a long document or a chat with yourself. Each has its own note to edit, search and move. Mark project ideas as done when you bring them to life."
+      ],
+      [
+        "Organize",
+        "Save first. Sort afterwards.",
+        "Online AI helps with tags, keywords, priority and placement in your projects or ongoing themes. Unsure ideas stay in the Nebula. You can always adjust their home."
+      ]
+    ],
+    "later": [
+      "When you come back",
+      "Pick up where the thought began.",
+      "Find related ideas, extract key points from longer text, and review suggested themes. You choose whether to turn a suggestion into a new planet."
+    ],
+    "finish": [
+      "Ready for your next thought.",
+      "A quick place to capture it. A clearer place to find it."
+    ]
+  }
+}
