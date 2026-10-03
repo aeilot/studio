@@ -82,3 +82,15 @@ html[lang="ko"] .ip-home { --ip-display-font:var(--font-ip-rounded),"IP Rounded 
 .ip-home .ip-planet-scene .ip-universe { z-index:0; inset:0 !important; width:100% !important; height:100% !important; object-fit:cover; object-position:center bottom; }
 .ip-home .ip-hero::after { display:none; }
 .ip-home .ip-hero-copy { position:relative; z-index:1; padding-bottom:30px; }
+/* Drop the artwork below the hero copy so the planets don't collide with the buttons and caption.
+   Cover scales the 3:2 art by width, so wide-but-short screens push the planets up; the calc
+   (100% = hero height) adds extra offset to keep the planet tops below ~500px. */
+.ip-home .ip-planet-scene .ip-universe { transform:translateY(max(80px,calc(500px + 29vw - 100%))); -webkit-mask-image:linear-gradient(to bottom,transparent,#000 18%); mask-image:linear-gradient(to bottom,transparent,#000 18%); }
+/* Small screens: put the art in flow below the copy and size it by width, so it shrinks with the
+   screen and shows more of the planets instead of a cropped close-up of one. */
+@media(max-width:900px) {
+ .ip-home .ip-hero { display:flex; flex-direction:column; height:auto; min-height:0; }
+ .ip-home .ip-hero-copy { order:1; }
+ .ip-home .ip-planet-scene { order:2; position:relative; inset:auto; flex:none; height:clamp(180px,44vw,420px); margin-top:-12px; }
+ .ip-home .ip-planet-scene .ip-universe { transform:none; -webkit-mask-image:linear-gradient(to bottom,transparent,#000 22%); mask-image:linear-gradient(to bottom,transparent,#000 22%); }
+}
