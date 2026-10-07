@@ -6,7 +6,7 @@ export const rediscoverLinks: {
   chrome: string | null;
   feedback: string | null;
 } = {
-  appStore: "#download", // Preview destination; replace with the real App Store URL.
+  appStore: "https://apps.apple.com/us/app/rediscover-reading-radar/id6807623281",
   safari: null,
   chrome:
     "https://chromewebstore.google.com/detail/save-to-rediscover/mfcclligjgceiagjnkahhjhmmgbnnnbh",

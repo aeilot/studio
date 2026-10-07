@@ -5,7 +5,7 @@ import { siteUrl } from "@/lib/site";
 import { inspirplanetLanguages, inspirplanetRoute } from "@/lib/inspirplanet-languages";
 
 const rediscoverPages = [
-  { path: "", updated: "2026-09-28", priority: 1 },
+  { path: "", updated: "2026-10-07", priority: 1 },
   { path: "/support", updated: "2026-09-28", priority: 0.5 },
   { path: "/privacy", updated: "2026-09-21", priority: 0.3 },
 ] as const;
@@ -13,9 +13,10 @@ const rediscoverPages = [
 export default function sitemap(): MetadataRoute.Sitemap {
   const origin = new URL(siteUrl()).origin;
   const url = (path: string) => new URL(path, origin).href;
-  const studio: MetadataRoute.Sitemap = ["/", "/about", "/members"].map(
-    (path) => ({ url: url(path), changeFrequency: "monthly", priority: 0.6 }),
-  );
+  // /about redirects off-site and /members is a placeholder; keep them out.
+  const studio: MetadataRoute.Sitemap = [
+    { url: url("/"), lastModified: "2026-10-07", changeFrequency: "monthly", priority: 0.8 },
+  ];
   const rediscover = rediscoverPages.flatMap(({ path, updated, priority }) => {
     const languages = Object.fromEntries([
       ["x-default", url(route(path))],

@@ -5,6 +5,8 @@ import { Shell } from "@/components/inspirplanet/Shell";
 import { copy } from "@/lib/inspirplanet/copy";
 import { inspirplanetLanguage, inspirplanetRoute as route, type PageQuery } from "@/lib/inspirplanet-languages";
 import { pageMetadata } from "@/lib/inspirplanet/metadata";
+import { inspirplanetSchema } from "@/lib/inspirplanet/schema";
+import { jsonLd } from "@/lib/rediscover-schema";
 
 export async function generateMetadata({ searchParams }: { searchParams: PageQuery }) {
   return pageMetadata("", inspirplanetLanguage((await searchParams).lang), 0);
@@ -21,6 +23,7 @@ export default async function Product({ searchParams }: { searchParams: PageQuer
     "03-organize": c.product.captions[2], "04-overview": c.product.captions[3], "06-completed": c.product.captions[5],
   };
   return <Shell active="product" lang={lang} hero>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(inspirplanetSchema(lang)) }} />
     <section className="ip-hero" aria-labelledby="hero-title">
       <div className="ip-planet-scene" aria-hidden="true"><Image className="ip-universe ip-universe-dark" src="/inspirplanet/universe-dark-full.webp" fill priority sizes="100vw" alt="" />
       <Image className="ip-universe ip-universe-light" src="/inspirplanet/universe-light-full.webp" fill priority sizes="100vw" alt="" /></div>
